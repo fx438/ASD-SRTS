@@ -37,6 +37,6 @@ python experiments/revision_srts_v2/plsnet_cc400_v1.py
 
 ## BrainGNN, BrainNetTF, RGTNet and GBT
 
-The adapter scripts for these four models were not kept with this repository. Their rows in
-Table 5 can be re-run with `export_inputs.py` and `evaluate_predictions.py` above; results may
-differ slightly from the published table because of nondeterminism in GPU training.
+To retrain these models on the same participants and folds, feed the official implementations
+with `export_inputs.py` and score them with `evaluate_predictions.py` as described above. Results
+can differ slightly from Table 5 because of nondeterminism in GPU training.
