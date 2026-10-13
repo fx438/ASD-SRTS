@@ -1,0 +1,11 @@
+{
+  "artifact_version": "efficiency-core-evidence-sha256-manifest-v1",
+  "files": {
+    "classifier_efficiency.csv": "9a57ef4a647c31bcf03f511cf405260e00907bc3c38772b1f3cd5dce4c576579",
+    "core_efficiency.json": "f5034f2532e14a6e2a902963fa6960596c432f053ebd5ffa2e4a4bb2e081476e",
+    "provenance.json": "c9fe0d2f3e9d0c140d50a4c659beac91850cc1b724467c15d1bd9d197c9e4244",
+    "report.md": "e20c641a2bf6e1ad362a81daf6f035cc784c58fe8062d7c7d2da0cca97c72c78",
+    "srts_preprocessing.csv": "f3a4867a078a08a416cbe903d889cdca35dd09941af90d39baa68ef96c1767a2",
+    "validation.json": "5a1ba4ace9b939b60e0a09636ede16686a5a80500a2b0a308303c3c5d92bcf9a"
+  }
+}

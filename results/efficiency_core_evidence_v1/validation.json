@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "artifact_version": "efficiency-core-evidence-validation-v1",
+  "validated_at_utc": "2026-08-25T15:55:52.127329+00:00",
+  "bundle": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/efficiency_core_evidence_v1",
+  "checks": {
+    "independent_five_fold_auc_recalculation": true,
+    "auc_maximum_mean_spread_below_0_004": true,
+    "sample_sd_ddof_1_recalculation": true,
+    "parameter_counts": true,
+    "latency_raw_trials": true,
+    "gpu_peak_memory": true,
+    "cpu_gpu_device_semantics": true,
+    "same_cpu_three_classifier_latency": true,
+    "native_device_latency_separated": true,
+    "svm_support_vector_storage": true,
+    "csv_json_markdown_numeric_consistency": true,
+    "input_output_sha256": true,
+    "markdown_hash_update_does_not_bypass_numeric_validation": true
+  },
+  "key_values": {
+    "auc": {
+      "lr": {
+        "mean": 0.7726136671302164,
+        "sample_sd": 0.04040294520336983,
+        "fold_values": [
+          0.7689393939393939,
+          0.7339015151515151,
+          0.7415730337078652,
+          0.783267903072966,
+          0.8353864897793422
+        ]
+      },
+      "svm": {
+        "mean": 0.7698938977858025,
+        "sample_sd": 0.04028683403081101,
+        "fold_values": [
+          0.7642045454545454,
+          0.7295725108225108,
+          0.7404900500879925,
+          0.7838770813591445,
+          0.8313253012048192
+        ]
+      },
+      "brainnet_mlp": {
+        "mean": 0.7686899209269589,
+        "sample_sd": 0.04650416907728378,
+        "fold_values": [
+          0.7739448051948051,
+          0.7136093073593073,
+          0.7421145255178014,
+          0.7755516447813726,
+          0.838229321781508
+        ]
+      }
+    },
+    "auc_maximum_mean_spread": 0.003923746203257528,
+    "lr_parameter_count": 77029,
+    "svm_probability_parameter_count": 77031,
+    "brainnet_mlp_parameter_count": 2477634
+  }
+}

@@ -1,0 +1,1617 @@
+{
+  "fold": 2,
+  "sizes_used": {
+    "train": 602,
+    "validation": 86,
+    "test_evaluated": 0
+  },
+  "selection_uses_test_data": false,
+  "test_predictions_computed": false,
+  "reference_selected_gamma": 0.7,
+  "reference_gamma_090_auc": 0.8625541125541125,
+  "gamma_090_reproduction_error": 0.0,
+  "audit_trials": [
+    {
+      "gamma": 0.9,
+      "best_val_auc": 0.8625541125541125,
+      "epochs_run": 73,
+      "n_parameters": 2477634,
+      "validation_labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "validation_probabilities": [
+        0.3578890860080719,
+        0.17201939225196838,
+        0.35876211524009705,
+        0.42122069001197815,
+        0.6059644818305969,
+        0.7542764544487,
+        0.4630492329597473,
+        0.29570645093917847,
+        0.7541866302490234,
+        0.3941143751144409,
+        0.13934670388698578,
+        0.28453612327575684,
+        0.0799848735332489,
+        0.5651323795318604,
+        0.6120264530181885,
+        0.485750675201416,
+        0.3862079679965973,
+        0.41902878880500793,
+        0.8775509595870972,
+        0.6255031228065491,
+        0.5288078188896179,
+        0.35174062848091125,
+        0.4889453053474426,
+        0.30175647139549255,
+        0.7395473122596741,
+        0.2415897399187088,
+        0.8223198652267456,
+        0.423152893781662,
+        0.2075602114200592,
+        0.6511844992637634,
+        0.6134401559829712,
+        0.7771970629692078,
+        0.6865572333335876,
+        0.6710768938064575,
+        0.41172870993614197,
+        0.8358949422836304,
+        0.1112985908985138,
+        0.09868185967206955,
+        0.3714826703071594,
+        0.9478663802146912,
+        0.07105572521686554,
+        0.26138174533843994,
+        0.27185991406440735,
+        0.31096717715263367,
+        0.34819069504737854,
+        0.46538645029067993,
+        0.6562280654907227,
+        0.08184520900249481,
+        0.771603524684906,
+        0.6279740929603577,
+        0.5505092144012451,
+        0.1385962963104248,
+        0.15984389185905457,
+        0.18827317655086517,
+        0.34196120500564575,
+        0.7701715230941772,
+        0.33693546056747437,
+        0.2689131200313568,
+        0.6497752070426941,
+        0.3118526041507721,
+        0.52262943983078,
+        0.10734724998474121,
+        0.6940130591392517,
+        0.29007387161254883,
+        0.8576772212982178,
+        0.785732090473175,
+        0.7158451676368713,
+        0.27910012006759644,
+        0.12195601314306259,
+        0.38959693908691406,
+        0.8815200924873352,
+        0.7911683917045593,
+        0.7195479869842529,
+        0.2490086853504181,
+        0.4823000729084015,
+        0.5162106156349182,
+        0.37420496344566345,
+        0.549727201461792,
+        0.8387287855148315,
+        0.1656419038772583,
+        0.3017388582229614,
+        0.5747425556182861,
+        0.17059028148651123,
+        0.1957084983587265,
+        0.5158045887947083,
+        0.5039658546447754
+      ],
+      "validation_subject_indices": [
+        151,
+        56,
+        206,
+        638,
+        478,
+        642,
+        343,
+        335,
+        40,
+        389,
+        294,
+        538,
+        329,
+        51,
+        719,
+        399,
+        519,
+        730,
+        775,
+        547,
+        416,
+        856,
+        275,
+        29,
+        601,
+        31,
+        481,
+        777,
+        119,
+        717,
+        402,
+        155,
+        185,
+        757,
+        201,
+        176,
+        805,
+        264,
+        832,
+        158,
+        146,
+        670,
+        720,
+        145,
+        568,
+        639,
+        225,
+        279,
+        27,
+        443,
+        827,
+        136,
+        492,
+        823,
+        685,
+        202,
+        306,
+        448,
+        435,
+        731,
+        574,
+        141,
+        800,
+        571,
+        474,
+        18,
+        28,
+        570,
+        114,
+        301,
+        640,
+        781,
+        105,
+        284,
+        23,
+        189,
+        254,
+        7,
+        645,
+        130,
+        530,
+        510,
+        267,
+        683,
+        590,
+        468
+      ],
+      "numerics": [
+        {
+          "subject_index": 151,
+          "min_eigenvalue": 0.4368839542570344,
+          "max_eigenvalue": 3.838645277877375,
+          "log10_condition_number": 0.9438118872554827
+        },
+        {
+          "subject_index": 56,
+          "min_eigenvalue": 0.40898769704319016,
+          "max_eigenvalue": 3.9554105886976214,
+          "log10_condition_number": 0.9854813278347098
+        },
+        {
+          "subject_index": 206,
+          "min_eigenvalue": 0.4018220166008072,
+          "max_eigenvalue": 3.0292151997263472,
+          "log10_condition_number": 0.8772963984284554
+        },
+        {
+          "subject_index": 638,
+          "min_eigenvalue": 0.4463304665058517,
+          "max_eigenvalue": 3.4430268707502822,
+          "log10_condition_number": 0.8872838793424488
+        },
+        {
+          "subject_index": 478,
+          "min_eigenvalue": 0.40638171465831946,
+          "max_eigenvalue": 4.215093834018558,
+          "log10_condition_number": 1.0158730886594627
+        },
+        {
+          "subject_index": 642,
+          "min_eigenvalue": 0.36120630184189956,
+          "max_eigenvalue": 4.4776302839453415,
+          "log10_condition_number": 1.0932929125163908
+        },
+        {
+          "subject_index": 343,
+          "min_eigenvalue": 0.480475255718942,
+          "max_eigenvalue": 3.199536982430916,
+          "log10_condition_number": 0.8234161078154326
+        },
+        {
+          "subject_index": 335,
+          "min_eigenvalue": 0.404544940945191,
+          "max_eigenvalue": 3.3946375979997065,
+          "log10_condition_number": 0.9238266425754181
+        },
+        {
+          "subject_index": 40,
+          "min_eigenvalue": 0.2509183466833425,
+          "max_eigenvalue": 4.29748793678546,
+          "log10_condition_number": 1.2336822489981658
+        },
+        {
+          "subject_index": 389,
+          "min_eigenvalue": 0.37057472638850614,
+          "max_eigenvalue": 3.9821842823157767,
+          "log10_condition_number": 1.0312455572457724
+        },
+        {
+          "subject_index": 294,
+          "min_eigenvalue": 0.3683514722309331,
+          "max_eigenvalue": 3.3512682892144956,
+          "log10_condition_number": 0.9589467871294886
+        },
+        {
+          "subject_index": 538,
+          "min_eigenvalue": 0.41338430837726253,
+          "max_eigenvalue": 4.582323379512311,
+          "log10_condition_number": 1.0447317473119866
+        },
+        {
+          "subject_index": 329,
+          "min_eigenvalue": 0.44258283209463545,
+          "max_eigenvalue": 4.1042902070228,
+          "log10_condition_number": 0.9672434978559408
+        },
+        {
+          "subject_index": 51,
+          "min_eigenvalue": 0.39508648279866826,
+          "max_eigenvalue": 3.623874640339259,
+          "log10_condition_number": 0.9624809945392588
+        },
+        {
+          "subject_index": 719,
+          "min_eigenvalue": 0.4131774545987457,
+          "max_eigenvalue": 3.9461679977009054,
+          "log10_condition_number": 0.9800389544293983
+        },
+        {
+          "subject_index": 399,
+          "min_eigenvalue": 0.32439802979241517,
+          "max_eigenvalue": 3.571547059045213,
+          "log10_condition_number": 1.0417781689123178
+        },
+        {
+          "subject_index": 519,
+          "min_eigenvalue": 0.43990421146918895,
+          "max_eigenvalue": 4.057346924541144,
+          "log10_condition_number": 0.9648840239979943
+        },
+        {
+          "subject_index": 730,
+          "min_eigenvalue": 0.4520154394887854,
+          "max_eigenvalue": 3.288258039517313,
+          "log10_condition_number": 0.8618126213431196
+        },
+        {
+          "subject_index": 775,
+          "min_eigenvalue": 0.3584363590460695,
+          "max_eigenvalue": 3.9987876722350415,
+          "log10_condition_number": 1.047516287399998
+        },
+        {
+          "subject_index": 547,
+          "min_eigenvalue": 0.460933492163709,
+          "max_eigenvalue": 3.6281990278428906,
+          "log10_condition_number": 0.8960528368209199
+        },
+        {
+          "subject_index": 416,
+          "min_eigenvalue": 0.4487772314875559,
+          "max_eigenvalue": 3.986873709489371,
+          "log10_condition_number": 0.9486016638474235
+        },
+        {
+          "subject_index": 856,
+          "min_eigenvalue": 0.46000267260450795,
+          "max_eigenvalue": 3.7032785501749848,
+          "log10_condition_number": 0.9058260247554869
+        },
+        {
+          "subject_index": 275,
+          "min_eigenvalue": 0.4333633484066939,
+          "max_eigenvalue": 3.7778101395314048,
+          "log10_condition_number": 0.9403879497107714
+        },
+        {
+          "subject_index": 29,
+          "min_eigenvalue": 0.4014489108953365,
+          "max_eigenvalue": 3.896792018161459,
+          "log10_condition_number": 0.9870769429542504
+        },
+        {
+          "subject_index": 601,
+          "min_eigenvalue": 0.4056833629721029,
+          "max_eigenvalue": 3.989684871431444,
+          "log10_condition_number": 0.992751396228622
+        },
+        {
+          "subject_index": 31,
+          "min_eigenvalue": 0.4228905929473767,
+          "max_eigenvalue": 4.221571873533054,
+          "log10_condition_number": 0.9992461631403612
+        },
+        {
+          "subject_index": 481,
+          "min_eigenvalue": 0.2736726992864586,
+          "max_eigenvalue": 4.328564224563355,
+          "log10_condition_number": 1.1991123899526466
+        },
+        {
+          "subject_index": 777,
+          "min_eigenvalue": 0.42731473202162434,
+          "max_eigenvalue": 3.0003087585233263,
+          "log10_condition_number": 0.8464180840645549
+        },
+        {
+          "subject_index": 119,
+          "min_eigenvalue": 0.4835847867620158,
+          "max_eigenvalue": 4.424711921253545,
+          "log10_condition_number": 0.9614123706348482
+        },
+        {
+          "subject_index": 717,
+          "min_eigenvalue": 0.34054849646378516,
+          "max_eigenvalue": 4.284362888866786,
+          "log10_condition_number": 1.0997072816038491
+        },
+        {
+          "subject_index": 402,
+          "min_eigenvalue": 0.3570340287676875,
+          "max_eigenvalue": 4.9057698384507225,
+          "log10_condition_number": 1.1379975582565502
+        },
+        {
+          "subject_index": 155,
+          "min_eigenvalue": 0.45308391885213556,
+          "max_eigenvalue": 3.9529955153467373,
+          "log10_condition_number": 0.9407476734466486
+        },
+        {
+          "subject_index": 185,
+          "min_eigenvalue": 0.36976489389751366,
+          "max_eigenvalue": 3.9792204715264092,
+          "log10_condition_number": 1.0318723260761355
+        },
+        {
+          "subject_index": 757,
+          "min_eigenvalue": 0.3745085225767293,
+          "max_eigenvalue": 3.618875182375276,
+          "log10_condition_number": 0.9851118989798575
+        },
+        {
+          "subject_index": 201,
+          "min_eigenvalue": 0.46098262133785717,
+          "max_eigenvalue": 3.231533843738869,
+          "log10_condition_number": 0.8457241554763377
+        },
+        {
+          "subject_index": 176,
+          "min_eigenvalue": 0.3760158574079882,
+          "max_eigenvalue": 4.4366579758538665,
+          "log10_condition_number": 1.0718497895732755
+        },
+        {
+          "subject_index": 805,
+          "min_eigenvalue": 0.45253313498595715,
+          "max_eigenvalue": 5.782089912212142,
+          "log10_condition_number": 1.106434456483261
+        },
+        {
+          "subject_index": 264,
+          "min_eigenvalue": 0.4496922109300311,
+          "max_eigenvalue": 3.4920655329481254,
+          "log10_condition_number": 0.8901670199199966
+        },
+        {
+          "subject_index": 832,
+          "min_eigenvalue": 0.4331459154156546,
+          "max_eigenvalue": 5.85125065041854,
+          "log10_condition_number": 1.130614479072237
+        },
+        {
+          "subject_index": 158,
+          "min_eigenvalue": 0.37331115219590716,
+          "max_eigenvalue": 4.513863426975318,
+          "log10_condition_number": 1.0824774506599286
+        },
+        {
+          "subject_index": 146,
+          "min_eigenvalue": 0.4197726176129321,
+          "max_eigenvalue": 4.622243077141505,
+          "log10_condition_number": 1.0418386751676314
+        },
+        {
+          "subject_index": 670,
+          "min_eigenvalue": 0.4145891362575977,
+          "max_eigenvalue": 4.145968017701824,
+          "log10_condition_number": 1.00000802977876
+        },
+        {
+          "subject_index": 720,
+          "min_eigenvalue": 0.43975053295894445,
+          "max_eigenvalue": 3.3515029627157045,
+          "log10_condition_number": 0.8820332331683028
+        },
+        {
+          "subject_index": 145,
+          "min_eigenvalue": 0.44282296040524977,
+          "max_eigenvalue": 4.130445631118652,
+          "log10_condition_number": 0.9697667789426567
+        },
+        {
+          "subject_index": 568,
+          "min_eigenvalue": 0.3846280023565057,
+          "max_eigenvalue": 3.845631567261198,
+          "log10_condition_number": 0.9999267747706502
+        },
+        {
+          "subject_index": 639,
+          "min_eigenvalue": 0.44629155120367736,
+          "max_eigenvalue": 3.1428654664013567,
+          "log10_condition_number": 0.8477071257522021
+        },
+        {
+          "subject_index": 225,
+          "min_eigenvalue": 0.4334308593210171,
+          "max_eigenvalue": 3.598383875994201,
+          "log10_condition_number": 0.9191876631712312
+        },
+        {
+          "subject_index": 279,
+          "min_eigenvalue": 0.3935559606066724,
+          "max_eigenvalue": 3.620437531409841,
+          "log10_condition_number": 0.9637545639824822
+        },
+        {
+          "subject_index": 27,
+          "min_eigenvalue": 0.36606593722945163,
+          "max_eigenvalue": 3.947331438826185,
+          "log10_condition_number": 1.0327442743258435
+        },
+        {
+          "subject_index": 443,
+          "min_eigenvalue": 0.39873019093798046,
+          "max_eigenvalue": 4.4613099001242515,
+          "log10_condition_number": 1.0487832713993512
+        },
+        {
+          "subject_index": 827,
+          "min_eigenvalue": 0.4291597679496403,
+          "max_eigenvalue": 3.54289968742489,
+          "log10_condition_number": 0.9167398542340569
+        },
+        {
+          "subject_index": 136,
+          "min_eigenvalue": 0.4894743260817597,
+          "max_eigenvalue": 3.7895032496341376,
+          "log10_condition_number": 0.8888523667123023
+        },
+        {
+          "subject_index": 492,
+          "min_eigenvalue": 0.44164726838578316,
+          "max_eigenvalue": 4.404292060562803,
+          "log10_condition_number": 0.9988005618562724
+        },
+        {
+          "subject_index": 823,
+          "min_eigenvalue": 0.45372768392348617,
+          "max_eigenvalue": 4.059667183630461,
+          "log10_condition_number": 0.9516951527629504
+        },
+        {
+          "subject_index": 685,
+          "min_eigenvalue": 0.45990796469329015,
+          "max_eigenvalue": 3.147999720921397,
+          "log10_condition_number": 0.8353637544278998
+        },
+        {
+          "subject_index": 202,
+          "min_eigenvalue": 0.4184794386476721,
+          "max_eigenvalue": 3.873206762863648,
+          "log10_condition_number": 0.96639655703449
+        },
+        {
+          "subject_index": 306,
+          "min_eigenvalue": 0.41090834452836933,
+          "max_eigenvalue": 3.929081542952875,
+          "log10_condition_number": 0.9805460813255845
+        },
+        {
+          "subject_index": 448,
+          "min_eigenvalue": 0.41459389093250576,
+          "max_eigenvalue": 4.421663431146791,
+          "log10_condition_number": 1.027962783358964
+        },
+        {
+          "subject_index": 435,
+          "min_eigenvalue": 0.41988240904387275,
+          "max_eigenvalue": 3.743139907657454,
+          "log10_condition_number": 0.9501083798096979
+        },
+        {
+          "subject_index": 731,
+          "min_eigenvalue": 0.4062079931391691,
+          "max_eigenvalue": 3.260851220927045,
+          "log10_condition_number": 0.9045825192452194
+        },
+        {
+          "subject_index": 574,
+          "min_eigenvalue": 0.41301405316849765,
+          "max_eigenvalue": 3.8409447568591086,
+          "log10_condition_number": 0.9684732317228556
+        },
+        {
+          "subject_index": 141,
+          "min_eigenvalue": 0.4613059724865112,
+          "max_eigenvalue": 3.9654767077709128,
+          "log10_condition_number": 0.9343063258669636
+        },
+        {
+          "subject_index": 800,
+          "min_eigenvalue": 0.3552301711869974,
+          "max_eigenvalue": 3.54877612076787,
+          "log10_condition_number": 0.9995687570470324
+        },
+        {
+          "subject_index": 571,
+          "min_eigenvalue": 0.43065156809012783,
+          "max_eigenvalue": 4.264135160831633,
+          "log10_condition_number": 0.9957049292140381
+        },
+        {
+          "subject_index": 474,
+          "min_eigenvalue": 0.4021878938844315,
+          "max_eigenvalue": 4.28943891483796,
+          "log10_condition_number": 1.0279714935804498
+        },
+        {
+          "subject_index": 18,
+          "min_eigenvalue": 0.4099006572838874,
+          "max_eigenvalue": 5.456017311875361,
+          "log10_condition_number": 1.124197124944689
+        },
+        {
+          "subject_index": 28,
+          "min_eigenvalue": 0.3688020385453783,
+          "max_eigenvalue": 3.7737353362029906,
+          "log10_condition_number": 1.0099781255323987
+        },
+        {
+          "subject_index": 570,
+          "min_eigenvalue": 0.4446061791987171,
+          "max_eigenvalue": 3.393330466493553,
+          "log10_condition_number": 0.8826506620792934
+        },
+        {
+          "subject_index": 114,
+          "min_eigenvalue": 0.40093824265885164,
+          "max_eigenvalue": 3.9557484890414663,
+          "log10_condition_number": 0.9941511883686068
+        },
+        {
+          "subject_index": 301,
+          "min_eigenvalue": 0.4273358623743673,
+          "max_eigenvalue": 3.836060874002973,
+          "log10_condition_number": 0.953116149627848
+        },
+        {
+          "subject_index": 640,
+          "min_eigenvalue": 0.41611607724806027,
+          "max_eigenvalue": 3.8321003831865834,
+          "log10_condition_number": 0.9642223813345375
+        },
+        {
+          "subject_index": 781,
+          "min_eigenvalue": 0.3801540232899788,
+          "max_eigenvalue": 3.383582050268371,
+          "log10_condition_number": 0.9494171212608408
+        },
+        {
+          "subject_index": 105,
+          "min_eigenvalue": 0.36723570360871544,
+          "max_eigenvalue": 4.99205931876568,
+          "log10_condition_number": 1.1333348394440808
+        },
+        {
+          "subject_index": 284,
+          "min_eigenvalue": 0.4371236088930635,
+          "max_eigenvalue": 3.4448123244861253,
+          "log10_condition_number": 0.8965613030391646
+        },
+        {
+          "subject_index": 23,
+          "min_eigenvalue": 0.3924750100007855,
+          "max_eigenvalue": 3.7099354751089253,
+          "log10_condition_number": 0.9755543470351147
+        },
+        {
+          "subject_index": 189,
+          "min_eigenvalue": 0.44199566102174925,
+          "max_eigenvalue": 3.746623249962699,
+          "log10_condition_number": 0.9282220178488189
+        },
+        {
+          "subject_index": 254,
+          "min_eigenvalue": 0.42273274521263565,
+          "max_eigenvalue": 4.31835937886822,
+          "log10_condition_number": 1.0092528920660002
+        },
+        {
+          "subject_index": 7,
+          "min_eigenvalue": 0.43090425690639306,
+          "max_eigenvalue": 3.594754088777305,
+          "log10_condition_number": 0.921288401854866
+        },
+        {
+          "subject_index": 645,
+          "min_eigenvalue": 0.3953905743797954,
+          "max_eigenvalue": 4.168280751494874,
+          "log10_condition_number": 1.0229306508031208
+        },
+        {
+          "subject_index": 130,
+          "min_eigenvalue": 0.47522217378056647,
+          "max_eigenvalue": 3.742031166840388,
+          "log10_condition_number": 0.8962107038076608
+        },
+        {
+          "subject_index": 530,
+          "min_eigenvalue": 0.4309615161487734,
+          "max_eigenvalue": 3.876407059677107,
+          "log10_condition_number": 0.9539908854171613
+        },
+        {
+          "subject_index": 510,
+          "min_eigenvalue": 0.44214299585873484,
+          "max_eigenvalue": 3.3302266129337226,
+          "log10_condition_number": 0.8769110374838911
+        },
+        {
+          "subject_index": 267,
+          "min_eigenvalue": 0.406797953637765,
+          "max_eigenvalue": 3.802327690279125,
+          "log10_condition_number": 0.9706707827143546
+        },
+        {
+          "subject_index": 683,
+          "min_eigenvalue": 0.44055432990738946,
+          "max_eigenvalue": 3.551231562499121,
+          "log10_condition_number": 0.9063795179571554
+        },
+        {
+          "subject_index": 590,
+          "min_eigenvalue": 0.4716465173813382,
+          "max_eigenvalue": 4.028960860441815,
+          "log10_condition_number": 0.931576416457811
+        },
+        {
+          "subject_index": 468,
+          "min_eigenvalue": 0.40953258130318937,
+          "max_eigenvalue": 4.149329695406208,
+          "log10_condition_number": 1.005689485394327
+        }
+      ],
+      "numerics_summary": {
+        "n_validation_subjects": 86,
+        "min_eigenvalue_mean": 0.41386441623942666,
+        "min_eigenvalue_min": 0.2509183466833425,
+        "log10_condition_number_mean": 0.9767832816090559,
+        "log10_condition_number_max": 1.2336822489981658
+      }
+    },
+    {
+      "gamma": 0.95,
+      "best_val_auc": 0.8382034632034632,
+      "epochs_run": 70,
+      "n_parameters": 2477634,
+      "validation_labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "validation_probabilities": [
+        0.40536972880363464,
+        0.3156813681125641,
+        0.4263685345649719,
+        0.4769088625907898,
+        0.5179264545440674,
+        0.6862199306488037,
+        0.4855070114135742,
+        0.40391993522644043,
+        0.88644939661026,
+        0.46642276644706726,
+        0.30178117752075195,
+        0.3626559376716614,
+        0.20524148643016815,
+        0.5533198118209839,
+        0.5443101525306702,
+        0.4897388517856598,
+        0.4670489430427551,
+        0.41085419058799744,
+        0.6769514679908752,
+        0.4892527163028717,
+        0.5333844423294067,
+        0.36879315972328186,
+        0.44540971517562866,
+        0.3709867596626282,
+        0.5696032643318176,
+        0.43356624245643616,
+        0.5882956385612488,
+        0.512870728969574,
+        0.3413194715976715,
+        0.572120726108551,
+        0.46915119886398315,
+        0.5564681887626648,
+        0.5727630257606506,
+        0.5993677377700806,
+        0.3894011378288269,
+        0.6683331727981567,
+        0.2063823640346527,
+        0.2567415237426758,
+        0.35967156291007996,
+        0.6996488571166992,
+        0.24457138776779175,
+        0.42400431632995605,
+        0.3664761781692505,
+        0.3527291715145111,
+        0.4385758638381958,
+        0.458012193441391,
+        0.44833382964134216,
+        0.2903483510017395,
+        0.608700692653656,
+        0.7267096638679504,
+        0.45351460576057434,
+        0.2869254946708679,
+        0.3214894235134125,
+        0.2965541183948517,
+        0.41622593998908997,
+        0.6220864653587341,
+        0.38505491614341736,
+        0.35403162240982056,
+        0.5496872067451477,
+        0.38794466853141785,
+        0.44019585847854614,
+        0.24914804100990295,
+        0.5451009273529053,
+        0.3648093342781067,
+        0.6649561524391174,
+        0.6682507991790771,
+        0.6116068959236145,
+        0.4509755074977875,
+        0.2590881288051605,
+        0.4539901912212372,
+        0.6692634224891663,
+        0.6130040287971497,
+        0.6229308843612671,
+        0.3387623131275177,
+        0.6141849160194397,
+        0.49230149388313293,
+        0.43225744366645813,
+        0.45678120851516724,
+        0.6325407028198242,
+        0.2634109854698181,
+        0.42813023924827576,
+        0.49270930886268616,
+        0.35498329997062683,
+        0.308830201625824,
+        0.4629552662372589,
+        0.5217459201812744
+      ],
+      "validation_subject_indices": [
+        151,
+        56,
+        206,
+        638,
+        478,
+        642,
+        343,
+        335,
+        40,
+        389,
+        294,
+        538,
+        329,
+        51,
+        719,
+        399,
+        519,
+        730,
+        775,
+        547,
+        416,
+        856,
+        275,
+        29,
+        601,
+        31,
+        481,
+        777,
+        119,
+        717,
+        402,
+        155,
+        185,
+        757,
+        201,
+        176,
+        805,
+        264,
+        832,
+        158,
+        146,
+        670,
+        720,
+        145,
+        568,
+        639,
+        225,
+        279,
+        27,
+        443,
+        827,
+        136,
+        492,
+        823,
+        685,
+        202,
+        306,
+        448,
+        435,
+        731,
+        574,
+        141,
+        800,
+        571,
+        474,
+        18,
+        28,
+        570,
+        114,
+        301,
+        640,
+        781,
+        105,
+        284,
+        23,
+        189,
+        254,
+        7,
+        645,
+        130,
+        530,
+        510,
+        267,
+        683,
+        590,
+        468
+      ],
+      "numerics": [
+        {
+          "subject_index": 151,
+          "min_eigenvalue": 0.6000261774990848,
+          "max_eigenvalue": 2.6746291357754477,
+          "log10_condition_number": 0.6490933733588935
+        },
+        {
+          "subject_index": 56,
+          "min_eigenvalue": 0.5745602068898124,
+          "max_eigenvalue": 2.712243945320581,
+          "log10_condition_number": 0.6739932042098206
+        },
+        {
+          "subject_index": 206,
+          "min_eigenvalue": 0.5655456716794921,
+          "max_eigenvalue": 2.1193622131749033,
+          "log10_condition_number": 0.573737503959082
+        },
+        {
+          "subject_index": 638,
+          "min_eigenvalue": 0.6012030198933062,
+          "max_eigenvalue": 2.352990379476103,
+          "log10_condition_number": 0.5925989980890564
+        },
+        {
+          "subject_index": 478,
+          "min_eigenvalue": 0.5684382661110128,
+          "max_eigenvalue": 2.8594076626136586,
+          "log10_condition_number": 0.7015927705968877
+        },
+        {
+          "subject_index": 642,
+          "min_eigenvalue": 0.5187519894796632,
+          "max_eigenvalue": 2.8591595633010014,
+          "log10_condition_number": 0.7412786177403446
+        },
+        {
+          "subject_index": 343,
+          "min_eigenvalue": 0.6389420298836246,
+          "max_eigenvalue": 2.2751582454016663,
+          "log10_condition_number": 0.551550151628763
+        },
+        {
+          "subject_index": 335,
+          "min_eigenvalue": 0.5699219638728713,
+          "max_eigenvalue": 2.3255225254776914,
+          "log10_condition_number": 0.6107051562264718
+        },
+        {
+          "subject_index": 40,
+          "min_eigenvalue": 0.40894671793104276,
+          "max_eigenvalue": 2.762532789723601,
+          "log10_condition_number": 0.8296407145177906
+        },
+        {
+          "subject_index": 389,
+          "min_eigenvalue": 0.5343102027127457,
+          "max_eigenvalue": 2.7212270030050547,
+          "log10_condition_number": 0.7069713046935502
+        },
+        {
+          "subject_index": 294,
+          "min_eigenvalue": 0.530022480406072,
+          "max_eigenvalue": 2.265537074585866,
+          "log10_condition_number": 0.6308768834402952
+        },
+        {
+          "subject_index": 538,
+          "min_eigenvalue": 0.5720639125175929,
+          "max_eigenvalue": 3.064587660963744,
+          "log10_condition_number": 0.7289274965872636
+        },
+        {
+          "subject_index": 329,
+          "min_eigenvalue": 0.6080076785646346,
+          "max_eigenvalue": 2.851373222401215,
+          "log10_condition_number": 0.6711450027352523
+        },
+        {
+          "subject_index": 51,
+          "min_eigenvalue": 0.5629784207834391,
+          "max_eigenvalue": 2.515989060090929,
+          "log10_condition_number": 0.6502169999306647
+        },
+        {
+          "subject_index": 719,
+          "min_eigenvalue": 0.5786807624754072,
+          "max_eigenvalue": 2.5392109473776268,
+          "log10_condition_number": 0.6422597367800198
+        },
+        {
+          "subject_index": 399,
+          "min_eigenvalue": 0.48331714894371264,
+          "max_eigenvalue": 2.457707834067515,
+          "log10_condition_number": 0.7062980488719428
+        },
+        {
+          "subject_index": 519,
+          "min_eigenvalue": 0.5969786563478114,
+          "max_eigenvalue": 2.7289079897241457,
+          "log10_condition_number": 0.6600300886920327
+        },
+        {
+          "subject_index": 730,
+          "min_eigenvalue": 0.6095494104840206,
+          "max_eigenvalue": 2.264325880723069,
+          "log10_condition_number": 0.5699300148900853
+        },
+        {
+          "subject_index": 775,
+          "min_eigenvalue": 0.5251882448140336,
+          "max_eigenvalue": 2.6345579599667763,
+          "log10_condition_number": 0.7003927606440647
+        },
+        {
+          "subject_index": 547,
+          "min_eigenvalue": 0.6210361674645706,
+          "max_eigenvalue": 2.4475204751326975,
+          "log10_condition_number": 0.5956094406042682
+        },
+        {
+          "subject_index": 416,
+          "min_eigenvalue": 0.6110473139829014,
+          "max_eigenvalue": 2.6730780655052038,
+          "log10_condition_number": 0.640936802844272
+        },
+        {
+          "subject_index": 856,
+          "min_eigenvalue": 0.621319605651416,
+          "max_eigenvalue": 2.55780028652155,
+          "log10_condition_number": 0.6145515737502135
+        },
+        {
+          "subject_index": 275,
+          "min_eigenvalue": 0.596714437088201,
+          "max_eigenvalue": 2.6685609242776973,
+          "log10_condition_number": 0.6505105769414687
+        },
+        {
+          "subject_index": 29,
+          "min_eigenvalue": 0.5677993823610193,
+          "max_eigenvalue": 2.6879722871842224,
+          "log10_condition_number": 0.6752298710829567
+        },
+        {
+          "subject_index": 601,
+          "min_eigenvalue": 0.569997132498836,
+          "max_eigenvalue": 2.584676702166467,
+          "log10_condition_number": 0.6565335573257852
+        },
+        {
+          "subject_index": 31,
+          "min_eigenvalue": 0.5915375387259832,
+          "max_eigenvalue": 2.831377811763244,
+          "log10_condition_number": 0.6800155143835385
+        },
+        {
+          "subject_index": 481,
+          "min_eigenvalue": 0.4331291335268457,
+          "max_eigenvalue": 2.817537914402598,
+          "log10_condition_number": 0.8132523722486554
+        },
+        {
+          "subject_index": 777,
+          "min_eigenvalue": 0.5957525156153164,
+          "max_eigenvalue": 2.0850994956031146,
+          "log10_condition_number": 0.5440608983561617
+        },
+        {
+          "subject_index": 119,
+          "min_eigenvalue": 0.6395783028008688,
+          "max_eigenvalue": 3.064144204526366,
+          "log10_condition_number": 0.680415477956313
+        },
+        {
+          "subject_index": 717,
+          "min_eigenvalue": 0.5026826884125276,
+          "max_eigenvalue": 2.6908498528054596,
+          "log10_condition_number": 0.7285955360886657
+        },
+        {
+          "subject_index": 402,
+          "min_eigenvalue": 0.5240142256122665,
+          "max_eigenvalue": 3.242561421340059,
+          "log10_condition_number": 0.7915451342392062
+        },
+        {
+          "subject_index": 155,
+          "min_eigenvalue": 0.6186868345816999,
+          "max_eigenvalue": 2.718847428109502,
+          "log10_condition_number": 0.6429139627362003
+        },
+        {
+          "subject_index": 185,
+          "min_eigenvalue": 0.529737306898092,
+          "max_eigenvalue": 2.7661278076806757,
+          "log10_condition_number": 0.7178116832933626
+        },
+        {
+          "subject_index": 757,
+          "min_eigenvalue": 0.5353576234634523,
+          "max_eigenvalue": 2.5375623606981694,
+          "log10_condition_number": 0.6757727324717759
+        },
+        {
+          "subject_index": 201,
+          "min_eigenvalue": 0.624055178555067,
+          "max_eigenvalue": 2.2696141749993277,
+          "log10_condition_number": 0.5607290437889413
+        },
+        {
+          "subject_index": 176,
+          "min_eigenvalue": 0.5343855670352099,
+          "max_eigenvalue": 2.8683400343498175,
+          "log10_condition_number": 0.7297759145704905
+        },
+        {
+          "subject_index": 805,
+          "min_eigenvalue": 0.613907820189091,
+          "max_eigenvalue": 3.8181582260736278,
+          "log10_condition_number": 0.7937507561532618
+        },
+        {
+          "subject_index": 264,
+          "min_eigenvalue": 0.6128222473421152,
+          "max_eigenvalue": 2.458851642592181,
+          "log10_condition_number": 0.6033978027704244
+        },
+        {
+          "subject_index": 832,
+          "min_eigenvalue": 0.5888115715826595,
+          "max_eigenvalue": 3.9410763737876744,
+          "log10_condition_number": 0.825638514744892
+        },
+        {
+          "subject_index": 158,
+          "min_eigenvalue": 0.5387198695626949,
+          "max_eigenvalue": 3.0075599979754464,
+          "log10_condition_number": 0.7468513059715044
+        },
+        {
+          "subject_index": 146,
+          "min_eigenvalue": 0.5838159979652423,
+          "max_eigenvalue": 3.066280336743744,
+          "log10_condition_number": 0.7203358664684302
+        },
+        {
+          "subject_index": 670,
+          "min_eigenvalue": 0.577488894610382,
+          "max_eigenvalue": 2.7352960875398633,
+          "log10_condition_number": 0.675460707327572
+        },
+        {
+          "subject_index": 720,
+          "min_eigenvalue": 0.6040639780101955,
+          "max_eigenvalue": 2.300663501918418,
+          "log10_condition_number": 0.5807701644971742
+        },
+        {
+          "subject_index": 145,
+          "min_eigenvalue": 0.6083685625475155,
+          "max_eigenvalue": 2.8990933056945343,
+          "log10_condition_number": 0.6780954293161937
+        },
+        {
+          "subject_index": 568,
+          "min_eigenvalue": 0.5434225810427522,
+          "max_eigenvalue": 2.571299097818633,
+          "log10_condition_number": 0.6750149165842771
+        },
+        {
+          "subject_index": 639,
+          "min_eigenvalue": 0.6049481507533777,
+          "max_eigenvalue": 2.2003313083140275,
+          "log10_condition_number": 0.5607699248557171
+        },
+        {
+          "subject_index": 225,
+          "min_eigenvalue": 0.5987080422605221,
+          "max_eigenvalue": 2.486884502567075,
+          "log10_condition_number": 0.6184405240357975
+        },
+        {
+          "subject_index": 279,
+          "min_eigenvalue": 0.5580699387833687,
+          "max_eigenvalue": 2.483447901046862,
+          "log10_condition_number": 0.6483664243223518
+        },
+        {
+          "subject_index": 27,
+          "min_eigenvalue": 0.5315307606890102,
+          "max_eigenvalue": 2.632730175499425,
+          "log10_condition_number": 0.6948779481791715
+        },
+        {
+          "subject_index": 443,
+          "min_eigenvalue": 0.5643335356931662,
+          "max_eigenvalue": 2.9399550416937297,
+          "log10_condition_number": 0.7168048300363512
+        },
+        {
+          "subject_index": 827,
+          "min_eigenvalue": 0.5891186170469744,
+          "max_eigenvalue": 2.4567339017828034,
+          "log10_condition_number": 0.6201553716150278
+        },
+        {
+          "subject_index": 136,
+          "min_eigenvalue": 0.653459114434565,
+          "max_eigenvalue": 2.6730434968155716,
+          "log10_condition_number": 0.6117876059524479
+        },
+        {
+          "subject_index": 492,
+          "min_eigenvalue": 0.600314511904657,
+          "max_eigenvalue": 2.893705410823965,
+          "log10_condition_number": 0.6830754743130824
+        },
+        {
+          "subject_index": 823,
+          "min_eigenvalue": 0.6171914775910117,
+          "max_eigenvalue": 2.786135550198856,
+          "log10_condition_number": 0.654582321228666
+        },
+        {
+          "subject_index": 685,
+          "min_eigenvalue": 0.6174135167241759,
+          "max_eigenvalue": 2.195628353937752,
+          "log10_condition_number": 0.5509826975030366
+        },
+        {
+          "subject_index": 202,
+          "min_eigenvalue": 0.5772689368443616,
+          "max_eigenvalue": 2.637260428006633,
+          "log10_condition_number": 0.6597748297456687
+        },
+        {
+          "subject_index": 306,
+          "min_eigenvalue": 0.5695237174633162,
+          "max_eigenvalue": 2.668541187549033,
+          "log10_condition_number": 0.670762095584317
+        },
+        {
+          "subject_index": 448,
+          "min_eigenvalue": 0.5820012945309634,
+          "max_eigenvalue": 2.9742418825641046,
+          "log10_condition_number": 0.708452334321716
+        },
+        {
+          "subject_index": 435,
+          "min_eigenvalue": 0.5829169971598058,
+          "max_eigenvalue": 2.5101824512126165,
+          "log10_condition_number": 0.6340985700709193
+        },
+        {
+          "subject_index": 731,
+          "min_eigenvalue": 0.5715882025172104,
+          "max_eigenvalue": 2.2400611853557924,
+          "log10_condition_number": 0.5931766244310065
+        },
+        {
+          "subject_index": 574,
+          "min_eigenvalue": 0.5757503102115173,
+          "max_eigenvalue": 2.6540838407410487,
+          "log10_condition_number": 0.6636804571864511
+        },
+        {
+          "subject_index": 141,
+          "min_eigenvalue": 0.6193253595687903,
+          "max_eigenvalue": 2.849743017314,
+          "log10_condition_number": 0.6628868347186918
+        },
+        {
+          "subject_index": 800,
+          "min_eigenvalue": 0.5186064777959557,
+          "max_eigenvalue": 2.3925228081622896,
+          "log10_condition_number": 0.664018149500766
+        },
+        {
+          "subject_index": 571,
+          "min_eigenvalue": 0.5931239747719159,
+          "max_eigenvalue": 2.8935935825072425,
+          "log10_condition_number": 0.688292053479915
+        },
+        {
+          "subject_index": 474,
+          "min_eigenvalue": 0.5536681918615778,
+          "max_eigenvalue": 2.835249002051737,
+          "log10_condition_number": 0.7093416321628218
+        },
+        {
+          "subject_index": 18,
+          "min_eigenvalue": 0.573100260104949,
+          "max_eigenvalue": 3.631462676768913,
+          "log10_condition_number": 0.8018509793894406
+        },
+        {
+          "subject_index": 28,
+          "min_eigenvalue": 0.5376292396733485,
+          "max_eigenvalue": 2.4743916083084043,
+          "log10_condition_number": 0.6629855537595962
+        },
+        {
+          "subject_index": 570,
+          "min_eigenvalue": 0.6098473737059357,
+          "max_eigenvalue": 2.362001582415073,
+          "log10_condition_number": 0.5880590263539895
+        },
+        {
+          "subject_index": 114,
+          "min_eigenvalue": 0.5677170444933736,
+          "max_eigenvalue": 2.7395558755142444,
+          "log10_condition_number": 0.6835482294705623
+        },
+        {
+          "subject_index": 301,
+          "min_eigenvalue": 0.5901648561174662,
+          "max_eigenvalue": 2.6391634854416703,
+          "log10_condition_number": 0.650492949812371
+        },
+        {
+          "subject_index": 640,
+          "min_eigenvalue": 0.5755614558752608,
+          "max_eigenvalue": 2.55153580307539,
+          "log10_condition_number": 0.646709964256442
+        },
+        {
+          "subject_index": 781,
+          "min_eigenvalue": 0.5378361724563603,
+          "max_eigenvalue": 2.3216828535931398,
+          "log10_condition_number": 0.6351528864060129
+        },
+        {
+          "subject_index": 105,
+          "min_eigenvalue": 0.5215455238941028,
+          "max_eigenvalue": 3.174422590172035,
+          "log10_condition_number": 0.784372518587502
+        },
+        {
+          "subject_index": 284,
+          "min_eigenvalue": 0.6024064198561084,
+          "max_eigenvalue": 2.385252978939826,
+          "log10_condition_number": 0.597644855409756
+        },
+        {
+          "subject_index": 23,
+          "min_eigenvalue": 0.5617585366003113,
+          "max_eigenvalue": 2.5406451725871793,
+          "log10_condition_number": 0.6553943347917108
+        },
+        {
+          "subject_index": 189,
+          "min_eigenvalue": 0.604158848191923,
+          "max_eigenvalue": 2.5237080835206585,
+          "log10_condition_number": 0.6208879784628591
+        },
+        {
+          "subject_index": 254,
+          "min_eigenvalue": 0.5850642927828545,
+          "max_eigenvalue": 2.9008989014279893,
+          "log10_condition_number": 0.6953290001920688
+        },
+        {
+          "subject_index": 7,
+          "min_eigenvalue": 0.5944172579059288,
+          "max_eigenvalue": 2.4862145301833896,
+          "log10_condition_number": 0.62144719032722
+        },
+        {
+          "subject_index": 645,
+          "min_eigenvalue": 0.5519912118543543,
+          "max_eigenvalue": 2.69142752091986,
+          "log10_condition_number": 0.6880505254647739
+        },
+        {
+          "subject_index": 130,
+          "min_eigenvalue": 0.64019035283482,
+          "max_eigenvalue": 2.608777245000717,
+          "log10_condition_number": 0.6101278723097266
+        },
+        {
+          "subject_index": 530,
+          "min_eigenvalue": 0.5930707469020088,
+          "max_eigenvalue": 2.642342641126123,
+          "log10_condition_number": 0.6488826302302051
+        },
+        {
+          "subject_index": 510,
+          "min_eigenvalue": 0.6027092814426079,
+          "max_eigenvalue": 2.2838765626372663,
+          "log10_condition_number": 0.5785647483113247
+        },
+        {
+          "subject_index": 267,
+          "min_eigenvalue": 0.5654218774372873,
+          "max_eigenvalue": 2.5987332105792422,
+          "log10_condition_number": 0.6623890882345229
+        },
+        {
+          "subject_index": 683,
+          "min_eigenvalue": 0.6017650789023004,
+          "max_eigenvalue": 2.507241665078752,
+          "log10_condition_number": 0.6197692147017321
+        },
+        {
+          "subject_index": 590,
+          "min_eigenvalue": 0.6343073619918012,
+          "max_eigenvalue": 2.7475505243759284,
+          "log10_condition_number": 0.6366459353584357
+        },
+        {
+          "subject_index": 468,
+          "min_eigenvalue": 0.5706962265426686,
+          "max_eigenvalue": 2.7708561576764974,
+          "log10_condition_number": 0.6862089800226516
+        }
+      ],
+      "numerics_summary": {
+        "n_validation_subjects": 86,
+        "min_eigenvalue_mean": 0.5759989068207944,
+        "min_eigenvalue_min": 0.40894671793104276,
+        "log10_condition_number_mean": 0.6636936691768037,
+        "log10_condition_number_max": 0.8296407145177906
+      }
+    }
+  ],
+  "delta_auc_095_minus_090": -0.024350649350649345,
+  "paired_validation_bootstrap_095_minus_090": {
+    "estimate": -0.024350649350649345,
+    "ci95_percentile": [
+      -0.07413419913419905,
+      0.02435064935064946
+    ],
+    "probability_difference_gt_zero": 0.15885,
+    "repetitions": 20000,
+    "seed": 20260826,
+    "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+  }
+}

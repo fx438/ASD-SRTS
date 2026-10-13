@@ -1,0 +1,67 @@
+{
+  "model_key": "lr",
+  "status": "passed",
+  "checks": {
+    "locked_splits_and_gammas": true,
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "training_only_reference_and_scaler": true,
+    "no_feature_selection": true,
+    "validation_only_threshold_reproduced": true,
+    "metrics_and_sample_sd_recomputed": true,
+    "feature_dim": 77028,
+    "feature_hashes_verified": true,
+    "same_features_and_scalers_as_lr": true,
+    "main_deep_results_unchanged": true,
+    "validation_min_eigenvalue_min": 0.06123580984348415
+  },
+  "warnings": [
+    {
+      "fold": 1,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 2,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 3,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 4,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 5,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    }
+  ],
+  "auc": {
+    "mean": 0.7726136671302165,
+    "sample_sd": 0.040402945203369824,
+    "fold_values": [
+      0.7689393939393939,
+      0.7339015151515151,
+      0.7415730337078652,
+      0.783267903072966,
+      0.8353864897793422
+    ]
+  },
+  "accuracy": {
+    "mean": 0.7069767441860465,
+    "sample_sd": 0.028063996246853885,
+    "fold_values": [
+      0.6976744186046512,
+      0.686046511627907,
+      0.7034883720930233,
+      0.6918604651162791,
+      0.7558139534883721
+    ]
+  }
+}

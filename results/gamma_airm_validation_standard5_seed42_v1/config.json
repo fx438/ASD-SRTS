@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "t_use": 146,
+  "folds": 5,
+  "per_fold_sizes": [
+    602,
+    86,
+    172
+  ],
+  "core_gamma_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "audit_gamma": 0.95,
+  "target_partition": "validation only",
+  "reference_fit_partition": "training only",
+  "reference_matrix": "arithmetic mean of shrunk training FC only",
+  "distance": "affine-invariant Riemannian distance, equal to the Frobenius norm of log(R^(-1/2) C_tilde R^(-1/2))",
+  "validation_auc_source": "locked BrainNetMLP gamma trials from the standard-five-fold main experiment; unavailable by design for gamma=0.95 here",
+  "uses_test_predictions_or_metrics": false,
+  "used_to_change_locked_gamma_selection": false
+}

@@ -1,0 +1,212 @@
+{
+  "protocol": {
+    "comparison": "SRTS LR minus raw Pearson FC full-svec LR",
+    "n_bootstrap": 20000,
+    "seed": 20260824,
+    "resampling": "paired subject bootstrap stratified within fold and class",
+    "estimand": "pooled OOF metric difference conditional on the fixed five fitted fold models",
+    "used_for_model_selection": false,
+    "limitations": "does not include uncertainty from re-splitting, re-training, or random initialization"
+  },
+  "alignment_checks": {
+    "same_seed": true,
+    "same_fold_sizes": true,
+    "same_feature_dim": true,
+    "same_feature_selection": true,
+    "same_standardization": true,
+    "same_threshold_rule": true,
+    "same_lr_hyperparameters": true,
+    "classifier_specific_tuning_absent": true,
+    "same_train_validation_test_indices": true,
+    "only_representation_changed": true
+  },
+  "oof_alignment": {
+    "n_subjects": 860,
+    "asd_n": 417,
+    "tc_n": 443,
+    "fold_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "same_subject_label_fold_alignment": true
+  },
+  "five_fold_comparison": {
+    "auc": {
+      "raw_fc": {
+        "mean": 0.742573727714008,
+        "sample_sd": 0.04889698058984273,
+        "fold_values": [
+          0.716314935064935,
+          0.6915584415584416,
+          0.7231623121700285,
+          0.7662109110599702,
+          0.8156220387166644
+        ]
+      },
+      "srts": {
+        "mean": 0.7726136671302165,
+        "sample_sd": 0.040402945203369824,
+        "fold_values": [
+          0.7689393939393939,
+          0.7339015151515151,
+          0.7415730337078652,
+          0.783267903072966,
+          0.8353864897793422
+        ]
+      },
+      "difference_of_fold_means": 0.030039939416208528,
+      "paired_fold_differences": [
+        0.05262445887445888,
+        0.042343073593073544,
+        0.01841072153783674,
+        0.01705699201299582,
+        0.019764451062677768
+      ],
+      "paired_fold_difference_sample_sd": 0.01636160843541069,
+      "note": "descriptive five-fold summary; distinct from the pooled OOF bootstrap estimand"
+    },
+    "accuracy": {
+      "raw_fc": {
+        "mean": 0.6825581395348836,
+        "sample_sd": 0.039346335617880535,
+        "fold_values": [
+          0.6395348837209303,
+          0.6627906976744186,
+          0.6627906976744186,
+          0.7151162790697675,
+          0.7325581395348837
+        ]
+      },
+      "srts": {
+        "mean": 0.7069767441860465,
+        "sample_sd": 0.028063996246853885,
+        "fold_values": [
+          0.6976744186046512,
+          0.686046511627907,
+          0.7034883720930233,
+          0.6918604651162791,
+          0.7558139534883721
+        ]
+      },
+      "difference_of_fold_means": 0.024418604651162856,
+      "paired_fold_differences": [
+        0.05813953488372092,
+        0.023255813953488413,
+        0.04069767441860472,
+        -0.023255813953488413,
+        0.023255813953488413
+      ],
+      "paired_fold_difference_sample_sd": 0.030321871652105366,
+      "note": "descriptive five-fold summary; distinct from the pooled OOF bootstrap estimand"
+    }
+  },
+  "paired_pooled_oof_bootstrap": {
+    "method": "paired stratified within-fold subject bootstrap",
+    "estimand": "pooled OOF metric difference conditional on the five fitted fold models",
+    "limitations": "CI 不包含重新划分、重新训练或随机初始化带来的不确定性，不能解释为多随机种子置信区间。",
+    "n_bootstrap": 20000,
+    "seed": 20260824,
+    "point_oof_metrics": {
+      "raw_fc": {
+        "auc": 0.7428828945872645,
+        "accuracy": 0.6825581395348838,
+        "sensitivity": 0.6522781774580336,
+        "specificity": 0.7110609480812641,
+        "precision": 0.68,
+        "f1": 0.6658506731946144
+      },
+      "srts": {
+        "auc": 0.7723284126649019,
+        "accuracy": 0.7069767441860465,
+        "sensitivity": 0.7290167865707434,
+        "specificity": 0.6862302483069977,
+        "precision": 0.6862302483069977,
+        "f1": 0.7069767441860465
+      }
+    },
+    "comparisons": [
+      {
+        "comparison": "srts_minus_raw_fc",
+        "numerator": "srts",
+        "denominator": "raw_fc",
+        "metrics": {
+          "auc": {
+            "point_difference": 0.0294455180776374,
+            "percentile_95_ci": [
+              0.012688652689586391,
+              0.04661392781936984
+            ],
+            "bootstrap_mean_difference": 0.029530413682597952,
+            "bootstrap_sample_sd": 0.00861985214603041
+          },
+          "accuracy": {
+            "point_difference": 0.024418604651162745,
+            "percentile_95_ci": [
+              0.0011627906976743319,
+              0.04883720930232549
+            ],
+            "bootstrap_mean_difference": 0.0244478488372093,
+            "bootstrap_sample_sd": 0.012111135903984466
+          },
+          "sensitivity": {
+            "point_difference": 0.0767386091127098,
+            "percentile_95_ci": [
+              0.043165467625899234,
+              0.11270983213429253
+            ],
+            "bootstrap_mean_difference": 0.076621103117506,
+            "bootstrap_sample_sd": 0.017917728057653567
+          },
+          "specificity": {
+            "point_difference": -0.02483069977426633,
+            "percentile_95_ci": [
+              -0.05643340857787815,
+              0.006772009029345383
+            ],
+            "bootstrap_mean_difference": -0.024663318284424376,
+            "bootstrap_sample_sd": 0.016520591716696592
+          },
+          "precision": {
+            "point_difference": 0.006230248306997699,
+            "percentile_95_ci": [
+              -0.0195094881766862,
+              0.032132780696476286
+            ],
+            "bootstrap_mean_difference": 0.0063217009788444824,
+            "bootstrap_sample_sd": 0.013198930641123856
+          },
+          "f1": {
+            "point_difference": 0.04112607099143206,
+            "percentile_95_ci": [
+              0.0156787652569632,
+              0.06751077343841355
+            ],
+            "bootstrap_mean_difference": 0.04116200818255223,
+            "bootstrap_sample_sd": 0.013262819619312027
+          }
+        }
+      }
+    ]
+  },
+  "input_sha256": {
+    "raw_summary": "2691e9172addaf408864a01f10a6d9a688cdc4a5ac736890deff6bde0dab8683",
+    "srts_summary": "686130899d6eadc2f669dfc59a561c699f5cece251d670fb17dcf7a6d2df9d13",
+    "raw_fold_1": "df2ae8c2b8c87c67a3f6f8e0f10a12e707599c4bb2f5282885451e881130f50c",
+    "raw_fold_2": "ed12a91b6fd6a69c34fb8eb65087b50853937fb229e45be3d1f8ceb472e8af31",
+    "raw_fold_3": "6ca54d38a4da87febd06a3ee9d1399b9e57f0f89cc15663bfad71637feefbfeb",
+    "raw_fold_4": "65ccfd9f42b04a9d6c10cb49392cd9044e8d576acab922f7866fa4bfa3d727c6",
+    "raw_fold_5": "fba5cc98b23a6406f760a27dddb79305869f4937d0e057bccd2730d0f76e66f1",
+    "srts_fold_1": "98a13f565ae7423d2a5947acf33ccd2d973c22c527b5eaaec049351ca8cb305a",
+    "srts_fold_2": "656129212144095dd722ca9a42fe43170f36f15fdaffb09cb853544fffafa0af",
+    "srts_fold_3": "d2bece3777dccf9216ff15773b56470f13421f058f376f028cd29f2e15893c4e",
+    "srts_fold_4": "1d69466f385581e5e9a78f64827f8609a3eb75b4363da6450c7fd2a44975df80",
+    "srts_fold_5": "4a34b19467a7e4b118b1a4cc219d7168f9e0d4ee22f5851ff64f62d0c993a79e"
+  },
+  "provenance": {
+    "script_sha256": "474d9058833a8c58e2fe73d1c45be8812138445f9c0708eb358b4aac53e178b8",
+    "bootstrap_helper_script_sha256": "5d1b816378c0921d39e457610969e1f85e5f4869103ed5e4cb016e12d63d8823"
+  }
+}

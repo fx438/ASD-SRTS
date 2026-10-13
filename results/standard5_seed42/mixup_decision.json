@@ -1,0 +1,20 @@
+{
+  "module": "dual_branch_latent_mixup",
+  "alpha": 0.2,
+  "selection_uses_test_data": false,
+  "rule": {
+    "minimum_mean_validation_auc_delta": 0.01,
+    "minimum_improved_folds": 4
+  },
+  "validation_auc_deltas_srts_mixup_minus_srts": [
+    0.0010822510822510178,
+    -0.008658008658008698,
+    0.0,
+    0.007034632034632171,
+    0.008658008658008698
+  ],
+  "mean_validation_auc_delta": 0.0016233766233766378,
+  "improved_folds": 3,
+  "accepted": false,
+  "test_evaluated": false
+}

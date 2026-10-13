@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "t_use": 146,
+  "audit_gammas": [
+    0.9,
+    0.95
+  ],
+  "main_result_read_only": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/standard5_seed42",
+  "output": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/gamma_boundary_audit_standard5_seed42_v1",
+  "bootstrap_repetitions": 20000,
+  "bootstrap_seed": 20260824,
+  "test_evaluation_enabled": false,
+  "training_hyperparameters": {
+    "hidden": 32,
+    "drop": 0.0,
+    "k": 40,
+    "lr": 0.0001,
+    "weight_decay": 0.0005,
+    "epochs": 300,
+    "min_epochs": 60,
+    "patience": 40,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "eig_batch_size": 32,
+    "noise": 0.02
+  }
+}

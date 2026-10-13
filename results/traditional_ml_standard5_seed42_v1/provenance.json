@@ -1,0 +1,14 @@
+{
+  "script_sha256": "a8092313e4409cdc69dda11b0d6b64f70d480f7fc33a8f4b621862148df8f542",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.16.3",
+  "sklearn_version": "1.8.0",
+  "feature_matrix_shape": [
+    860,
+    76636
+  ],
+  "feature_matrix_sha256": "cdd3771b6782ea6a395f7ebfb7c9b61f15e9694fdbbf103700f4b55dd32917b7",
+  "upper_triangle_rows_sha256": "9e9e4fdae2fa2ccc4e27bd8b4ba69bfde5347e60f0b60ff873d3610d7f9b5696",
+  "upper_triangle_cols_sha256": "60a6c5dd16180ec035b62e67714c079d55f2efb6d23f995713013eeac652e1dc"
+}

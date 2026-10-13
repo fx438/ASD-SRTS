@@ -1,0 +1,41 @@
+{
+  "model_key": "svm",
+  "status": "passed",
+  "checks": {
+    "locked_splits_and_gammas": true,
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "training_only_reference_and_scaler": true,
+    "no_feature_selection": true,
+    "validation_only_threshold_reproduced": true,
+    "metrics_and_sample_sd_recomputed": true,
+    "feature_dim": 77028,
+    "feature_hashes_verified": true,
+    "same_features_and_scalers_as_lr": true,
+    "main_deep_results_unchanged": true,
+    "validation_min_eigenvalue_min": 0.06123580984348415
+  },
+  "warnings": [],
+  "auc": {
+    "mean": 0.7698938977858024,
+    "sample_sd": 0.04028683403081101,
+    "fold_values": [
+      0.7642045454545454,
+      0.7295725108225108,
+      0.7404900500879925,
+      0.7838770813591445,
+      0.8313253012048192
+    ]
+  },
+  "accuracy": {
+    "mean": 0.7058139534883721,
+    "sample_sd": 0.024871220507217944,
+    "fold_values": [
+      0.6918604651162791,
+      0.6976744186046512,
+      0.6976744186046512,
+      0.6918604651162791,
+      0.75
+    ]
+  }
+}

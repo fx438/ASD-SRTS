@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checks": {
+    "input_hashes_verified": true,
+    "script_and_helper_hashes_verified": true,
+    "same_860_subject_label_fold_alignment_recomputed": true,
+    "fold_specific_validation_thresholds_reapplied": true,
+    "paired_stratified_bootstrap_20000_recomputed_exactly": true,
+    "five_fold_mean_differences_recomputed": true,
+    "analysis_not_used_for_model_selection": true
+  },
+  "five_fold_auc_difference": 0.030039939416208528,
+  "five_fold_accuracy_difference": 0.024418604651162856,
+  "pooled_oof_auc": {
+    "point_difference": 0.0294455180776374,
+    "percentile_95_ci": [
+      0.012688652689586391,
+      0.04661392781936984
+    ],
+    "bootstrap_mean_difference": 0.029530413682597952,
+    "bootstrap_sample_sd": 0.00861985214603041
+  },
+  "pooled_oof_accuracy": {
+    "point_difference": 0.024418604651162745,
+    "percentile_95_ci": [
+      0.0011627906976743319,
+      0.04883720930232549
+    ],
+    "bootstrap_mean_difference": 0.0244478488372093,
+    "bootstrap_sample_sd": 0.012111135903984466
+  }
+}

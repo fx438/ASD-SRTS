@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "t_use": 146,
+  "topk": 1200,
+  "feature": "Fisher-Z Pearson FC strict upper triangle",
+  "feature_selection": "absolute two-sample t statistic, training fold only",
+  "standardization": "StandardScaler, training fold only",
+  "threshold_selection": "maximum validation accuracy, tie closest to 0.5",
+  "model_random_state": 0,
+  "model_hyperparameters": {
+    "lr": {
+      "C": 1.0,
+      "max_iter": 2000
+    },
+    "knn": {
+      "n_neighbors": 15
+    },
+    "mlp": {
+      "hidden_layer_sizes": [
+        64
+      ],
+      "max_iter": 500
+    },
+    "rf": {
+      "n_estimators": 500
+    },
+    "svm": {
+      "kernel": "rbf",
+      "C": 1.0,
+      "gamma": "scale",
+      "probability": true
+    }
+  },
+  "classifier_specific_tuning": false,
+  "run_order": [
+    "lr",
+    "knn",
+    "mlp",
+    "rf",
+    "svm"
+  ],
+  "main_split_manifest": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/standard5_seed42/splits_manifest.json",
+  "output": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/traditional_ml_standard5_seed42_v1"
+}

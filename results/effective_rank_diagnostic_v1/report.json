@@ -1,0 +1,386 @@
+{
+  "status": "completed",
+  "artifact_version": "effective-rank-diagnostic-v1",
+  "analysis_role": "determine whether the measured correlation-matrix rank of about 62 is a genuine effective rank of the preprocessed time series or an artifact of the numerical tolerance",
+  "uses_test_subjects": false,
+  "models_retrained": false,
+  "fold": 0,
+  "n_validation_measured": 86,
+  "n_roi": 392,
+  "t_use": 146,
+  "theoretical_rank_upper_bound": 145,
+  "rank_by_absolute_tolerance": {
+    "1e-12": {
+      "mean": 65.80232558139535,
+      "sample_sd": 7.763898001333003,
+      "min": 53.0,
+      "median": 68.0,
+      "max": 96.0
+    },
+    "1e-10": {
+      "mean": 63.93023255813954,
+      "sample_sd": 7.759306666531516,
+      "min": 52.0,
+      "median": 66.0,
+      "max": 93.0
+    },
+    "1e-08": {
+      "mean": 61.848837209302324,
+      "sample_sd": 7.443145195192475,
+      "min": 50.0,
+      "median": 64.0,
+      "max": 91.0
+    },
+    "1e-06": {
+      "mean": 59.72093023255814,
+      "sample_sd": 7.215426550174119,
+      "min": 49.0,
+      "median": 62.0,
+      "max": 88.0
+    },
+    "1e-04": {
+      "mean": 57.04651162790697,
+      "sample_sd": 7.04925023421421,
+      "min": 46.0,
+      "median": 59.0,
+      "max": 86.0
+    },
+    "1e-03": {
+      "mean": 55.825581395348834,
+      "sample_sd": 7.044717437601724,
+      "min": 45.0,
+      "median": 58.0,
+      "max": 84.0
+    },
+    "1e-02": {
+      "mean": 54.04651162790697,
+      "sample_sd": 6.970369180440008,
+      "min": 43.0,
+      "median": 56.0,
+      "max": 82.0
+    },
+    "1e-01": {
+      "mean": 51.616279069767444,
+      "sample_sd": 6.73388028100076,
+      "min": 41.0,
+      "median": 54.0,
+      "max": 78.0
+    }
+  },
+  "rank_by_relative_tolerance": {
+    "1e-10": {
+      "mean": 62.04651162790697,
+      "sample_sd": 7.4941655372605185,
+      "min": 51.0,
+      "median": 64.0,
+      "max": 92.0
+    },
+    "1e-08": {
+      "mean": 59.95348837209303,
+      "sample_sd": 7.279151496680633,
+      "min": 49.0,
+      "median": 62.0,
+      "max": 89.0
+    },
+    "1e-06": {
+      "mean": 57.604651162790695,
+      "sample_sd": 7.071532107504654,
+      "min": 46.0,
+      "median": 59.0,
+      "max": 86.0
+    },
+    "1e-04": {
+      "mean": 54.395348837209305,
+      "sample_sd": 6.967621030025776,
+      "min": 44.0,
+      "median": 56.0,
+      "max": 83.0
+    },
+    "1e-02": {
+      "mean": 47.174418604651166,
+      "sample_sd": 5.885559317646212,
+      "min": 36.0,
+      "median": 49.0,
+      "max": 60.0
+    }
+  },
+  "rank_capturing_energy_quantile": {
+    "0.90": {
+      "mean": 27.906976744186046,
+      "sample_sd": 3.70255208320755,
+      "min": 22.0,
+      "median": 27.0,
+      "max": 37.0
+    },
+    "0.95": {
+      "mean": 35.18604651162791,
+      "sample_sd": 4.468218826351744,
+      "min": 27.0,
+      "median": 35.0,
+      "max": 46.0
+    },
+    "0.99": {
+      "mean": 44.94186046511628,
+      "sample_sd": 6.06116791534008,
+      "min": 34.0,
+      "median": 46.0,
+      "max": 66.0
+    },
+    "1.00": {
+      "mean": 50.52325581395349,
+      "sample_sd": 6.731360747297676,
+      "min": 40.0,
+      "median": 52.0,
+      "max": 77.0
+    }
+  },
+  "cumulative_energy_at_top_k": {
+    "top_1": {
+      "mean": 0.15131423092386828,
+      "sample_sd": 0.026924145489332647,
+      "min": 0.10278376966130029,
+      "median": 0.1464946929636013,
+      "max": 0.22281299307640268
+    },
+    "top_5": {
+      "mean": 0.4573276935457513,
+      "sample_sd": 0.04234626711450871,
+      "min": 0.3345405809653231,
+      "median": 0.4604945278416922,
+      "max": 0.5520899173862246
+    },
+    "top_10": {
+      "mean": 0.6418916495107646,
+      "sample_sd": 0.045975353558721815,
+      "min": 0.4870956188673724,
+      "median": 0.6460969525191322,
+      "max": 0.7303444079231755
+    },
+    "top_20": {
+      "mean": 0.8242195474186499,
+      "sample_sd": 0.039683749752117886,
+      "min": 0.6898798083520522,
+      "median": 0.8314468804150437,
+      "max": 0.8862182983486544
+    },
+    "top_50": {
+      "mean": 0.9957164292223813,
+      "sample_sd": 0.006259022141332932,
+      "min": 0.9606227293239621,
+      "median": 0.9975444666317487,
+      "max": 1.0000000064328625
+    },
+    "top_62": {
+      "mean": 0.9996813453747546,
+      "sample_sd": 0.0020884781426650004,
+      "min": 0.9845611440253788,
+      "median": 1.0000000019216473,
+      "max": 1.0000000119308294
+    },
+    "top_100": {
+      "mean": 1.0000000058848917,
+      "sample_sd": 4.961605400704669e-09,
+      "min": 1.0000000001620897,
+      "median": 1.000000004784908,
+      "max": 1.0000000222265049
+    },
+    "top_145": {
+      "mean": 1.0000000058848917,
+      "sample_sd": 4.961605400704669e-09,
+      "min": 1.0000000001620897,
+      "median": 1.000000004784908,
+      "max": 1.0000000222265049
+    }
+  },
+  "participation_ratio": {
+    "mean": 16.907156620627187,
+    "sample_sd": 2.7907939956390044,
+    "min": 12.08305601330384,
+    "median": 16.578138525936414,
+    "max": 27.027966129901348
+  },
+  "largest_eigenvalue": {
+    "mean": 59.26664231409805,
+    "sample_sd": 10.587019456730486,
+    "min": 40.29123076211084,
+    "median": 57.425910972123276,
+    "max": 87.34268080286793
+  },
+  "eigenvalue_at_index_62": {
+    "mean": 0.014743214671368755,
+    "sample_sd": 0.08639065108738736,
+    "min": 8.596948425823292e-15,
+    "median": 1.574301957134458e-06,
+    "max": 0.6288606386215284
+  },
+  "eigenvalue_at_index_145": {
+    "mean": 1.517195510797911e-15,
+    "sample_sd": 3.8449658862980606e-16,
+    "min": 1.791215450829903e-16,
+    "median": 1.5879622929368292e-15,
+    "max": 2.0874600960554125e-15
+  },
+  "by_site_rank_tol_1e-8": {
+    "CALTECH": {
+      "n": 4,
+      "rank_tol_1e-8": {
+        "mean": 60.5,
+        "sample_sd": 1.0,
+        "min": 60.0,
+        "median": 60.0,
+        "max": 62.0
+      }
+    },
+    "CMU": {
+      "n": 1,
+      "rank_tol_1e-8": {
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    "LEUVEN_1": {
+      "n": 6,
+      "rank_tol_1e-8": {
+        "mean": 56.166666666666664,
+        "sample_sd": 0.408248290463863,
+        "min": 56.0,
+        "median": 56.0,
+        "max": 57.0
+      }
+    },
+    "LEUVEN_2": {
+      "n": 4,
+      "rank_tol_1e-8": {
+        "mean": 56.0,
+        "sample_sd": 0.0,
+        "min": 56.0,
+        "median": 56.0,
+        "max": 56.0
+      }
+    },
+    "MAX_MUN": {
+      "n": 2,
+      "rank_tol_1e-8": {
+        "mean": 90.5,
+        "sample_sd": 0.7071067811865476,
+        "min": 90.0,
+        "median": 90.5,
+        "max": 91.0
+      }
+    },
+    "NYU": {
+      "n": 15,
+      "rank_tol_1e-8": {
+        "mean": 64.0,
+        "sample_sd": 0.0,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    },
+    "OLIN": {
+      "n": 3,
+      "rank_tol_1e-8": {
+        "mean": 51.0,
+        "sample_sd": 0.0,
+        "min": 51.0,
+        "median": 51.0,
+        "max": 51.0
+      }
+    },
+    "PITT": {
+      "n": 12,
+      "rank_tol_1e-8": {
+        "mean": 50.5,
+        "sample_sd": 0.5222329678670935,
+        "min": 50.0,
+        "median": 50.5,
+        "max": 51.0
+      }
+    },
+    "SBL": {
+      "n": 6,
+      "rank_tol_1e-8": {
+        "mean": 70.0,
+        "sample_sd": 0.0,
+        "min": 70.0,
+        "median": 70.0,
+        "max": 70.0
+      }
+    },
+    "SDSU": {
+      "n": 2,
+      "rank_tol_1e-8": {
+        "mean": 64.0,
+        "sample_sd": 0.0,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    },
+    "STANFORD": {
+      "n": 3,
+      "rank_tol_1e-8": {
+        "mean": 64.0,
+        "sample_sd": 0.0,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    },
+    "TRINITY": {
+      "n": 3,
+      "rank_tol_1e-8": {
+        "mean": 60.0,
+        "sample_sd": 0.0,
+        "min": 60.0,
+        "median": 60.0,
+        "max": 60.0
+      }
+    },
+    "UM_1": {
+      "n": 5,
+      "rank_tol_1e-8": {
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    "UM_2": {
+      "n": 7,
+      "rank_tol_1e-8": {
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    "USM": {
+      "n": 3,
+      "rank_tol_1e-8": {
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    "YALE": {
+      "n": 10,
+      "rank_tol_1e-8": {
+        "mean": 64.0,
+        "sample_sd": 0.0,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    }
+  },
+  "interpretation_constraint": "Descriptive spectral diagnostic on fold-1 validation subjects only."
+}

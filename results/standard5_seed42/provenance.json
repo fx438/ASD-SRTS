@@ -1,0 +1,11 @@
+{
+  "source_sha256": {
+    "/root/autodl-tmp/ASD/exp_fix/dataset_cc400.py": "eb365a5f730869b501d53d1e1150c4885390de88e89b65aedfa5397b7261582f",
+    "/root/autodl-tmp/ASD/exp_fix/revision_srts_v2/run_revision.py": "4ea46550edd4731e9ac17672596836769a485f2a0b978b9990269ae46aa57ad3",
+    "/root/autodl-tmp/ASD/exp_fix/revision_srts_v2/model_revision.py": "646919b9596fe0eab16a074c7e1d61dc3d590701536ae96b490489c732d96f6c"
+  },
+  "data_cache": "/root/autodl-tmp/ASD/exp_fix/cc400_cache_t146.npz",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "torch_version": "2.5.1+cu124",
+  "numpy_version": "2.1.3"
+}

@@ -1,0 +1,263 @@
+{
+  "status": "completed",
+  "artifact_version": "constant-roi-site-distribution-v1",
+  "analysis_role": "descriptive data-quality statistic; no model involved",
+  "uses_test_predictions": false,
+  "source_cache": "/root/autodl-tmp/ASD/exp_fix/cc400_cache_t146.npz",
+  "source_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "epsilon_in_standardization": 1e-06,
+  "constant_criterion": "standardized ROI row is exactly all-zero",
+  "shape": {
+    "n_subjects": 860,
+    "n_roi": 392,
+    "t_use": 146
+  },
+  "overall": {
+    "constant_subject_roi_pairs": 1269,
+    "affected_subjects": 117,
+    "affected_subject_fraction": 0.13604651162790699,
+    "distinct_rois_affected": 318,
+    "affected_asd": 65,
+    "affected_tc": 52,
+    "mean_constant_rois_per_affected_subject": 10.846153846153847,
+    "max_constant_rois_in_one_subject": 237
+  },
+  "by_site": [
+    {
+      "site": "CALTECH",
+      "n_subjects": 37,
+      "constant_pairs": 627,
+      "affected_subjects": 28,
+      "affected_subject_fraction": 0.7567567567567568,
+      "distinct_rois_affected": 298,
+      "mean_constant_rois_per_subject": 16.945945945945947,
+      "max_constant_rois_in_one_subject": 237
+    },
+    {
+      "site": "CMU",
+      "n_subjects": 27,
+      "constant_pairs": 221,
+      "affected_subjects": 14,
+      "affected_subject_fraction": 0.5185185185185185,
+      "distinct_rois_affected": 38,
+      "mean_constant_rois_per_subject": 8.185185185185185,
+      "max_constant_rois_in_one_subject": 29
+    },
+    {
+      "site": "KKI",
+      "n_subjects": 42,
+      "constant_pairs": 0,
+      "affected_subjects": 0,
+      "affected_subject_fraction": 0.0,
+      "distinct_rois_affected": 0,
+      "mean_constant_rois_per_subject": 0.0,
+      "max_constant_rois_in_one_subject": 0
+    },
+    {
+      "site": "LEUVEN_1",
+      "n_subjects": 29,
+      "constant_pairs": 0,
+      "affected_subjects": 0,
+      "affected_subject_fraction": 0.0,
+      "distinct_rois_affected": 0,
+      "mean_constant_rois_per_subject": 0.0,
+      "max_constant_rois_in_one_subject": 0
+    },
+    {
+      "site": "LEUVEN_2",
+      "n_subjects": 34,
+      "constant_pairs": 34,
+      "affected_subjects": 4,
+      "affected_subject_fraction": 0.11764705882352941,
+      "distinct_rois_affected": 27,
+      "mean_constant_rois_per_subject": 1.0,
+      "max_constant_rois_in_one_subject": 25
+    },
+    {
+      "site": "MAX_MUN",
+      "n_subjects": 16,
+      "constant_pairs": 1,
+      "affected_subjects": 1,
+      "affected_subject_fraction": 0.0625,
+      "distinct_rois_affected": 1,
+      "mean_constant_rois_per_subject": 0.0625,
+      "max_constant_rois_in_one_subject": 1
+    },
+    {
+      "site": "NYU",
+      "n_subjects": 175,
+      "constant_pairs": 13,
+      "affected_subjects": 6,
+      "affected_subject_fraction": 0.03428571428571429,
+      "distinct_rois_affected": 7,
+      "mean_constant_rois_per_subject": 0.07428571428571429,
+      "max_constant_rois_in_one_subject": 5
+    },
+    {
+      "site": "OLIN",
+      "n_subjects": 30,
+      "constant_pairs": 0,
+      "affected_subjects": 0,
+      "affected_subject_fraction": 0.0,
+      "distinct_rois_affected": 0,
+      "mean_constant_rois_per_subject": 0.0,
+      "max_constant_rois_in_one_subject": 0
+    },
+    {
+      "site": "PITT",
+      "n_subjects": 51,
+      "constant_pairs": 41,
+      "affected_subjects": 15,
+      "affected_subject_fraction": 0.29411764705882354,
+      "distinct_rois_affected": 14,
+      "mean_constant_rois_per_subject": 0.803921568627451,
+      "max_constant_rois_in_one_subject": 13
+    },
+    {
+      "site": "SBL",
+      "n_subjects": 30,
+      "constant_pairs": 79,
+      "affected_subjects": 22,
+      "affected_subject_fraction": 0.7333333333333333,
+      "distinct_rois_affected": 28,
+      "mean_constant_rois_per_subject": 2.6333333333333333,
+      "max_constant_rois_in_one_subject": 25
+    },
+    {
+      "site": "SDSU",
+      "n_subjects": 36,
+      "constant_pairs": 212,
+      "affected_subjects": 12,
+      "affected_subject_fraction": 0.3333333333333333,
+      "distinct_rois_affected": 88,
+      "mean_constant_rois_per_subject": 5.888888888888889,
+      "max_constant_rois_in_one_subject": 78
+    },
+    {
+      "site": "STANFORD",
+      "n_subjects": 39,
+      "constant_pairs": 0,
+      "affected_subjects": 0,
+      "affected_subject_fraction": 0.0,
+      "distinct_rois_affected": 0,
+      "mean_constant_rois_per_subject": 0.0,
+      "max_constant_rois_in_one_subject": 0
+    },
+    {
+      "site": "TRINITY",
+      "n_subjects": 47,
+      "constant_pairs": 11,
+      "affected_subjects": 6,
+      "affected_subject_fraction": 0.1276595744680851,
+      "distinct_rois_affected": 6,
+      "mean_constant_rois_per_subject": 0.23404255319148937,
+      "max_constant_rois_in_one_subject": 6
+    },
+    {
+      "site": "UM_1",
+      "n_subjects": 106,
+      "constant_pairs": 5,
+      "affected_subjects": 4,
+      "affected_subject_fraction": 0.03773584905660377,
+      "distinct_rois_affected": 2,
+      "mean_constant_rois_per_subject": 0.04716981132075472,
+      "max_constant_rois_in_one_subject": 2
+    },
+    {
+      "site": "UM_2",
+      "n_subjects": 34,
+      "constant_pairs": 0,
+      "affected_subjects": 0,
+      "affected_subject_fraction": 0.0,
+      "distinct_rois_affected": 0,
+      "mean_constant_rois_per_subject": 0.0,
+      "max_constant_rois_in_one_subject": 0
+    },
+    {
+      "site": "USM",
+      "n_subjects": 71,
+      "constant_pairs": 1,
+      "affected_subjects": 1,
+      "affected_subject_fraction": 0.014084507042253521,
+      "distinct_rois_affected": 1,
+      "mean_constant_rois_per_subject": 0.014084507042253521,
+      "max_constant_rois_in_one_subject": 1
+    },
+    {
+      "site": "YALE",
+      "n_subjects": 56,
+      "constant_pairs": 24,
+      "affected_subjects": 4,
+      "affected_subject_fraction": 0.07142857142857142,
+      "distinct_rois_affected": 21,
+      "mean_constant_rois_per_subject": 0.42857142857142855,
+      "max_constant_rois_in_one_subject": 19
+    }
+  ],
+  "top_rois": [
+    {
+      "roi_index": 226,
+      "n_subjects_constant": 73
+    },
+    {
+      "roi_index": 139,
+      "n_subjects_constant": 52
+    },
+    {
+      "roi_index": 107,
+      "n_subjects_constant": 40
+    },
+    {
+      "roi_index": 93,
+      "n_subjects_constant": 36
+    },
+    {
+      "roi_index": 178,
+      "n_subjects_constant": 34
+    },
+    {
+      "roi_index": 380,
+      "n_subjects_constant": 27
+    },
+    {
+      "roi_index": 308,
+      "n_subjects_constant": 25
+    },
+    {
+      "roi_index": 108,
+      "n_subjects_constant": 24
+    },
+    {
+      "roi_index": 297,
+      "n_subjects_constant": 22
+    },
+    {
+      "roi_index": 43,
+      "n_subjects_constant": 19
+    },
+    {
+      "roi_index": 122,
+      "n_subjects_constant": 17
+    },
+    {
+      "roi_index": 243,
+      "n_subjects_constant": 17
+    },
+    {
+      "roi_index": 16,
+      "n_subjects_constant": 16
+    },
+    {
+      "roi_index": 310,
+      "n_subjects_constant": 15
+    },
+    {
+      "roi_index": 376,
+      "n_subjects_constant": 15
+    }
+  ],
+  "site_concentration": {
+    "sites_with_any_affected_subject": 12,
+    "n_sites": 17
+  }
+}

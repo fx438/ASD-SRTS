@@ -1,0 +1,16 @@
+{
+  "script_sha256": "5f25895d24e4401586649a081dd181f36f533f4c19a3dae9cf9867e3115406b7",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "main_summary_sha256": "ba0932439cd788193aa707d28b1abf0938d7378c7080dd7eb7b382bc39dd88ea",
+  "split_manifest_sha256": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab",
+  "srts_lr_summary_sha256": "686130899d6eadc2f669dfc59a561c699f5cece251d670fb17dcf7a6d2df9d13",
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.16.3",
+  "sklearn_version": "1.8.0",
+  "torch_version": "2.5.1+cu124",
+  "feature_matrix_shape": [
+    860,
+    77028
+  ],
+  "feature_matrix_sha256": "789bfb547345ad6df4fe1f883c5c0cae2a4469940410226b6d95f0e023515ec7"
+}

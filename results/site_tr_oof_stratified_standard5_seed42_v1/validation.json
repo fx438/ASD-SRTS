@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checks": {
+    "subjects": 860,
+    "sites": 17,
+    "tr_groups": 6,
+    "tr_group_counts": {
+      "1.500": 94,
+      "1.667": 63,
+      "2.000": 615,
+      "2.200": 30,
+      "2.500": 42,
+      "3.000": 16
+    },
+    "test_oof_coverage_exactly_once": true,
+    "fold_validation_thresholds_verified": true,
+    "subject_identity_and_tr_mapping_recomputed": true,
+    "site_and_tr_metrics_recomputed": true,
+    "leave_one_site_out_sensitivity_recomputed": true,
+    "source_hashes_verified": true,
+    "output_hashes_verified": true,
+    "official_protocol_pdf_hashes_verified": true,
+    "official_protocol_pdf_urls": 17,
+    "uses_dsm_iv_tr_as_repetition_time": false,
+    "maximum_numeric_absolute_error": 0.0,
+    "overall_delta_auc": 0.0294455180776374,
+    "overall_delta_accuracy": 0.024418604651162745,
+    "site_delta_auc_positive_n": 14,
+    "leave_one_site_out_delta_auc_positive_all": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "checks": {
+    "locked_splits_exact_match": true,
+    "same_splits_as_srts_lr": true,
+    "same_lr_hyperparameters_as_srts_lr": true,
+    "same_scaling_and_threshold_protocol_as_srts_lr": true,
+    "only_representation_changed": true,
+    "raw_pearson_without_fisher_z": true,
+    "no_shrinkage_or_tangent_mapping": true,
+    "no_feature_selection": true,
+    "feature_shape": [
+      860,
+      77028
+    ],
+    "feature_hash_verified": true,
+    "feature_semantics_sampled_subjects": [
+      0,
+      1,
+      85,
+      171,
+      344,
+      516,
+      688,
+      777,
+      858,
+      859
+    ],
+    "feature_semantics": {
+      "cached_diagonal_min": 0.0,
+      "cached_diagonal_max": 1.0000009536743164,
+      "cached_vs_direct_max_abs_error": 1.0027151238212184e-06,
+      "diagonal_abs_error_from_one_gt_1e_5_count": 1472,
+      "constant_subject_roi_count": 1269,
+      "constant_affected_subject_count": 117,
+      "constant_affected_roi_count": 318,
+      "deviating_affected_subject_count": 137,
+      "deviating_affected_roi_count": 326,
+      "sampled_feature_max_abs_error": 8.344650268554688e-07,
+      "normalization_note": "dataset_cc400 uses (a-mean)/(std_ddof0+1e-6); a per-subject constant ROI becomes all zeros, so its raw FC diagonal is correctly zero rather than one"
+    },
+    "training_only_scalers_recomputed": true,
+    "validation_only_thresholds_recomputed": true,
+    "metrics_and_sample_sd_recomputed": true,
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "main_and_srts_results_unchanged": true
+  },
+  "warnings": [
+    {
+      "fold": 1,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 2,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 3,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 4,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 5,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    }
+  ],
+  "auc": {
+    "mean": 0.742573727714008,
+    "sample_sd": 0.04889698058984273,
+    "fold_values": [
+      0.716314935064935,
+      0.6915584415584416,
+      0.7231623121700285,
+      0.7662109110599702,
+      0.8156220387166644
+    ]
+  },
+  "accuracy": {
+    "mean": 0.6825581395348836,
+    "sample_sd": 0.039346335617880535,
+    "fold_values": [
+      0.6395348837209303,
+      0.6627906976744186,
+      0.6627906976744186,
+      0.7151162790697675,
+      0.7325581395348837
+    ]
+  }
+}

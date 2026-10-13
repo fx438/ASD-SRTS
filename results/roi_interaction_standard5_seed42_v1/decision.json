@@ -1,0 +1,20 @@
+{
+  "module": "srts_roi_interaction_encoder",
+  "exploratory_module": true,
+  "selection_uses_candidate_test_data": false,
+  "rule": {
+    "minimum_mean_validation_auc_delta": 0.01,
+    "minimum_improved_folds": 4
+  },
+  "validation_auc_deltas_candidate_minus_srts": [
+    0.0010822510822510178,
+    0.0005411255411253979,
+    0.006493506493506551,
+    0.0021645021645022577,
+    -0.0037878787878786735
+  ],
+  "mean_validation_auc_delta": 0.0012987012987013102,
+  "improved_folds": 4,
+  "accepted": false,
+  "test_evaluated": false
+}

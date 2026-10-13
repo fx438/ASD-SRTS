@@ -1,0 +1,20 @@
+{
+  "artifact_version": "efficiency-core-evidence-v1-provenance",
+  "created_at_utc": "2026-08-25T15:54:48.088437+00:00",
+  "input_sha256": {
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/summary.json": "686130899d6eadc2f669dfc59a561c699f5cece251d670fb17dcf7a6d2df9d13",
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/svm/summary.json": "e5a4d7d276fa870767c21f228899cf736e5b7ee2c23c90a06001b304d2b8c1f3",
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/standard5_seed42/postprocess/metrics_summary.csv": "578eadfa1b49083fcbedb2688df2ddfe650cbd4f107eebb4f089ca9d81f953e3",
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/efficiency_core_evidence_v1_staging/cpu_classifier_measurements.json": "6e07ac3726fc4e68c1df112b092dfea6ac1e0995a250c8f4e90562326423d841",
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/efficiency_core_evidence_v1_staging/brainnet_cpu_measurements.json": "3b6b8e87aff71e623974acf9932c0d1e52fe70b0e69ee89f7e28d42d032c4645",
+    "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/efficiency_core_evidence_v1_staging/gpu_measurements.json": "d700ffba781ec0fd0fe334102dc08f7222679dbb20dd7d6e9370efeb6939a200",
+    "/root/autodl-tmp/ASD/exp_fix/build_efficiency_core_evidence_v1.py": "a699ae925e179bf863d88d4c844ccfb3e7c002878aad45b86f66c6a5d2f80877"
+  },
+  "output_sha256": {
+    "core_efficiency.json": "f5034f2532e14a6e2a902963fa6960596c432f053ebd5ffa2e4a4bb2e081476e",
+    "classifier_efficiency.csv": "9a57ef4a647c31bcf03f511cf405260e00907bc3c38772b1f3cd5dce4c576579",
+    "srts_preprocessing.csv": "f3a4867a078a08a416cbe903d889cdca35dd09941af90d39baa68ef96c1767a2",
+    "report.md": "e20c641a2bf6e1ad362a81daf6f035cc784c58fe8062d7c7d2da0cca97c72c78"
+  },
+  "build_policy": "non-overwriting temporary directory then atomic rename"
+}

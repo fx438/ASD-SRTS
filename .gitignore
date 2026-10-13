@@ -1,0 +1,29 @@
+# Data (download with data/download_cc400.py; ABIDE terms apply)
+data/ABIDE_CC400_Complete/
+experiments/cc400_cache_t*.npz
+published_models/inputs_cc400_t146.npz
+published_models/folds_seed42.json
+
+# Outputs of new runs (our results are in results/)
+experiments/results_revision_v2/
+figures/output/
+external/
+
+# Large or binary artefacts
+*.npy
+*.pt
+*.pth
+*.log
+
+# Python / tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env
+.env.*

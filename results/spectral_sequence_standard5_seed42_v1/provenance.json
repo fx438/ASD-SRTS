@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "/root/autodl-tmp/ASD/exp_fix/revision_srts_v2/run_spectral_sequence.py": "ac3be1917fb00d0c19184fb997579affdf34869da336c91bdf394fadd89b6628",
+    "/root/autodl-tmp/ASD/exp_fix/revision_srts_v2/model_spectral_sequence.py": "b6ea294f3dde1276127ca4b85a744a0b31ef892a96e7f6723b8b7c3fcef543df",
+    "/root/autodl-tmp/ASD/exp_fix/revision_srts_v2/run_revision.py": "4ea46550edd4731e9ac17672596836769a485f2a0b978b9990269ae46aa57ad3",
+    "/root/autodl-tmp/ASD/exp_fix/dataset_cc400.py": "eb365a5f730869b501d53d1e1150c4885390de88e89b65aedfa5397b7261582f"
+  },
+  "base_config_sha256": "d15484e243919b1df38b89fc3fcfd3c430e71a186bddbd4cfd1716b5cc64cf8d",
+  "base_splits_sha256": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab",
+  "base_fold_sha256": {
+    "fold_1": "315467389eb14c690ffc344f5eb8a1e5b5bdee1590dee08c90b48957f6593390",
+    "fold_2": "1b9ed3ac323d09629c5d876e6b4b0176de920c024a4039c15127812523ca2247",
+    "fold_3": "7295d3708354e84b87358f7f49011bff9e2fa07ea7b4688306610696ecd5784c",
+    "fold_4": "39e1a491879b34e8b994f8dfdef18f46c8a76c03a95c6fbe0b3ceea74a1bdbfc",
+    "fold_5": "14821c6d11fa8060143d350d7ffbdfeb9f6fafea17cea5396ba32c92551083a7"
+  },
+  "data_cache": "/root/autodl-tmp/ASD/exp_fix/cc400_cache_t146.npz",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "torch_version": "2.5.1+cu124",
+  "numpy_version": "2.1.3"
+}

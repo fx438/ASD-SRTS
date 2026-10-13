@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "artifact_version": "efficiency-core-evidence-v1",
+  "created_at_utc": "2026-08-25T15:54:48.088437+00:00",
+  "auc_reporting": {
+    "definition": "five-fold mean and sample SD (ddof=1)",
+    "evidence": {
+      "lr": {
+        "mean": 0.7726136671302165,
+        "sample_sd": 0.040402945203369824,
+        "fold_values": [
+          0.7689393939393939,
+          0.7339015151515151,
+          0.7415730337078652,
+          0.783267903072966,
+          0.8353864897793422
+        ],
+        "source": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/summary.json",
+        "sd_definition": "sample SD across five folds (ddof=1)"
+      },
+      "svm": {
+        "mean": 0.7698938977858024,
+        "sample_sd": 0.04028683403081101,
+        "fold_values": [
+          0.7642045454545454,
+          0.7295725108225108,
+          0.7404900500879925,
+          0.7838770813591445,
+          0.8313253012048192
+        ],
+        "source": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/svm/summary.json",
+        "sd_definition": "sample SD across five folds (ddof=1)"
+      },
+      "brainnet_mlp": {
+        "mean": 0.7686899209269589,
+        "sample_sd": 0.046504169077283775,
+        "fold_values": [
+          0.7739448051948051,
+          0.7136093073593073,
+          0.7421145255178014,
+          0.7755516447813726,
+          0.838229321781508
+        ],
+        "source": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/standard5_seed42/postprocess/metrics_summary.csv",
+        "source_variant": "srts",
+        "sd_definition": "sample SD across five folds (ddof=1)"
+      }
+    },
+    "maximum_mean_spread": 0.003923746203257639,
+    "maximum_mean_spread_below_0_004": true,
+    "interpretation": "descriptively close; not a statistical equivalence test"
+  },
+  "classifier_rows": [
+    {
+      "model_key": "lr",
+      "method": "SRTS + LR",
+      "auc_mean": 0.7726136671302165,
+      "auc_sample_sd": 0.040402945203369824,
+      "parameter_count": 77029,
+      "cpu_latency_ms_median": 0.6318926239999999,
+      "native_latency_ms_median": 0.6318926239999999,
+      "peak_gpu_memory_mib": null,
+      "peak_gpu_reserved_memory_mib": null,
+      "memory_display": "N/A（无需 GPU）",
+      "cpu_device": "Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz",
+      "native_device": "Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz",
+      "cpu_inference_scope": "StandardScaler.transform + LogisticRegression.predict_proba",
+      "native_inference_scope": "StandardScaler.transform + LogisticRegression.predict_proba"
+    },
+    {
+      "model_key": "svm",
+      "method": "SRTS + SVM",
+      "auc_mean": 0.7698938977858024,
+      "auc_sample_sd": 0.04028683403081101,
+      "parameter_count": 77031,
+      "cpu_latency_ms_median": 39.4689559,
+      "native_latency_ms_median": 39.4689559,
+      "peak_gpu_memory_mib": null,
+      "peak_gpu_reserved_memory_mib": null,
+      "memory_display": "N/A（无需 GPU）",
+      "cpu_device": "Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz",
+      "native_device": "Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz",
+      "cpu_inference_scope": "StandardScaler.transform + linear SVC.predict_proba",
+      "native_inference_scope": "StandardScaler.transform + linear SVC.predict_proba"
+    },
+    {
+      "model_key": "brainnet_mlp",
+      "method": "SRTS + BrainNetMLP",
+      "auc_mean": 0.7686899209269589,
+      "auc_sample_sd": 0.046504169077283775,
+      "parameter_count": 2477634,
+      "cpu_latency_ms_median": 2.32661089,
+      "native_latency_ms_median": 0.3393034362792969,
+      "peak_gpu_memory_mib": 20.85302734375,
+      "peak_gpu_reserved_memory_mib": 24.0,
+      "memory_display": "20.853 MiB allocated / 24.000 MiB reserved",
+      "cpu_device": "Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz",
+      "native_device": "NVIDIA GeForce RTX 2080 Ti",
+      "cpu_inference_scope": "RevisionBrainNetMLP.forward on CPU, batch=1",
+      "native_inference_scope": "RevisionBrainNetMLP.forward on CUDA, batch=1, device-resident input"
+    }
+  ],
+  "srts_preprocessing_rows": [
+    {
+      "stage": "860 人相关矩阵计算",
+      "unit": "ms/人",
+      "mean": 0.017785934736562328,
+      "sample_sd": 0.00010518160214840049,
+      "measurement_n": 10,
+      "device": "NVIDIA GeForce RTX 2080 Ti"
+    },
+    {
+      "stage": "训练折参考矩阵拟合",
+      "unit": "ms/折",
+      "mean": 18.288288040161135,
+      "sample_sd": 0.05152077930012486,
+      "measurement_n": 5,
+      "device": "NVIDIA GeForce RTX 2080 Ti"
+    },
+    {
+      "stage": "固定参考矩阵下单目标切线映射",
+      "unit": "ms/人",
+      "mean": 13.303761241824128,
+      "sample_sd": 0.028858564190009515,
+      "measurement_n": 5,
+      "device": "NVIDIA GeForce RTX 2080 Ti"
+    },
+    {
+      "stage": "参考拟合+172目标切线映射（batch=32，摊销）",
+      "unit": "ms/人",
+      "mean": 13.111532521802326,
+      "sample_sd": 0.39379475428188193,
+      "measurement_n": 5,
+      "device": "NVIDIA GeForce RTX 2080 Ti"
+    }
+  ],
+  "latency_boundary": {
+    "shared_exclusion": "classifier latency excludes shared SRTS representation preprocessing",
+    "same_cpu": "all classifiers measured on one CPU core with one thread",
+    "native_device": "LR/SVM use CPU; BrainNetMLP uses device-resident CUDA; heterogeneous-device milliseconds are not normalized speedups"
+  }
+}

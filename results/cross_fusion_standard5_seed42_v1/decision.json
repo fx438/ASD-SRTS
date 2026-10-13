@@ -1,0 +1,20 @@
+{
+  "module": "residual_cross_branch_interaction_fusion",
+  "exploratory_module": true,
+  "selection_uses_candidate_test_data": false,
+  "rule": {
+    "minimum_mean_validation_auc_delta": 0.01,
+    "minimum_improved_folds": 4
+  },
+  "validation_auc_deltas_candidate_minus_srts": [
+    -0.02705627705627711,
+    -0.018398268398268525,
+    -0.010822510822510845,
+    0.008116883116883078,
+    0.012445887445887482
+  ],
+  "mean_validation_auc_delta": -0.007142857142857184,
+  "improved_folds": 2,
+  "accepted": false,
+  "test_evaluated": false
+}

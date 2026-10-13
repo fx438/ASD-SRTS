@@ -1,0 +1,20 @@
+{
+  "module": "deep_residual_spectral_sequence_encoder",
+  "exploratory_module": true,
+  "selection_uses_candidate_test_data": false,
+  "rule": {
+    "minimum_mean_validation_auc_delta": 0.01,
+    "minimum_improved_folds": 4
+  },
+  "validation_auc_deltas_candidate_minus_srts": [
+    0.0043290043290044045,
+    0.0037878787878786735,
+    -0.008116883116883078,
+    -0.0027056277056276556,
+    0.005411255411255422
+  ],
+  "mean_validation_auc_delta": 0.0005411255411255534,
+  "improved_folds": 3,
+  "accepted": false,
+  "test_evaluated": false
+}

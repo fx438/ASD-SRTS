@@ -1,0 +1,23 @@
+{
+  "module": "null-space completion with training-fold arithmetic mean of raw correlations",
+  "tau": 1e-08,
+  "gammas": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "selection": "LR validation AUC per fold",
+  "acceptance": {
+    "mean_val_auc_gain": 0.01,
+    "min_improved_folds": 4
+  },
+  "test_policy": "module test metrics computed only if accepted",
+  "n_roi": 392,
+  "t_use": 146,
+  "split_seed": 42
+}

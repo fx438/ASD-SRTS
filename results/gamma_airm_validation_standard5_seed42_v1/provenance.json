@@ -1,0 +1,17 @@
+{
+  "script_sha256": "364ddbbbad8d89f2a9af648c5593f1a2de952c9469a6c9c8965035ef9c616f52",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "main_config_sha256": "d15484e243919b1df38b89fc3fcfd3c430e71a186bddbd4cfd1716b5cc64cf8d",
+  "main_summary_sha256": "ba0932439cd788193aa707d28b1abf0938d7378c7080dd7eb7b382bc39dd88ea",
+  "split_manifest_sha256": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab",
+  "fold_sha256": {
+    "1": "315467389eb14c690ffc344f5eb8a1e5b5bdee1590dee08c90b48957f6593390",
+    "2": "1b9ed3ac323d09629c5d876e6b4b0176de920c024a4039c15127812523ca2247",
+    "3": "7295d3708354e84b87358f7f49011bff9e2fa07ea7b4688306610696ecd5784c",
+    "4": "39e1a491879b34e8b994f8dfdef18f46c8a76c03a95c6fbe0b3ceea74a1bdbfc",
+    "5": "14821c6d11fa8060143d350d7ffbdfeb9f6fafea17cea5396ba32c92551083a7"
+  },
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.16.3",
+  "torch_version": "2.5.1+cu124"
+}

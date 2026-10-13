@@ -1,0 +1,10 @@
+{
+  "script_sha256": "ddc43b1addd2da4f7f19e0bdda6d464dba2d9d3a6b123d6b87e5ca74998dfb6d",
+  "data_cache_sha256": "e00632c49d97f0cfa4c4cc6a3bda4a349f91ebde1eeb0752e9eadceba4159da6",
+  "main_summary_sha256": "ba0932439cd788193aa707d28b1abf0938d7378c7080dd7eb7b382bc39dd88ea",
+  "split_manifest_sha256": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab",
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.16.3",
+  "sklearn_version": "1.8.0",
+  "torch_version": "2.5.1+cu124"
+}

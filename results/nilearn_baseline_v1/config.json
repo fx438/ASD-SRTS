@@ -1,0 +1,20 @@
+{
+  "baseline": "nilearn ConnectivityMeasure(kind=\"tangent\", vectorize=True), all other defaults",
+  "nilearn_version": "0.13.1",
+  "readout": "StandardScaler + LR(l2, C=1, liblinear, dual=True)",
+  "srts_gamma_per_fold": {
+    "0": 0.9,
+    "1": 0.9,
+    "2": 0.5,
+    "3": 0.3,
+    "4": 0.9
+  },
+  "bootstrap": {
+    "n": 20000,
+    "seed": 20260824,
+    "scheme": "within-fold, within-class paired resampling, pooled OOF"
+  },
+  "n_roi": 392,
+  "t_use": 146,
+  "split_seed": 42
+}

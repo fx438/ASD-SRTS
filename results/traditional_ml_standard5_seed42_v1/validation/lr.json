@@ -1,0 +1,47 @@
+{
+  "model_key": "lr",
+  "status": "passed",
+  "checks": {
+    "locked_splits_exact_match": true,
+    "train_val_test_sizes": [
+      602,
+      86,
+      172
+    ],
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "training_only_feature_selection_and_scaling": true,
+    "validation_only_threshold_reproduced": true,
+    "fold_metrics_recomputed": true,
+    "summary_mean_and_sample_sd_recomputed": true,
+    "feature_shape": [
+      860,
+      76636
+    ],
+    "main_deep_results_unchanged": true,
+    "same_preprocessing_as_lr": true
+  },
+  "warnings": [],
+  "auc": {
+    "mean": 0.6914134100974159,
+    "sample_sd": 0.050166672373339494,
+    "fold_values": [
+      0.6425865800865801,
+      0.6865530303030303,
+      0.6435630161093815,
+      0.7318261811290103,
+      0.7525382428590768
+    ]
+  },
+  "accuracy": {
+    "mean": 0.6313953488372093,
+    "sample_sd": 0.03977356134066762,
+    "fold_values": [
+      0.6104651162790697,
+      0.5988372093023255,
+      0.5988372093023255,
+      0.6686046511627907,
+      0.6802325581395349
+    ]
+  }
+}

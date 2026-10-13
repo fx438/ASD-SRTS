@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "checks": {
+    "gamma_pre_specified_as_070_for_all_folds": true,
+    "gamma_not_selected_with_test_data": true,
+    "locked_splits_exact_match": true,
+    "same_lr_hyperparameters_as_locked_srts_lr": true,
+    "same_scaling_and_threshold_protocol": true,
+    "reference_matrices_fit_on_training_only": true,
+    "no_feature_selection": true,
+    "feature_shape_per_fold": {
+      "train_validation": [
+        688,
+        77028
+      ],
+      "test": [
+        172,
+        77028
+      ]
+    },
+    "feature_hashes_verified": true,
+    "fold3_features_identical_to_locked_gamma070_fold3": true,
+    "training_only_scalers_recomputed": true,
+    "validation_only_thresholds_recomputed": true,
+    "metrics_and_sample_sd_recomputed": true,
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "locked_main_results_unchanged": true
+  },
+  "warnings": [
+    {
+      "fold": 1,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 2,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 3,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 4,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    },
+    {
+      "fold": 5,
+      "category": "FutureWarning",
+      "message": "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None."
+    }
+  ],
+  "auc": {
+    "mean": 0.7805957450112724,
+    "sample_sd": 0.03596626110680639,
+    "fold_values": [
+      0.7904491341991342,
+      0.7487824675324676,
+      0.7415730337078652,
+      0.7926086367943684,
+      0.829565452822526
+    ]
+  },
+  "accuracy": {
+    "mean": 0.7209302325581395,
+    "sample_sd": 0.027578002850305632,
+    "fold_values": [
+      0.7209302325581395,
+      0.686046511627907,
+      0.7034883720930233,
+      0.7383720930232558,
+      0.7558139534883721
+    ]
+  },
+  "descriptive_difference_from_fold_specific_gamma": {
+    "auc_mean": 0.007982077881055871,
+    "accuracy_mean": 0.013953488372092981,
+    "note": "descriptive difference in five-fold means; not an inferential paired estimate"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "module": "lightweight_tangent_latent_adapter",
+  "exploratory_module": true,
+  "selection_uses_candidate_test_data": false,
+  "rule": {
+    "minimum_mean_validation_auc_delta": 0.01,
+    "minimum_improved_folds": 4
+  },
+  "validation_auc_deltas_candidate_minus_srts": [
+    -0.0043290043290042934,
+    -0.005952380952381042,
+    -0.0037878787878787845,
+    0.005952380952381042,
+    0.022727272727272707
+  ],
+  "mean_validation_auc_delta": 0.0029220779220779257,
+  "improved_folds": 2,
+  "accepted": false,
+  "test_evaluated": false
+}

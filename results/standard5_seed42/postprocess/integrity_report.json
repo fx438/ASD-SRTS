@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "protocol_sizes_are_602_86_172": true,
+    "sample_sd_declared_ddof_1": true,
+    "fold_ids_are_0_to_4": true,
+    "within_fold_splits_are_disjoint": true,
+    "each_fold_partitions_all_860_subjects": true,
+    "fold_json_test_indices_match_locked_splits": true,
+    "each_subject_is_tested_exactly_once": true,
+    "oof_has_exactly_860_rows": true,
+    "oof_subject_indices_are_unique_0_to_859": true,
+    "oof_class_counts_are_417_443": true,
+    "selected_gamma_is_validation_argmax_with_small_gamma_tie_break": true,
+    "gamma_trials_have_8_candidates_86_diagnostics_and_no_test_field": true,
+    "all_probabilities_are_finite_and_in_unit_interval": true,
+    "fold_test_labels_match_oof_manifest_labels": true,
+    "saved_test_metrics_and_oof_probabilities_recompute_exactly": true,
+    "mixup_gate_recomputes_from_validation_only": true,
+    "mixup_test_file_presence_matches_gate": true,
+    "all_integrity_checks_pass": true
+  },
+  "details": {
+    "test_count_distribution": {
+      "1": 860
+    },
+    "mixup_validation_deltas": [
+      0.0010822510822510178,
+      -0.008658008658008698,
+      0.0,
+      0.007034632034632171,
+      0.008658008658008698
+    ],
+    "input_sha256": {
+      "summary.json": "ba0932439cd788193aa707d28b1abf0938d7378c7080dd7eb7b382bc39dd88ea",
+      "splits_manifest.json": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab",
+      "provenance.json": "8e4f61514d7ac31d2ab6bfd0ccb8a56a684ef3b4656e5d47f92df6a55da7fb43",
+      "config.json": "d15484e243919b1df38b89fc3fcfd3c430e71a186bddbd4cfd1716b5cc64cf8d",
+      "folds/fold_1.json": "315467389eb14c690ffc344f5eb8a1e5b5bdee1590dee08c90b48957f6593390",
+      "folds/fold_2.json": "1b9ed3ac323d09629c5d876e6b4b0176de920c024a4039c15127812523ca2247",
+      "folds/fold_3.json": "7295d3708354e84b87358f7f49011bff9e2fa07ea7b4688306610696ecd5784c",
+      "folds/fold_4.json": "39e1a491879b34e8b994f8dfdef18f46c8a76c03a95c6fbe0b3ceea74a1bdbfc",
+      "folds/fold_5.json": "14821c6d11fa8060143d350d7ffbdfeb9f6fafea17cea5396ba32c92551083a7"
+    }
+  }
+}

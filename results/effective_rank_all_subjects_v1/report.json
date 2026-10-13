@@ -1,0 +1,608 @@
+{
+  "status": "completed",
+  "artifact_version": "effective-rank-all-subjects-v1",
+  "analysis_role": "descriptive statistics of correlation-matrix effective rank and temporal power spectrum for the full cohort; determines empirically whether the source derivative was band-pass filtered",
+  "uses_test_predictions": false,
+  "models_involved": false,
+  "n_subjects": 860,
+  "n_roi": 392,
+  "t_use": 146,
+  "rank_tolerance": 1e-08,
+  "theoretical_rank_upper_bound": 145,
+  "tr_map_source": "https://fcon_1000.projects.nitrc.org/indi/abide/abide_I.html",
+  "overall_rank": {
+    "n": 860,
+    "mean": 63.43255813953488,
+    "sample_sd": 6.870080597637564,
+    "min": 50.0,
+    "median": 64.0,
+    "max": 92.0
+  },
+  "overall_null_dimension": {
+    "n": 860,
+    "mean": 328.5674418604651,
+    "sample_sd": 6.870080597637564,
+    "min": 300.0,
+    "median": 328.0,
+    "max": 342.0
+  },
+  "rank_by_tr": [
+    {
+      "group": "1.500",
+      "n": 94,
+      "tr_seconds": 1.5,
+      "scan_duration_s": 219.0,
+      "nyquist_hz": 0.3333333333333333,
+      "frequency_resolution_hz": 0.0045662100456621,
+      "rank": {
+        "n": 94,
+        "mean": 50.808510638297875,
+        "sample_sd": 0.47010856089353936,
+        "min": 50.0,
+        "median": 51.0,
+        "max": 52.0
+      }
+    },
+    {
+      "group": "1.667",
+      "n": 63,
+      "tr_seconds": 1.667,
+      "scan_duration_s": 243.382,
+      "nyquist_hz": 0.29994001199760045,
+      "frequency_resolution_hz": 0.004108767287638363,
+      "rank": {
+        "n": 63,
+        "mean": 56.01587301587302,
+        "sample_sd": 0.1259881576697424,
+        "min": 56.0,
+        "median": 56.0,
+        "max": 57.0
+      }
+    },
+    {
+      "group": "2.000",
+      "n": 615,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 615,
+        "mean": 64.27967479674797,
+        "sample_sd": 1.9014377960154796,
+        "min": 60.0,
+        "median": 64.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "2.200",
+      "n": 30,
+      "tr_seconds": 2.2,
+      "scan_duration_s": 321.20000000000005,
+      "nyquist_hz": 0.22727272727272727,
+      "frequency_resolution_hz": 0.0031133250311332497,
+      "rank": {
+        "n": 30,
+        "mean": 70.03333333333333,
+        "sample_sd": 0.18257418583505536,
+        "min": 70.0,
+        "median": 70.0,
+        "max": 71.0
+      }
+    },
+    {
+      "group": "2.500",
+      "n": 42,
+      "tr_seconds": 2.5,
+      "scan_duration_s": 365.0,
+      "nyquist_hz": 0.2,
+      "frequency_resolution_hz": 0.0027397260273972603,
+      "rank": {
+        "n": 42,
+        "mean": 75.0952380952381,
+        "sample_sd": 0.37020256877551605,
+        "min": 74.0,
+        "median": 75.0,
+        "max": 76.0
+      }
+    },
+    {
+      "group": "3.000",
+      "n": 16,
+      "tr_seconds": 3.0,
+      "scan_duration_s": 438.0,
+      "nyquist_hz": 0.16666666666666666,
+      "frequency_resolution_hz": 0.00228310502283105,
+      "rank": {
+        "n": 16,
+        "mean": 91.25,
+        "sample_sd": 0.6831300510639732,
+        "min": 90.0,
+        "median": 91.0,
+        "max": 92.0
+      }
+    }
+  ],
+  "rank_by_site": [
+    {
+      "group": "CALTECH",
+      "n": 37,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 37,
+        "mean": 60.24324324324324,
+        "sample_sd": 0.547996624351191,
+        "min": 60.0,
+        "median": 60.0,
+        "max": 62.0
+      }
+    },
+    {
+      "group": "CMU",
+      "n": 27,
+      "tr_seconds": 1.5,
+      "scan_duration_s": 219.0,
+      "nyquist_hz": 0.3333333333333333,
+      "frequency_resolution_hz": 0.0045662100456621,
+      "rank": {
+        "n": 27,
+        "mean": 58.81481481481482,
+        "sample_sd": 7.462918778544806,
+        "min": 51.0,
+        "median": 64.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "KKI",
+      "n": 42,
+      "tr_seconds": 2.5,
+      "scan_duration_s": 365.0,
+      "nyquist_hz": 0.2,
+      "frequency_resolution_hz": 0.0027397260273972603,
+      "rank": {
+        "n": 42,
+        "mean": 75.0952380952381,
+        "sample_sd": 0.37020256877551605,
+        "min": 74.0,
+        "median": 75.0,
+        "max": 76.0
+      }
+    },
+    {
+      "group": "LEUVEN_1",
+      "n": 29,
+      "tr_seconds": 1.667,
+      "scan_duration_s": 243.382,
+      "nyquist_hz": 0.29994001199760045,
+      "frequency_resolution_hz": 0.004108767287638363,
+      "rank": {
+        "n": 29,
+        "mean": 56.03448275862069,
+        "sample_sd": 0.18569533817705186,
+        "min": 56.0,
+        "median": 56.0,
+        "max": 57.0
+      }
+    },
+    {
+      "group": "LEUVEN_2",
+      "n": 34,
+      "tr_seconds": 1.667,
+      "scan_duration_s": 243.382,
+      "nyquist_hz": 0.29994001199760045,
+      "frequency_resolution_hz": 0.004108767287638363,
+      "rank": {
+        "n": 34,
+        "mean": 56.0,
+        "sample_sd": 0.0,
+        "min": 56.0,
+        "median": 56.0,
+        "max": 56.0
+      }
+    },
+    {
+      "group": "MAX_MUN",
+      "n": 16,
+      "tr_seconds": 3.0,
+      "scan_duration_s": 438.0,
+      "nyquist_hz": 0.16666666666666666,
+      "frequency_resolution_hz": 0.00228310502283105,
+      "rank": {
+        "n": 16,
+        "mean": 91.25,
+        "sample_sd": 0.6831300510639732,
+        "min": 90.0,
+        "median": 91.0,
+        "max": 92.0
+      }
+    },
+    {
+      "group": "NYU",
+      "n": 175,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 175,
+        "mean": 64.0,
+        "sample_sd": 0.0,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    },
+    {
+      "group": "OLIN",
+      "n": 30,
+      "tr_seconds": 1.5,
+      "scan_duration_s": 219.0,
+      "nyquist_hz": 0.3333333333333333,
+      "frequency_resolution_hz": 0.0045662100456621,
+      "rank": {
+        "n": 30,
+        "mean": 50.96666666666667,
+        "sample_sd": 0.18257418583505536,
+        "min": 50.0,
+        "median": 51.0,
+        "max": 51.0
+      }
+    },
+    {
+      "group": "PITT",
+      "n": 51,
+      "tr_seconds": 1.5,
+      "scan_duration_s": 219.0,
+      "nyquist_hz": 0.3333333333333333,
+      "frequency_resolution_hz": 0.0045662100456621,
+      "rank": {
+        "n": 51,
+        "mean": 50.6078431372549,
+        "sample_sd": 0.49308949989019313,
+        "min": 50.0,
+        "median": 51.0,
+        "max": 51.0
+      }
+    },
+    {
+      "group": "SBL",
+      "n": 30,
+      "tr_seconds": 2.2,
+      "scan_duration_s": 321.20000000000005,
+      "nyquist_hz": 0.22727272727272727,
+      "frequency_resolution_hz": 0.0031133250311332497,
+      "rank": {
+        "n": 30,
+        "mean": 70.03333333333333,
+        "sample_sd": 0.18257418583505536,
+        "min": 70.0,
+        "median": 70.0,
+        "max": 71.0
+      }
+    },
+    {
+      "group": "SDSU",
+      "n": 36,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 36,
+        "mean": 64.11111111111111,
+        "sample_sd": 0.3187276291558383,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 65.0
+      }
+    },
+    {
+      "group": "STANFORD",
+      "n": 39,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 39,
+        "mean": 65.12820512820512,
+        "sample_sd": 1.004712244205882,
+        "min": 64.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "TRINITY",
+      "n": 47,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 47,
+        "mean": 60.02127659574468,
+        "sample_sd": 0.14586499149789459,
+        "min": 60.0,
+        "median": 60.0,
+        "max": 61.0
+      }
+    },
+    {
+      "group": "UM_1",
+      "n": 106,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 106,
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "UM_2",
+      "n": 34,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 34,
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "USM",
+      "n": 71,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 71,
+        "mean": 66.0,
+        "sample_sd": 0.0,
+        "min": 66.0,
+        "median": 66.0,
+        "max": 66.0
+      }
+    },
+    {
+      "group": "YALE",
+      "n": 56,
+      "tr_seconds": 2.0,
+      "scan_duration_s": 292.0,
+      "nyquist_hz": 0.25,
+      "frequency_resolution_hz": 0.003424657534246575,
+      "rank": {
+        "n": 56,
+        "mean": 64.03571428571429,
+        "sample_sd": 0.1872563351797078,
+        "min": 64.0,
+        "median": 64.0,
+        "max": 65.0
+      }
+    }
+  ],
+  "power_spectrum_by_tr": [
+    {
+      "tr_seconds": 1.5,
+      "n": 94,
+      "nyquist_hz": 0.3333333333333333,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.1004566210045662,
+      "power_fraction_below_0.01hz": 0.024567137914841816,
+      "power_fraction_above_0.10hz": 0.020261933819517092,
+      "power_fraction_above_0.15hz": 0.0022978136997661653,
+      "mean_normalized_power_first_10_bins": [
+        0.00259443544798581,
+        0.021972702466856,
+        0.059915340884828965,
+        0.0666024076823274,
+        0.06449512615421198,
+        0.06395178141012384,
+        0.06161444585002926,
+        0.0594681833640326,
+        0.05654801386623698,
+        0.054849262578320755
+      ],
+      "mean_normalized_power_last_10_bins": [
+        3.749765851091252e-05,
+        3.7122790405828185e-05,
+        3.679659747865628e-05,
+        3.651730194360297e-05,
+        3.628340788103804e-05,
+        3.609367569225381e-05,
+        3.594711461774953e-05,
+        3.58429626898683e-05,
+        3.578068424502156e-05,
+        3.5759960430571344e-05
+      ]
+    },
+    {
+      "tr_seconds": 1.667,
+      "n": 63,
+      "nyquist_hz": 0.29994001199760045,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.0986104149033207,
+      "power_fraction_below_0.01hz": 0.005529628937844593,
+      "power_fraction_above_0.10hz": 0.005620765144797277,
+      "power_fraction_above_0.15hz": 0.0018424547481125755,
+      "mean_normalized_power_first_10_bins": [
+        0.00179766932620282,
+        0.0037319596116417715,
+        0.055935379394247774,
+        0.07186538470657229,
+        0.06608472578321507,
+        0.0632074824869704,
+        0.05888367574455806,
+        0.05491166236029164,
+        0.05446172248201649,
+        0.04826805720415458
+      ],
+      "mean_normalized_power_last_10_bins": [
+        3.6800198139182565e-05,
+        3.641961476381508e-05,
+        3.608867539114067e-05,
+        3.580548968067776e-05,
+        3.556843703804313e-05,
+        3.5376236776560504e-05,
+        3.5227811894863887e-05,
+        3.512235659160671e-05,
+        3.5059314726867144e-05,
+        3.503833683042362e-05
+      ]
+    },
+    {
+      "tr_seconds": 2.0,
+      "n": 615,
+      "nyquist_hz": 0.25,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.09931506849315068,
+      "power_fraction_below_0.01hz": 0.003111962896123348,
+      "power_fraction_above_0.10hz": 0.004434500548012558,
+      "power_fraction_above_0.15hz": 0.0012574072995433828,
+      "mean_normalized_power_first_10_bins": [
+        0.0011433579201674021,
+        0.0019686049759559446,
+        0.01509190556317298,
+        0.0504626778927538,
+        0.05220757453823525,
+        0.052194439248171354,
+        0.050447478452699035,
+        0.04874574473035331,
+        0.046676785034855325,
+        0.045120657287183494
+      ],
+      "mean_normalized_power_last_10_bins": [
+        3.462291445495596e-05,
+        3.4204588542107654e-05,
+        3.384153502868152e-05,
+        3.353257653073131e-05,
+        3.327381607934896e-05,
+        3.3065302482077284e-05,
+        3.290361698579609e-05,
+        3.2789022054099914e-05,
+        3.2721227832773224e-05,
+        3.269789026714837e-05
+      ]
+    },
+    {
+      "tr_seconds": 2.2,
+      "n": 30,
+      "nyquist_hz": 0.22727272727272727,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.09962640099626399,
+      "power_fraction_below_0.01hz": 0.016149207766287248,
+      "power_fraction_above_0.10hz": 0.0036109860755066544,
+      "power_fraction_above_0.15hz": 0.0009528331420806505,
+      "mean_normalized_power_first_10_bins": [
+        0.001183361179370308,
+        0.002002582018680434,
+        0.012963264568236503,
+        0.047697097991817025,
+        0.053132349932147355,
+        0.05334176681064683,
+        0.04778889153895717,
+        0.0508422944962484,
+        0.04648976579680841,
+        0.04691467160119474
+      ],
+      "mean_normalized_power_last_10_bins": [
+        3.416897753796962e-05,
+        3.373050840759873e-05,
+        3.335114652125622e-05,
+        3.302791745339677e-05,
+        3.275835168731302e-05,
+        3.2540429414346804e-05,
+        3.2372544407737926e-05,
+        3.225347942590794e-05,
+        3.21823795913881e-05,
+        3.2158734973773105e-05
+      ]
+    },
+    {
+      "tr_seconds": 2.5,
+      "n": 42,
+      "nyquist_hz": 0.2,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.09863013698630137,
+      "power_fraction_below_0.01hz": 0.002171300513601744,
+      "power_fraction_above_0.10hz": 0.007115673082427667,
+      "power_fraction_above_0.15hz": 0.0007336501559092398,
+      "mean_normalized_power_first_10_bins": [
+        0.00051973548864696,
+        0.0006392000239759848,
+        0.0010123650009787987,
+        0.023848962396583195,
+        0.03405404274701736,
+        0.03657863226698786,
+        0.04054510378120655,
+        0.03888892944321823,
+        0.03993131339668342,
+        0.037837678117090455
+      ],
+      "mean_normalized_power_last_10_bins": [
+        3.705285086740986e-05,
+        3.6414878603824535e-05,
+        3.586681021202747e-05,
+        3.54026754705426e-05,
+        3.5017584367611375e-05,
+        3.470758209807428e-05,
+        3.446956011777131e-05,
+        3.430117329454478e-05,
+        3.420078570211071e-05,
+        3.416742965957004e-05
+      ]
+    },
+    {
+      "tr_seconds": 3.0,
+      "n": 16,
+      "nyquist_hz": 0.16666666666666666,
+      "frequency_bins_excluding_dc": 73,
+      "frequency_at_99pct_cumulative_power_hz": 0.09817351598173515,
+      "power_fraction_below_0.01hz": 0.0077362649765873506,
+      "power_fraction_above_0.10hz": 0.005202432101446836,
+      "power_fraction_above_0.15hz": 0.0004509658858406709,
+      "mean_normalized_power_first_10_bins": [
+        0.0005613751383694981,
+        0.0007103776440490969,
+        0.0011944610423162024,
+        0.005270051151852552,
+        0.037731272408752195,
+        0.035949170474877334,
+        0.034701919274330445,
+        0.03479027536289988,
+        0.03279880486897203,
+        0.03456556607569461
+      ],
+      "mean_normalized_power_last_10_bins": [
+        6.119534478451862e-05,
+        5.982659287066518e-05,
+        5.8663663812644505e-05,
+        5.7687995749486993e-05,
+        5.6884756380888335e-05,
+        5.624221378128296e-05,
+        5.575130267172301e-05,
+        5.540527881367642e-05,
+        5.519948458995601e-05,
+        5.5131190041012574e-05
+      ]
+    }
+  ],
+  "interpretation_constraint": "Purely descriptive; no model fitting, no test predictions, and no influence on any locked selection."
+}

@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "artifact_version": "tangent-spectrum-diagnostic-v1.1",
+  "analysis_role": "mechanism diagnostic: energy carried by raw null-space directions after tangent mapping under two positive-definitization schemes",
+  "uses_test_subjects": false,
+  "models_retrained": false,
+  "fold": 0,
+  "n_train_for_reference": 602,
+  "n_validation_measured": 86,
+  "locked_gamma_fold1": 0.9,
+  "eigclip_floor": 1e-06,
+  "numeric_floor": 1e-12,
+  "rank_tolerance": 1e-08,
+  "n_roi": 392,
+  "raw_correlation_rank": {
+    "mean": 61.848837209302324,
+    "sample_sd": 7.443145195192475,
+    "min": 50.0,
+    "median": 64.0,
+    "max": 91.0
+  },
+  "raw_null_dimension": {
+    "mean": 330.1511627906977,
+    "sample_sd": 7.443145195192476,
+    "min": 301.0,
+    "median": 328.0,
+    "max": 342.0
+  },
+  "block_definition": "null block = projection of the tangent matrix onto eigenvectors of the raw correlation matrix with eigenvalue <= 1e-8; range block = the complementary eigenvectors; fractions are of squared Frobenius norm",
+  "schemes": {
+    "shrink": {
+      "parameter": 0.9,
+      "parameter_name": "gamma",
+      "tangent_frobenius_norm": {
+        "mean": 4.0520732486185835,
+        "sample_sd": 0.17686450377819246,
+        "min": 3.562905960788879,
+        "median": 4.036984043389792,
+        "max": 4.607181237207416
+      },
+      "energy_fraction_null_block": {
+        "mean": 0.17562011272914654,
+        "sample_sd": 0.01515938593898914,
+        "min": 0.1281439183569276,
+        "median": 0.17701183884829721,
+        "max": 0.21182458775042512
+      },
+      "energy_fraction_range_block": {
+        "mean": 0.6090763072656482,
+        "sample_sd": 0.024005124808749778,
+        "min": 0.5730317748341323,
+        "median": 0.6051638723512591,
+        "max": 0.6978128320767972
+      },
+      "energy_fraction_cross_block": {
+        "mean": 0.2153035800052053,
+        "sample_sd": 0.011854511351336286,
+        "min": 0.17404324956627515,
+        "median": 0.21754921246670622,
+        "max": 0.2351389058609169
+      },
+      "per_direction_rms_null_block": {
+        "mean": 0.005140549332041597,
+        "sample_sd": 0.00033367551237404144,
+        "min": 0.004508506417878552,
+        "median": 0.005146551199497326,
+        "max": 0.006425538674720436
+      },
+      "per_direction_rms_range_block": {
+        "mean": 0.051919245947323334,
+        "sample_sd": 0.00728677069204408,
+        "min": 0.03174735450706974,
+        "median": 0.0497869863076178,
+        "max": 0.06753870425671048
+      },
+      "abs_log_eigenvalue_max": {
+        "mean": 1.3904373812573185,
+        "sample_sd": 0.12265937907579026,
+        "min": 1.1549646316601487,
+        "median": 1.3780993388932585,
+        "max": 1.698639735681512
+      },
+      "whitened_eigenvalue_min": {
+        "mean": 0.4211122757073227,
+        "sample_sd": 0.03620525305137647,
+        "min": 0.2999794563919469,
+        "median": 0.419551663511354,
+        "max": 0.5048925307994295
+      },
+      "whitened_eigenvalue_max": {
+        "mean": 4.047092565304206,
+        "sample_sd": 0.5106182216624275,
+        "min": 3.1739111595738736,
+        "median": 3.9673595303621,
+        "max": 5.466506438387959
+      }
+    },
+    "eigclip": {
+      "parameter": 1e-06,
+      "parameter_name": "eigenvalue floor",
+      "tangent_frobenius_norm": {
+        "mean": 241.40164759674707,
+        "sample_sd": 2.699376067432072,
+        "min": 230.29652292605442,
+        "median": 240.89773454895723,
+        "max": 245.87234283797395
+      },
+      "energy_fraction_null_block": {
+        "mean": 0.9275124813889993,
+        "sample_sd": 0.00565865329866933,
+        "min": 0.9100292291007472,
+        "median": 0.9259058729579215,
+        "max": 0.9393848829539723
+      },
+      "energy_fraction_range_block": {
+        "mean": 0.021806514714219443,
+        "sample_sd": 0.002581288718472035,
+        "min": 0.015926741024207137,
+        "median": 0.022343473668325706,
+        "max": 0.027950268365364045
+      },
+      "energy_fraction_cross_block": {
+        "mean": 0.050681003896781374,
+        "sample_sd": 0.0034093385462298153,
+        "min": 0.04394715608294553,
+        "median": 0.051683419032651834,
+        "max": 0.06202050253388869
+      },
+      "per_direction_rms_null_block": {
+        "mean": 0.7043424072488601,
+        "sample_sd": 0.006294755271255158,
+        "min": 0.6940371479273286,
+        "median": 0.7051716453560442,
+        "max": 0.7298751140607967
+      },
+      "per_direction_rms_range_block": {
+        "mean": 0.5802930286462034,
+        "sample_sd": 0.04817767398159843,
+        "min": 0.40856794290766213,
+        "median": 0.5697935396506407,
+        "max": 0.6767386301031526
+      },
+      "abs_log_eigenvalue_max": {
+        "mean": 15.86107004200042,
+        "sample_sd": 0.1888766672868979,
+        "min": 15.420513919697056,
+        "median": 15.840012349592465,
+        "max": 16.633740570574005
+      },
+      "whitened_eigenvalue_min": {
+        "mean": 1.3152141753764194e-07,
+        "sample_sd": 2.382139193523797e-08,
+        "min": 5.971153789942924e-08,
+        "median": 1.320604894717377e-07,
+        "max": 2.008888795743649e-07
+      },
+      "whitened_eigenvalue_max": {
+        "mean": 33.081529220873115,
+        "sample_sd": 5.67010520950223,
+        "min": 22.22169663526585,
+        "median": 32.15207383014457,
+        "max": 48.245420249309994
+      }
+    },
+    "ledoit_wolf": {
+      "parameter": 0.12869963699243592,
+      "parameter_name": "mean Ledoit-Wolf shrinkage coefficient (validation)",
+      "shrinkage_coefficient_train": {
+        "mean": 0.13613582261280818,
+        "sample_sd": 0.023798972289243322,
+        "min": 0.07112607296551576,
+        "median": 0.13509153078628924,
+        "max": 0.20947316292004356
+      },
+      "shrinkage_coefficient_validation": {
+        "mean": 0.12869963699243592,
+        "sample_sd": 0.022665546203108327,
+        "min": 0.08777238292818428,
+        "median": 0.12542667772210564,
+        "max": 0.20283872799108413
+      },
+      "tangent_frobenius_norm": {
+        "mean": 33.10641590910149,
+        "sample_sd": 2.724921200570532,
+        "min": 25.960762008981916,
+        "median": 33.095523861671836,
+        "max": 39.32951540813888
+      },
+      "energy_fraction_null_block": {
+        "mean": 0.7126616396612888,
+        "sample_sd": 0.042818302369424244,
+        "min": 0.5684374127443339,
+        "median": 0.7206366921789487,
+        "max": 0.7862630233891003
+      },
+      "energy_fraction_range_block": {
+        "mean": 0.11852414140695786,
+        "sample_sd": 0.02380108197836894,
+        "min": 0.080008375631789,
+        "median": 0.11388692081475954,
+        "max": 0.2075221047342637
+      },
+      "energy_fraction_cross_block": {
+        "mean": 0.16881421893175338,
+        "sample_sd": 0.019987406596033683,
+        "min": 0.13372860097911077,
+        "median": 0.166652670800034,
+        "max": 0.2240404825214024
+      },
+      "per_direction_rms_null_block": {
+        "mean": 0.08473794407286445,
+        "sample_sd": 0.008487234291444434,
+        "min": 0.06360420807298686,
+        "median": 0.08527307836944253,
+        "max": 0.10326976056176976
+      },
+      "per_direction_rms_range_block": {
+        "mean": 0.18452718239177926,
+        "sample_sd": 0.02190675938189451,
+        "min": 0.11911467452111042,
+        "median": 0.18061791747586342,
+        "max": 0.23918814598205795
+      },
+      "abs_log_eigenvalue_max": {
+        "mean": 4.094108225155507,
+        "sample_sd": 0.21155607126801274,
+        "min": 3.669192690641604,
+        "median": 4.078314300616914,
+        "max": 4.613096579479101
+      },
+      "whitened_eigenvalue_min": {
+        "mean": 0.017037630834189153,
+        "sample_sd": 0.0035488605099394826,
+        "min": 0.009921049375305586,
+        "median": 0.016936056768261248,
+        "max": 0.02549704564364671
+      },
+      "whitened_eigenvalue_max": {
+        "mean": 25.43290983122857,
+        "sample_sd": 4.4855634593529885,
+        "min": 16.839020475666242,
+        "median": 24.359246965024237,
+        "max": 38.231333946227515
+      }
+    }
+  },
+  "interpretation_constraint": "Descriptive spectral diagnostic on fold-1 validation subjects only. It explains a mechanism; it is not a performance measurement.",
+  "scheme_order": [
+    "eigclip",
+    "ledoit_wolf",
+    "shrink"
+  ]
+}

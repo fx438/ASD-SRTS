@@ -1,0 +1,254 @@
+{
+  "artifact_version": "site-tr-oof-stratified-v1",
+  "analysis_scope": "locked test OOF only",
+  "models_retrained": false,
+  "uses_test_predictions": true,
+  "used_for_model_selection": false,
+  "uses_dsm_iv_tr_as_repetition_time": false,
+  "tr_source_type": "official ABIDE-I functional protocol PDFs",
+  "official_index_url": "https://fcon_1000.projects.nitrc.org/indi/abide/abide_I.html",
+  "tr_rules": [
+    {
+      "rule_id": "caltech",
+      "site_id": "CALTECH",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Caltech/rest.pdf",
+      "source_sha256": "b513c8805ba635b8a3dcad0618405dc4de6c1fdce091f764f90eda8e02dfda00",
+      "evidence": "TR 2000 ms"
+    },
+    {
+      "rule_id": "cmu-a",
+      "site_id": "CMU",
+      "file_id_prefix": "CMU_a_",
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/CMU/rest.pdf",
+      "source_sha256": "2a689be6addc5d497689274edd1c459f0995049cba262a5c39ee5beb3a09dd82",
+      "evidence": "first functional protocol: TR 2000 ms"
+    },
+    {
+      "rule_id": "cmu-b",
+      "site_id": "CMU",
+      "file_id_prefix": "CMU_b_",
+      "tr_seconds": 1.5,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/CMU/rest.pdf",
+      "source_sha256": "2a689be6addc5d497689274edd1c459f0995049cba262a5c39ee5beb3a09dd82",
+      "evidence": "second functional protocol: TR 1500 ms"
+    },
+    {
+      "rule_id": "kki",
+      "site_id": "KKI",
+      "file_id_prefix": null,
+      "tr_seconds": 2.5,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/KKI/rest.pdf",
+      "source_sha256": "b53806c708d17241bec452b731b8f97c23d757a47494ee469b5e537890953882",
+      "evidence": "Act. TR/TE (ms) 2500 / 30"
+    },
+    {
+      "rule_id": "leuven-1",
+      "site_id": "LEUVEN_1",
+      "file_id_prefix": null,
+      "tr_seconds": 1.667,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Leuven-1/rest.pdf",
+      "source_sha256": "875abd057c98d54f53de6b3c0e001c72693ad60d6e06b3365d0daa5711d477c0",
+      "evidence": "Act. TR/TE (ms) 1667 / 33"
+    },
+    {
+      "rule_id": "leuven-2",
+      "site_id": "LEUVEN_2",
+      "file_id_prefix": null,
+      "tr_seconds": 1.667,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Leuven-2/rest.pdf",
+      "source_sha256": "875abd057c98d54f53de6b3c0e001c72693ad60d6e06b3365d0daa5711d477c0",
+      "evidence": "Act. TR/TE (ms) 1667 / 33"
+    },
+    {
+      "rule_id": "max-mun",
+      "site_id": "MAX_MUN",
+      "file_id_prefix": null,
+      "tr_seconds": 3.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/MaxMun/rest.pdf",
+      "source_sha256": "17b4a00f755ca42411e283a13caed3ecf327b0e64a641dfbf74163c5086aab7c",
+      "evidence": "TR 3000 ms"
+    },
+    {
+      "rule_id": "nyu",
+      "site_id": "NYU",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/NYU/rest.pdf",
+      "source_sha256": "ffa59eea66f780c12dfc6989a081e8495c32899986ddc1ce31f5469dee43713e",
+      "evidence": "TR 2000 ms"
+    },
+    {
+      "rule_id": "olin",
+      "site_id": "OLIN",
+      "file_id_prefix": null,
+      "tr_seconds": 1.5,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Olin/rest.pdf",
+      "source_sha256": "69e61dff85bef69f89feca9ac81001c9f9861582ddb8cb8270f5bbd5391f538d",
+      "evidence": "TR 1500 ms"
+    },
+    {
+      "rule_id": "pitt",
+      "site_id": "PITT",
+      "file_id_prefix": null,
+      "tr_seconds": 1.5,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Pitt/rest.pdf",
+      "source_sha256": "b703bdd5178d0a23a0bc6dcb043dc117532d57e055a4579781a342bdb94e5108",
+      "evidence": "TR 1500 ms"
+    },
+    {
+      "rule_id": "sbl",
+      "site_id": "SBL",
+      "file_id_prefix": null,
+      "tr_seconds": 2.2,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/SBL/rest.pdf",
+      "source_sha256": "1468e0f810b5d347d89c7c5029ef22020a555da4ae45d925fe11035033a420ca",
+      "evidence": "Act. TR/TE (ms) 2200 / 30"
+    },
+    {
+      "rule_id": "sdsu",
+      "site_id": "SDSU",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/SDSU/rest.pdf",
+      "source_sha256": "8933f2e7bb8d15ca67ce871936217ff7eabdb8c4a8e46734744bf67541ead188",
+      "evidence": "TR 2000.0 ms"
+    },
+    {
+      "rule_id": "stanford",
+      "site_id": "STANFORD",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Stanford/rest.pdf",
+      "source_sha256": "7919d52fd247f9c2ad44fb66d4dcc09345b904af68d13edaae6158e0e89e37a1",
+      "evidence": "TR 2 sec"
+    },
+    {
+      "rule_id": "trinity",
+      "site_id": "TRINITY",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Trinity/rest.pdf",
+      "source_sha256": "a971863142dc75e0ff84d94243d58c56361ad8124880828fc42d387c20501748",
+      "evidence": "Act. TR/TE (ms) 2000 / 28"
+    },
+    {
+      "rule_id": "um-1",
+      "site_id": "UM_1",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/UM1/rest.pdf",
+      "source_sha256": "0493e022efbd7d6192e3675befd261a38d37cb3e032ee7760a4688468c905bbe",
+      "evidence": "TR 2000 ms"
+    },
+    {
+      "rule_id": "um-2",
+      "site_id": "UM_2",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/UM2/rest.pdf",
+      "source_sha256": "0493e022efbd7d6192e3675befd261a38d37cb3e032ee7760a4688468c905bbe",
+      "evidence": "TR 2000 ms"
+    },
+    {
+      "rule_id": "usm",
+      "site_id": "USM",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/USM/rest.pdf",
+      "source_sha256": "b194e280b13be2e1a21203f60608f6187f157dfda8155eb8f33ad97929b81b7c",
+      "evidence": "TR 2000 ms"
+    },
+    {
+      "rule_id": "yale",
+      "site_id": "YALE",
+      "file_id_prefix": null,
+      "tr_seconds": 2.0,
+      "source_url": "https://fcon_1000.projects.nitrc.org/indi/abide/scan_params/Yale/rest.pdf",
+      "source_sha256": "965670ef8017342271cb72aa70818a539160589b10b6dc50b281e0ed7a3cca0d",
+      "evidence": "TR 2000 ms"
+    }
+  ],
+  "input_files": [
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/standard5_seed42/splits_manifest.json",
+      "sha256": "1d2d74e1aa2971eb05eee71ee8b70cd771551dcec3a9ab73ff72638702a425ab"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/phenotypic.csv",
+      "sha256": "009f01a89697113e5375ded4fbcff4c85e89a4daa6d13e63c21ae5d57dda0865"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/tr_acquisition_map_abide1_v1.json",
+      "sha256": "b51bee7963d8c01d4641987b4fa1d12f259247945c9fb05483c2ed6bd95e17e9"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/summary.json",
+      "sha256": "686130899d6eadc2f669dfc59a561c699f5cece251d670fb17dcf7a6d2df9d13"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/folds/fold_1.json",
+      "sha256": "98a13f565ae7423d2a5947acf33ccd2d973c22c527b5eaaec049351ca8cb305a"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/folds/fold_2.json",
+      "sha256": "656129212144095dd722ca9a42fe43170f36f15fdaffb09cb853544fffafa0af"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/folds/fold_3.json",
+      "sha256": "d2bece3777dccf9216ff15773b56470f13421f058f376f028cd29f2e15893c4e"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/folds/fold_4.json",
+      "sha256": "1d69466f385581e5e9a78f64827f8609a3eb75b4363da6450c7fd2a44975df80"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/srts_linear_standard5_seed42_v1/models/lr/folds/fold_5.json",
+      "sha256": "4a34b19467a7e4b118b1a4cc219d7168f9e0d4ee22f5851ff64f62d0c993a79e"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/summary.json",
+      "sha256": "2691e9172addaf408864a01f10a6d9a688cdc4a5ac736890deff6bde0dab8683"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/folds/fold_1.json",
+      "sha256": "df2ae8c2b8c87c67a3f6f8e0f10a12e707599c4bb2f5282885451e881130f50c"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/folds/fold_2.json",
+      "sha256": "ed12a91b6fd6a69c34fb8eb65087b50853937fb229e45be3d1f8ceb472e8af31"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/folds/fold_3.json",
+      "sha256": "6ca54d38a4da87febd06a3ee9d1399b9e57f0f89cc15663bfad71637feefbfeb"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/folds/fold_4.json",
+      "sha256": "65ccfd9f42b04a9d6c10cb49392cd9044e8d576acab922f7866fa4bfa3d727c6"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/results_revision_v2/raw_fc_full_lr_standard5_seed42_v1/models/lr/folds/fold_5.json",
+      "sha256": "fba5cc98b23a6406f760a27dddb79305869f4937d0e057bccd2730d0f76e66f1"
+    },
+    {
+      "path": "/root/autodl-tmp/ASD/exp_fix/analyze_site_tr_oof_v1.py",
+      "sha256": "2422a8534b0fe547b81ba3a52af98207d89562fb586a85da4599f9050e18d0f0"
+    }
+  ],
+  "output_sha256": {
+    "subjects": "858c0ddde6852c0d1d89f644807cba32f58a9d7184f92983edc6bb84854d907d",
+    "sites": "279adfc3f2e9b5f971d961873db1917aa1707cec8362b3b66ee2a6727a97539e",
+    "tr": "8aa397be67d74c3eb95bb66246cb865cbe8846cd7d842d9a7bd053dd4af199ba",
+    "influence": "2e04d50d37cf27c8865626c4fe4f48d9d602b7f3133ffc3cafea2336bba051e1",
+    "report_json": "f1964725eb65338a037f754fc81e0772325813a303bcf80429775b0be40395ed",
+    "report_md": "785931362dcd2daf4587abf873f2120337b3c1813f76cb3ef68c57139439013b"
+  },
+  "software": {
+    "python": "3.12.3",
+    "numpy": "2.1.3",
+    "scikit_learn": "1.8.0",
+    "platform": "Linux-5.4.0-182-generic-x86_64-with-glibc2.35"
+  }
+}

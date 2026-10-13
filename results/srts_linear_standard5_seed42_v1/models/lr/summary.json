@@ -1,0 +1,7856 @@
+{
+  "model_key": "lr",
+  "model_name": "SRTS + Logistic Regression",
+  "protocol": {
+    "folds": 5,
+    "per_fold_sizes": [
+      602,
+      86,
+      172
+    ],
+    "test_union_n": 860,
+    "test_count_per_subject": 1,
+    "seed": 42,
+    "gammas": [
+      0.9,
+      0.9,
+      0.7,
+      0.5,
+      0.9
+    ],
+    "sd_definition": "sample SD across five folds (ddof=1)"
+  },
+  "metrics": {
+    "auc": {
+      "mean": 0.7726136671302165,
+      "sample_sd": 0.040402945203369824,
+      "fold_values": [
+        0.7689393939393939,
+        0.7339015151515151,
+        0.7415730337078652,
+        0.783267903072966,
+        0.8353864897793422
+      ]
+    },
+    "accuracy": {
+      "mean": 0.7069767441860465,
+      "sample_sd": 0.028063996246853885,
+      "fold_values": [
+        0.6976744186046512,
+        0.686046511627907,
+        0.7034883720930233,
+        0.6918604651162791,
+        0.7558139534883721
+      ]
+    },
+    "sensitivity": {
+      "mean": 0.7291451520367184,
+      "sample_sd": 0.06660913062837938,
+      "fold_values": [
+        0.6785714285714286,
+        0.7261904761904762,
+        0.7469879518072289,
+        0.6626506024096386,
+        0.8313253012048193
+      ]
+    },
+    "specificity": {
+      "mean": 0.6862104187946885,
+      "sample_sd": 0.03157455729615275,
+      "fold_values": [
+        0.7159090909090909,
+        0.6477272727272727,
+        0.6629213483146067,
+        0.7191011235955056,
+        0.6853932584269663
+      ]
+    },
+    "precision": {
+      "mean": 0.6861837358288418,
+      "sample_sd": 0.018711718638474865,
+      "fold_values": [
+        0.6951219512195121,
+        0.6630434782608695,
+        0.6739130434782609,
+        0.6875,
+        0.711340206185567
+      ]
+    },
+    "f1": {
+      "mean": 0.7060027054277184,
+      "sample_sd": 0.03602975727404681,
+      "fold_values": [
+        0.6867469879518072,
+        0.6931818181818181,
+        0.7085714285714286,
+        0.6748466257668712,
+        0.7666666666666667
+      ]
+    },
+    "acc_at_half": {
+      "mean": 0.713953488372093,
+      "sample_sd": 0.041397635160274206,
+      "fold_values": [
+        0.7034883720930233,
+        0.6744186046511628,
+        0.7267441860465116,
+        0.686046511627907,
+        0.7790697674418605
+      ]
+    }
+  },
+  "runtime_seconds": 121.75851345062256,
+  "oof_predictions": [
+    {
+      "subject_index": 0,
+      "sub_id": 50642,
+      "file_id": "CMU_a_0050642",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8980211309755898
+    },
+    {
+      "subject_index": 1,
+      "sub_id": 50646,
+      "file_id": "CMU_a_0050646",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.7081742005245093
+    },
+    {
+      "subject_index": 2,
+      "sub_id": 50647,
+      "file_id": "CMU_a_0050647",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5288872885104848
+    },
+    {
+      "subject_index": 3,
+      "sub_id": 50649,
+      "file_id": "CMU_a_0050649",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.7544961940478114
+    },
+    {
+      "subject_index": 4,
+      "sub_id": 50653,
+      "file_id": "CMU_a_0050653",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.11638123418639239
+    },
+    {
+      "subject_index": 5,
+      "sub_id": 50654,
+      "file_id": "CMU_a_0050654",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.00651182539350953
+    },
+    {
+      "subject_index": 6,
+      "sub_id": 50656,
+      "file_id": "CMU_a_0050656",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.014551921452819099
+    },
+    {
+      "subject_index": 7,
+      "sub_id": 50659,
+      "file_id": "CMU_a_0050659",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9693902697146738
+    },
+    {
+      "subject_index": 8,
+      "sub_id": 50660,
+      "file_id": "CMU_a_0050660",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.03274046972682752
+    },
+    {
+      "subject_index": 9,
+      "sub_id": 50663,
+      "file_id": "CMU_a_0050663",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0009469563327720098
+    },
+    {
+      "subject_index": 10,
+      "sub_id": 50664,
+      "file_id": "CMU_a_0050664",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00371979489534334
+    },
+    {
+      "subject_index": 11,
+      "sub_id": 50665,
+      "file_id": "CMU_a_0050665",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.13315801898416293
+    },
+    {
+      "subject_index": 12,
+      "sub_id": 50666,
+      "file_id": "CMU_a_0050666",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9178327720560752
+    },
+    {
+      "subject_index": 13,
+      "sub_id": 50668,
+      "file_id": "CMU_a_0050668",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.005355117015900889
+    },
+    {
+      "subject_index": 14,
+      "sub_id": 50643,
+      "file_id": "CMU_b_0050643",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9975259749672349
+    },
+    {
+      "subject_index": 15,
+      "sub_id": 50644,
+      "file_id": "CMU_b_0050644",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.881330168565914
+    },
+    {
+      "subject_index": 16,
+      "sub_id": 50645,
+      "file_id": "CMU_b_0050645",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9958239102789406
+    },
+    {
+      "subject_index": 17,
+      "sub_id": 50648,
+      "file_id": "CMU_b_0050648",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9353410509031386
+    },
+    {
+      "subject_index": 18,
+      "sub_id": 50650,
+      "file_id": "CMU_b_0050650",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9897640289174183
+    },
+    {
+      "subject_index": 19,
+      "sub_id": 50651,
+      "file_id": "CMU_b_0050651",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9079074047105923
+    },
+    {
+      "subject_index": 20,
+      "sub_id": 50652,
+      "file_id": "CMU_b_0050652",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.7948141179109822
+    },
+    {
+      "subject_index": 21,
+      "sub_id": 50655,
+      "file_id": "CMU_b_0050655",
+      "site_id": "CMU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9995377625531391
+    },
+    {
+      "subject_index": 22,
+      "sub_id": 50657,
+      "file_id": "CMU_b_0050657",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9455021049059075
+    },
+    {
+      "subject_index": 23,
+      "sub_id": 50658,
+      "file_id": "CMU_b_0050658",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.033868126732652354
+    },
+    {
+      "subject_index": 24,
+      "sub_id": 50661,
+      "file_id": "CMU_b_0050661",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.04187516189245959
+    },
+    {
+      "subject_index": 25,
+      "sub_id": 50667,
+      "file_id": "CMU_b_0050667",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.03587495276127413
+    },
+    {
+      "subject_index": 26,
+      "sub_id": 50669,
+      "file_id": "CMU_b_0050669",
+      "site_id": "CMU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9874016594970707
+    },
+    {
+      "subject_index": 27,
+      "sub_id": 51456,
+      "file_id": "Caltech_0051456",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9958118998021824
+    },
+    {
+      "subject_index": 28,
+      "sub_id": 51457,
+      "file_id": "Caltech_0051457",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9130964422085096
+    },
+    {
+      "subject_index": 29,
+      "sub_id": 51458,
+      "file_id": "Caltech_0051458",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8689405390032937
+    },
+    {
+      "subject_index": 30,
+      "sub_id": 51459,
+      "file_id": "Caltech_0051459",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6987657279406316
+    },
+    {
+      "subject_index": 31,
+      "sub_id": 51460,
+      "file_id": "Caltech_0051460",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.32918045691147224
+    },
+    {
+      "subject_index": 32,
+      "sub_id": 51461,
+      "file_id": "Caltech_0051461",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 0,
+      "score": 0.3454934125197314
+    },
+    {
+      "subject_index": 33,
+      "sub_id": 51462,
+      "file_id": "Caltech_0051462",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9118578662426999
+    },
+    {
+      "subject_index": 34,
+      "sub_id": 51463,
+      "file_id": "Caltech_0051463",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.18711347676203133
+    },
+    {
+      "subject_index": 35,
+      "sub_id": 51464,
+      "file_id": "Caltech_0051464",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9036903665006465
+    },
+    {
+      "subject_index": 36,
+      "sub_id": 51465,
+      "file_id": "Caltech_0051465",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.1555055087880169
+    },
+    {
+      "subject_index": 37,
+      "sub_id": 51466,
+      "file_id": "Caltech_0051466",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9935469491013251
+    },
+    {
+      "subject_index": 38,
+      "sub_id": 51467,
+      "file_id": "Caltech_0051467",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8547223958714021
+    },
+    {
+      "subject_index": 39,
+      "sub_id": 51468,
+      "file_id": "Caltech_0051468",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9449240001430378
+    },
+    {
+      "subject_index": 40,
+      "sub_id": 51469,
+      "file_id": "Caltech_0051469",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9990684350183153
+    },
+    {
+      "subject_index": 41,
+      "sub_id": 51470,
+      "file_id": "Caltech_0051470",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7780188061257489
+    },
+    {
+      "subject_index": 42,
+      "sub_id": 51471,
+      "file_id": "Caltech_0051471",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 0,
+      "score": 0.99636085779686
+    },
+    {
+      "subject_index": 43,
+      "sub_id": 51472,
+      "file_id": "Caltech_0051472",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6430264900195276
+    },
+    {
+      "subject_index": 44,
+      "sub_id": 51473,
+      "file_id": "Caltech_0051473",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 0,
+      "score": 0.5007492155237346
+    },
+    {
+      "subject_index": 45,
+      "sub_id": 51474,
+      "file_id": "Caltech_0051474",
+      "site_id": "CALTECH",
+      "label": 1,
+      "fold": 0,
+      "score": 0.2679128083614625
+    },
+    {
+      "subject_index": 46,
+      "sub_id": 51476,
+      "file_id": "Caltech_0051476",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 2,
+      "score": 0.20248006720552253
+    },
+    {
+      "subject_index": 47,
+      "sub_id": 51477,
+      "file_id": "Caltech_0051477",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 0,
+      "score": 0.3045499689880319
+    },
+    {
+      "subject_index": 48,
+      "sub_id": 51478,
+      "file_id": "Caltech_0051478",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9999658115490493
+    },
+    {
+      "subject_index": 49,
+      "sub_id": 51479,
+      "file_id": "Caltech_0051479",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.27552241935339733
+    },
+    {
+      "subject_index": 50,
+      "sub_id": 51480,
+      "file_id": "Caltech_0051480",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 1,
+      "score": 0.05408440618883999
+    },
+    {
+      "subject_index": 51,
+      "sub_id": 51481,
+      "file_id": "Caltech_0051481",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.7770956833759207
+    },
+    {
+      "subject_index": 52,
+      "sub_id": 51482,
+      "file_id": "Caltech_0051482",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 2,
+      "score": 0.007242610788436561
+    },
+    {
+      "subject_index": 53,
+      "sub_id": 51483,
+      "file_id": "Caltech_0051483",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6986371593583836
+    },
+    {
+      "subject_index": 54,
+      "sub_id": 51484,
+      "file_id": "Caltech_0051484",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 0,
+      "score": 0.27510884011954073
+    },
+    {
+      "subject_index": 55,
+      "sub_id": 51485,
+      "file_id": "Caltech_0051485",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9915388314344182
+    },
+    {
+      "subject_index": 56,
+      "sub_id": 51486,
+      "file_id": "Caltech_0051486",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.08851364294085462
+    },
+    {
+      "subject_index": 57,
+      "sub_id": 51487,
+      "file_id": "Caltech_0051487",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.47048631013676495
+    },
+    {
+      "subject_index": 58,
+      "sub_id": 51488,
+      "file_id": "Caltech_0051488",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 4,
+      "score": 0.724171497909261
+    },
+    {
+      "subject_index": 59,
+      "sub_id": 51489,
+      "file_id": "Caltech_0051489",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 0,
+      "score": 0.909326688577532
+    },
+    {
+      "subject_index": 60,
+      "sub_id": 51490,
+      "file_id": "Caltech_0051490",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 3,
+      "score": 0.27315122412539233
+    },
+    {
+      "subject_index": 61,
+      "sub_id": 51491,
+      "file_id": "Caltech_0051491",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6759299568212468
+    },
+    {
+      "subject_index": 62,
+      "sub_id": 51492,
+      "file_id": "Caltech_0051492",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 1,
+      "score": 0.040102820044760304
+    },
+    {
+      "subject_index": 63,
+      "sub_id": 51493,
+      "file_id": "Caltech_0051493",
+      "site_id": "CALTECH",
+      "label": 0,
+      "fold": 4,
+      "score": 0.834836465526167
+    },
+    {
+      "subject_index": 64,
+      "sub_id": 50772,
+      "file_id": "KKI_0050772",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 1,
+      "score": 0.20236104994219262
+    },
+    {
+      "subject_index": 65,
+      "sub_id": 50773,
+      "file_id": "KKI_0050773",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.008162914501274803
+    },
+    {
+      "subject_index": 66,
+      "sub_id": 50774,
+      "file_id": "KKI_0050774",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.9884723480210916
+    },
+    {
+      "subject_index": 67,
+      "sub_id": 50775,
+      "file_id": "KKI_0050775",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.11080980515689824
+    },
+    {
+      "subject_index": 68,
+      "sub_id": 50776,
+      "file_id": "KKI_0050776",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.13779319408437538
+    },
+    {
+      "subject_index": 69,
+      "sub_id": 50777,
+      "file_id": "KKI_0050777",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 1,
+      "score": 0.038110001342461945
+    },
+    {
+      "subject_index": 70,
+      "sub_id": 50778,
+      "file_id": "KKI_0050778",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8583348507482073
+    },
+    {
+      "subject_index": 71,
+      "sub_id": 50779,
+      "file_id": "KKI_0050779",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.31411865648151477
+    },
+    {
+      "subject_index": 72,
+      "sub_id": 50780,
+      "file_id": "KKI_0050780",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.497559419784997
+    },
+    {
+      "subject_index": 73,
+      "sub_id": 50781,
+      "file_id": "KKI_0050781",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5567243285933183
+    },
+    {
+      "subject_index": 74,
+      "sub_id": 50782,
+      "file_id": "KKI_0050782",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1425312621768514
+    },
+    {
+      "subject_index": 75,
+      "sub_id": 50783,
+      "file_id": "KKI_0050783",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.21517700142631133
+    },
+    {
+      "subject_index": 76,
+      "sub_id": 50784,
+      "file_id": "KKI_0050784",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.13147953670262177
+    },
+    {
+      "subject_index": 77,
+      "sub_id": 50785,
+      "file_id": "KKI_0050785",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9025684715105641
+    },
+    {
+      "subject_index": 78,
+      "sub_id": 50786,
+      "file_id": "KKI_0050786",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5728184237077109
+    },
+    {
+      "subject_index": 79,
+      "sub_id": 50787,
+      "file_id": "KKI_0050787",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1844642191942035
+    },
+    {
+      "subject_index": 80,
+      "sub_id": 50788,
+      "file_id": "KKI_0050788",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.016202400024742995
+    },
+    {
+      "subject_index": 81,
+      "sub_id": 50789,
+      "file_id": "KKI_0050789",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5510373672611553
+    },
+    {
+      "subject_index": 82,
+      "sub_id": 50790,
+      "file_id": "KKI_0050790",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.3310943244436659
+    },
+    {
+      "subject_index": 83,
+      "sub_id": 50795,
+      "file_id": "KKI_0050795",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 2,
+      "score": 0.28230557107650245
+    },
+    {
+      "subject_index": 84,
+      "sub_id": 50796,
+      "file_id": "KKI_0050796",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9844235422335825
+    },
+    {
+      "subject_index": 85,
+      "sub_id": 50797,
+      "file_id": "KKI_0050797",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9633952605120832
+    },
+    {
+      "subject_index": 86,
+      "sub_id": 50798,
+      "file_id": "KKI_0050798",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 0,
+      "score": 0.19327711933508923
+    },
+    {
+      "subject_index": 87,
+      "sub_id": 50799,
+      "file_id": "KKI_0050799",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9660591797102103
+    },
+    {
+      "subject_index": 88,
+      "sub_id": 50800,
+      "file_id": "KKI_0050800",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8267369928790459
+    },
+    {
+      "subject_index": 89,
+      "sub_id": 50801,
+      "file_id": "KKI_0050801",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4547032807884914
+    },
+    {
+      "subject_index": 90,
+      "sub_id": 50802,
+      "file_id": "KKI_0050802",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 3,
+      "score": 0.2560708791426933
+    },
+    {
+      "subject_index": 91,
+      "sub_id": 50803,
+      "file_id": "KKI_0050803",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8629968061450092
+    },
+    {
+      "subject_index": 92,
+      "sub_id": 50804,
+      "file_id": "KKI_0050804",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 2,
+      "score": 0.3763345559412989
+    },
+    {
+      "subject_index": 93,
+      "sub_id": 50807,
+      "file_id": "KKI_0050807",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9986979081802461
+    },
+    {
+      "subject_index": 94,
+      "sub_id": 50812,
+      "file_id": "KKI_0050812",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9765773235540842
+    },
+    {
+      "subject_index": 95,
+      "sub_id": 50814,
+      "file_id": "KKI_0050814",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 2,
+      "score": 0.008764326991576242
+    },
+    {
+      "subject_index": 96,
+      "sub_id": 50815,
+      "file_id": "KKI_0050815",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9831122336889143
+    },
+    {
+      "subject_index": 97,
+      "sub_id": 50818,
+      "file_id": "KKI_0050818",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 1,
+      "score": 0.07704825401344574
+    },
+    {
+      "subject_index": 98,
+      "sub_id": 50819,
+      "file_id": "KKI_0050819",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.3200097355562639
+    },
+    {
+      "subject_index": 99,
+      "sub_id": 50820,
+      "file_id": "KKI_0050820",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.20520738543516293
+    },
+    {
+      "subject_index": 100,
+      "sub_id": 50821,
+      "file_id": "KKI_0050821",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6807495766151876
+    },
+    {
+      "subject_index": 101,
+      "sub_id": 50822,
+      "file_id": "KKI_0050822",
+      "site_id": "KKI",
+      "label": 0,
+      "fold": 3,
+      "score": 0.1256545068914896
+    },
+    {
+      "subject_index": 102,
+      "sub_id": 50823,
+      "file_id": "KKI_0050823",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 1,
+      "score": 0.239998858757988
+    },
+    {
+      "subject_index": 103,
+      "sub_id": 50824,
+      "file_id": "KKI_0050824",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 1,
+      "score": 0.471156797599658
+    },
+    {
+      "subject_index": 104,
+      "sub_id": 50825,
+      "file_id": "KKI_0050825",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6872338429449181
+    },
+    {
+      "subject_index": 105,
+      "sub_id": 50826,
+      "file_id": "KKI_0050826",
+      "site_id": "KKI",
+      "label": 1,
+      "fold": 0,
+      "score": 0.988950879652686
+    },
+    {
+      "subject_index": 106,
+      "sub_id": 50682,
+      "file_id": "Leuven_1_0050682",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.1085337639535417
+    },
+    {
+      "subject_index": 107,
+      "sub_id": 50683,
+      "file_id": "Leuven_1_0050683",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.011439330047093714
+    },
+    {
+      "subject_index": 108,
+      "sub_id": 50685,
+      "file_id": "Leuven_1_0050685",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.10618358082817467
+    },
+    {
+      "subject_index": 109,
+      "sub_id": 50686,
+      "file_id": "Leuven_1_0050686",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9056990802409065
+    },
+    {
+      "subject_index": 110,
+      "sub_id": 50687,
+      "file_id": "Leuven_1_0050687",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.01845247434064991
+    },
+    {
+      "subject_index": 111,
+      "sub_id": 50688,
+      "file_id": "Leuven_1_0050688",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0907577492105675
+    },
+    {
+      "subject_index": 112,
+      "sub_id": 50689,
+      "file_id": "Leuven_1_0050689",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.8936116756889775
+    },
+    {
+      "subject_index": 113,
+      "sub_id": 50690,
+      "file_id": "Leuven_1_0050690",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.0027221541918827337
+    },
+    {
+      "subject_index": 114,
+      "sub_id": 50691,
+      "file_id": "Leuven_1_0050691",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.010958353100889062
+    },
+    {
+      "subject_index": 115,
+      "sub_id": 50692,
+      "file_id": "Leuven_1_0050692",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.40254668654484604
+    },
+    {
+      "subject_index": 116,
+      "sub_id": 50693,
+      "file_id": "Leuven_1_0050693",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.1972698537654328
+    },
+    {
+      "subject_index": 117,
+      "sub_id": 50694,
+      "file_id": "Leuven_1_0050694",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8221856022327977
+    },
+    {
+      "subject_index": 118,
+      "sub_id": 50695,
+      "file_id": "Leuven_1_0050695",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6445621863398928
+    },
+    {
+      "subject_index": 119,
+      "sub_id": 50696,
+      "file_id": "Leuven_1_0050696",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.07048482611714253
+    },
+    {
+      "subject_index": 120,
+      "sub_id": 50697,
+      "file_id": "Leuven_1_0050697",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.012361639015166822
+    },
+    {
+      "subject_index": 121,
+      "sub_id": 50698,
+      "file_id": "Leuven_1_0050698",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.014611924709323487
+    },
+    {
+      "subject_index": 122,
+      "sub_id": 50699,
+      "file_id": "Leuven_1_0050699",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.28987597822771
+    },
+    {
+      "subject_index": 123,
+      "sub_id": 50700,
+      "file_id": "Leuven_1_0050700",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9038283496551736
+    },
+    {
+      "subject_index": 124,
+      "sub_id": 50701,
+      "file_id": "Leuven_1_0050701",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.7711346852385278
+    },
+    {
+      "subject_index": 125,
+      "sub_id": 50702,
+      "file_id": "Leuven_1_0050702",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.6781677556980473
+    },
+    {
+      "subject_index": 126,
+      "sub_id": 50703,
+      "file_id": "Leuven_1_0050703",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.11629302216872381
+    },
+    {
+      "subject_index": 127,
+      "sub_id": 50704,
+      "file_id": "Leuven_1_0050704",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.0013302936955117807
+    },
+    {
+      "subject_index": 128,
+      "sub_id": 50705,
+      "file_id": "Leuven_1_0050705",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.02387100675993919
+    },
+    {
+      "subject_index": 129,
+      "sub_id": 50706,
+      "file_id": "Leuven_1_0050706",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.7684635168600329
+    },
+    {
+      "subject_index": 130,
+      "sub_id": 50707,
+      "file_id": "Leuven_1_0050707",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.022735275191464822
+    },
+    {
+      "subject_index": 131,
+      "sub_id": 50708,
+      "file_id": "Leuven_1_0050708",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.3912250531806757
+    },
+    {
+      "subject_index": 132,
+      "sub_id": 50709,
+      "file_id": "Leuven_1_0050709",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.25604371359722894
+    },
+    {
+      "subject_index": 133,
+      "sub_id": 50710,
+      "file_id": "Leuven_1_0050710",
+      "site_id": "LEUVEN_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.0017254050601946994
+    },
+    {
+      "subject_index": 134,
+      "sub_id": 50711,
+      "file_id": "Leuven_1_0050711",
+      "site_id": "LEUVEN_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.03625124443502647
+    },
+    {
+      "subject_index": 135,
+      "sub_id": 50722,
+      "file_id": "Leuven_2_0050722",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.35149164393809496
+    },
+    {
+      "subject_index": 136,
+      "sub_id": 50723,
+      "file_id": "Leuven_2_0050723",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.008388253594765683
+    },
+    {
+      "subject_index": 137,
+      "sub_id": 50724,
+      "file_id": "Leuven_2_0050724",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.22710754210026818
+    },
+    {
+      "subject_index": 138,
+      "sub_id": 50725,
+      "file_id": "Leuven_2_0050725",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0015905990226290653
+    },
+    {
+      "subject_index": 139,
+      "sub_id": 50726,
+      "file_id": "Leuven_2_0050726",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 4,
+      "score": 5.2942964407010796e-05
+    },
+    {
+      "subject_index": 140,
+      "sub_id": 50727,
+      "file_id": "Leuven_2_0050727",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.4082039323686408
+    },
+    {
+      "subject_index": 141,
+      "sub_id": 50728,
+      "file_id": "Leuven_2_0050728",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0032707677717671193
+    },
+    {
+      "subject_index": 142,
+      "sub_id": 50730,
+      "file_id": "Leuven_2_0050730",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.07555773061871823
+    },
+    {
+      "subject_index": 143,
+      "sub_id": 50731,
+      "file_id": "Leuven_2_0050731",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.061006047582136076
+    },
+    {
+      "subject_index": 144,
+      "sub_id": 50732,
+      "file_id": "Leuven_2_0050732",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.06868396173028045
+    },
+    {
+      "subject_index": 145,
+      "sub_id": 50733,
+      "file_id": "Leuven_2_0050733",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.012594663168735719
+    },
+    {
+      "subject_index": 146,
+      "sub_id": 50735,
+      "file_id": "Leuven_2_0050735",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0003891085120339695
+    },
+    {
+      "subject_index": 147,
+      "sub_id": 50736,
+      "file_id": "Leuven_2_0050736",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 1,
+      "score": 0.017369827912585296
+    },
+    {
+      "subject_index": 148,
+      "sub_id": 50737,
+      "file_id": "Leuven_2_0050737",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.005355340465943421
+    },
+    {
+      "subject_index": 149,
+      "sub_id": 50738,
+      "file_id": "Leuven_2_0050738",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0576855185339269
+    },
+    {
+      "subject_index": 150,
+      "sub_id": 50739,
+      "file_id": "Leuven_2_0050739",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.21421473117548945
+    },
+    {
+      "subject_index": 151,
+      "sub_id": 50740,
+      "file_id": "Leuven_2_0050740",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0075713625611037805
+    },
+    {
+      "subject_index": 152,
+      "sub_id": 50741,
+      "file_id": "Leuven_2_0050741",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.06868184828955408
+    },
+    {
+      "subject_index": 153,
+      "sub_id": 50742,
+      "file_id": "Leuven_2_0050742",
+      "site_id": "LEUVEN_2",
+      "label": 0,
+      "fold": 1,
+      "score": 0.2656582964937843
+    },
+    {
+      "subject_index": 154,
+      "sub_id": 50743,
+      "file_id": "Leuven_2_0050743",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6257636196835756
+    },
+    {
+      "subject_index": 155,
+      "sub_id": 50744,
+      "file_id": "Leuven_2_0050744",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.999356603922269
+    },
+    {
+      "subject_index": 156,
+      "sub_id": 50745,
+      "file_id": "Leuven_2_0050745",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7886449027295261
+    },
+    {
+      "subject_index": 157,
+      "sub_id": 50746,
+      "file_id": "Leuven_2_0050746",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4681268490422525
+    },
+    {
+      "subject_index": 158,
+      "sub_id": 50747,
+      "file_id": "Leuven_2_0050747",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9999974406471168
+    },
+    {
+      "subject_index": 159,
+      "sub_id": 50748,
+      "file_id": "Leuven_2_0050748",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.39513803175438084
+    },
+    {
+      "subject_index": 160,
+      "sub_id": 50749,
+      "file_id": "Leuven_2_0050749",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9493235466774196
+    },
+    {
+      "subject_index": 161,
+      "sub_id": 50750,
+      "file_id": "Leuven_2_0050750",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9988717490276773
+    },
+    {
+      "subject_index": 162,
+      "sub_id": 50751,
+      "file_id": "Leuven_2_0050751",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.14484676154738418
+    },
+    {
+      "subject_index": 163,
+      "sub_id": 50752,
+      "file_id": "Leuven_2_0050752",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7175910871652023
+    },
+    {
+      "subject_index": 164,
+      "sub_id": 50753,
+      "file_id": "Leuven_2_0050753",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.480612237803942
+    },
+    {
+      "subject_index": 165,
+      "sub_id": 50754,
+      "file_id": "Leuven_2_0050754",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5173778409546045
+    },
+    {
+      "subject_index": 166,
+      "sub_id": 50755,
+      "file_id": "Leuven_2_0050755",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.00762317694416147
+    },
+    {
+      "subject_index": 167,
+      "sub_id": 50756,
+      "file_id": "Leuven_2_0050756",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.017900143187849552
+    },
+    {
+      "subject_index": 168,
+      "sub_id": 50757,
+      "file_id": "Leuven_2_0050757",
+      "site_id": "LEUVEN_2",
+      "label": 1,
+      "fold": 0,
+      "score": 0.0033122018002462303
+    },
+    {
+      "subject_index": 169,
+      "sub_id": 51329,
+      "file_id": "MaxMun_d_0051329",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.06180799647835565
+    },
+    {
+      "subject_index": 170,
+      "sub_id": 51330,
+      "file_id": "MaxMun_d_0051330",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.3866082154848112
+    },
+    {
+      "subject_index": 171,
+      "sub_id": 51331,
+      "file_id": "MaxMun_d_0051331",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6106970620921345
+    },
+    {
+      "subject_index": 172,
+      "sub_id": 51349,
+      "file_id": "MaxMun_d_0051349",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.16329344286215008
+    },
+    {
+      "subject_index": 173,
+      "sub_id": 51350,
+      "file_id": "MaxMun_d_0051350",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9970179249950238
+    },
+    {
+      "subject_index": 174,
+      "sub_id": 51351,
+      "file_id": "MaxMun_d_0051351",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.691518052850077
+    },
+    {
+      "subject_index": 175,
+      "sub_id": 51352,
+      "file_id": "MaxMun_d_0051352",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.994148330065764
+    },
+    {
+      "subject_index": 176,
+      "sub_id": 51353,
+      "file_id": "MaxMun_d_0051353",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9970561829843001
+    },
+    {
+      "subject_index": 177,
+      "sub_id": 51354,
+      "file_id": "MaxMun_d_0051354",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7317001375230114
+    },
+    {
+      "subject_index": 178,
+      "sub_id": 51355,
+      "file_id": "MaxMun_d_0051355",
+      "site_id": "MAX_MUN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9294277297333009
+    },
+    {
+      "subject_index": 179,
+      "sub_id": 51356,
+      "file_id": "MaxMun_d_0051356",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 3,
+      "score": 0.7658552629984215
+    },
+    {
+      "subject_index": 180,
+      "sub_id": 51357,
+      "file_id": "MaxMun_d_0051357",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 0,
+      "score": 0.002992163751443255
+    },
+    {
+      "subject_index": 181,
+      "sub_id": 51358,
+      "file_id": "MaxMun_d_0051358",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9932631416239258
+    },
+    {
+      "subject_index": 182,
+      "sub_id": 51359,
+      "file_id": "MaxMun_d_0051359",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9805132060974363
+    },
+    {
+      "subject_index": 183,
+      "sub_id": 51360,
+      "file_id": "MaxMun_d_0051360",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 0,
+      "score": 0.563338516189266
+    },
+    {
+      "subject_index": 184,
+      "sub_id": 51361,
+      "file_id": "MaxMun_d_0051361",
+      "site_id": "MAX_MUN",
+      "label": 0,
+      "fold": 3,
+      "score": 0.4900089577278118
+    },
+    {
+      "subject_index": 185,
+      "sub_id": 50952,
+      "file_id": "NYU_0050952",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6250458950401885
+    },
+    {
+      "subject_index": 186,
+      "sub_id": 50954,
+      "file_id": "NYU_0050954",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5491502234500457
+    },
+    {
+      "subject_index": 187,
+      "sub_id": 50955,
+      "file_id": "NYU_0050955",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.5992336043106886
+    },
+    {
+      "subject_index": 188,
+      "sub_id": 50956,
+      "file_id": "NYU_0050956",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8617280246567101
+    },
+    {
+      "subject_index": 189,
+      "sub_id": 50957,
+      "file_id": "NYU_0050957",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.46445300600400585
+    },
+    {
+      "subject_index": 190,
+      "sub_id": 50958,
+      "file_id": "NYU_0050958",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5694760942180483
+    },
+    {
+      "subject_index": 191,
+      "sub_id": 50959,
+      "file_id": "NYU_0050959",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6616447568808783
+    },
+    {
+      "subject_index": 192,
+      "sub_id": 50960,
+      "file_id": "NYU_0050960",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.06453002414771261
+    },
+    {
+      "subject_index": 193,
+      "sub_id": 50961,
+      "file_id": "NYU_0050961",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9028322065064159
+    },
+    {
+      "subject_index": 194,
+      "sub_id": 50962,
+      "file_id": "NYU_0050962",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9113681698224915
+    },
+    {
+      "subject_index": 195,
+      "sub_id": 50964,
+      "file_id": "NYU_0050964",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9630120950165072
+    },
+    {
+      "subject_index": 196,
+      "sub_id": 50965,
+      "file_id": "NYU_0050965",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8910526967003778
+    },
+    {
+      "subject_index": 197,
+      "sub_id": 50966,
+      "file_id": "NYU_0050966",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6122875224636722
+    },
+    {
+      "subject_index": 198,
+      "sub_id": 50967,
+      "file_id": "NYU_0050967",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8677467570347503
+    },
+    {
+      "subject_index": 199,
+      "sub_id": 50968,
+      "file_id": "NYU_0050968",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9995839066892523
+    },
+    {
+      "subject_index": 200,
+      "sub_id": 50969,
+      "file_id": "NYU_0050969",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9630604537494633
+    },
+    {
+      "subject_index": 201,
+      "sub_id": 50970,
+      "file_id": "NYU_0050970",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9029919188826904
+    },
+    {
+      "subject_index": 202,
+      "sub_id": 50972,
+      "file_id": "NYU_0050972",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9883991580985063
+    },
+    {
+      "subject_index": 203,
+      "sub_id": 50973,
+      "file_id": "NYU_0050973",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9646142577836393
+    },
+    {
+      "subject_index": 204,
+      "sub_id": 50974,
+      "file_id": "NYU_0050974",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.7250438895617373
+    },
+    {
+      "subject_index": 205,
+      "sub_id": 50976,
+      "file_id": "NYU_0050976",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.17251891473511033
+    },
+    {
+      "subject_index": 206,
+      "sub_id": 50977,
+      "file_id": "NYU_0050977",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.006297376812052753
+    },
+    {
+      "subject_index": 207,
+      "sub_id": 50978,
+      "file_id": "NYU_0050978",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7038418681808891
+    },
+    {
+      "subject_index": 208,
+      "sub_id": 50979,
+      "file_id": "NYU_0050979",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8377872215060693
+    },
+    {
+      "subject_index": 209,
+      "sub_id": 50981,
+      "file_id": "NYU_0050981",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.013564926401204363
+    },
+    {
+      "subject_index": 210,
+      "sub_id": 50982,
+      "file_id": "NYU_0050982",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.009558465630400298
+    },
+    {
+      "subject_index": 211,
+      "sub_id": 50983,
+      "file_id": "NYU_0050983",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.761393509181977
+    },
+    {
+      "subject_index": 212,
+      "sub_id": 50984,
+      "file_id": "NYU_0050984",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.16811044647950676
+    },
+    {
+      "subject_index": 213,
+      "sub_id": 50985,
+      "file_id": "NYU_0050985",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.05033506612738841
+    },
+    {
+      "subject_index": 214,
+      "sub_id": 50986,
+      "file_id": "NYU_0050986",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9974802949881698
+    },
+    {
+      "subject_index": 215,
+      "sub_id": 50987,
+      "file_id": "NYU_0050987",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9919665662487681
+    },
+    {
+      "subject_index": 216,
+      "sub_id": 50988,
+      "file_id": "NYU_0050988",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6800929471856585
+    },
+    {
+      "subject_index": 217,
+      "sub_id": 50989,
+      "file_id": "NYU_0050989",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9887279729849713
+    },
+    {
+      "subject_index": 218,
+      "sub_id": 50990,
+      "file_id": "NYU_0050990",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9858847965484845
+    },
+    {
+      "subject_index": 219,
+      "sub_id": 50991,
+      "file_id": "NYU_0050991",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.040528372770381606
+    },
+    {
+      "subject_index": 220,
+      "sub_id": 50992,
+      "file_id": "NYU_0050992",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.17130783182256
+    },
+    {
+      "subject_index": 221,
+      "sub_id": 50993,
+      "file_id": "NYU_0050993",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.708693439917401
+    },
+    {
+      "subject_index": 222,
+      "sub_id": 50994,
+      "file_id": "NYU_0050994",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9540837786237464
+    },
+    {
+      "subject_index": 223,
+      "sub_id": 50995,
+      "file_id": "NYU_0050995",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.2966534091952589
+    },
+    {
+      "subject_index": 224,
+      "sub_id": 50996,
+      "file_id": "NYU_0050996",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5966798580509407
+    },
+    {
+      "subject_index": 225,
+      "sub_id": 50997,
+      "file_id": "NYU_0050997",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7173953874852854
+    },
+    {
+      "subject_index": 226,
+      "sub_id": 50998,
+      "file_id": "NYU_0050998",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9311713351095174
+    },
+    {
+      "subject_index": 227,
+      "sub_id": 50999,
+      "file_id": "NYU_0050999",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.13810666706221833
+    },
+    {
+      "subject_index": 228,
+      "sub_id": 51000,
+      "file_id": "NYU_0051000",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9932197258603653
+    },
+    {
+      "subject_index": 229,
+      "sub_id": 51001,
+      "file_id": "NYU_0051001",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9682175857760651
+    },
+    {
+      "subject_index": 230,
+      "sub_id": 51002,
+      "file_id": "NYU_0051002",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.923550246373414
+    },
+    {
+      "subject_index": 231,
+      "sub_id": 51003,
+      "file_id": "NYU_0051003",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9208139264984935
+    },
+    {
+      "subject_index": 232,
+      "sub_id": 51006,
+      "file_id": "NYU_0051006",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.054562623512019744
+    },
+    {
+      "subject_index": 233,
+      "sub_id": 51007,
+      "file_id": "NYU_0051007",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.39152324898523133
+    },
+    {
+      "subject_index": 234,
+      "sub_id": 51008,
+      "file_id": "NYU_0051008",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.05208264434590846
+    },
+    {
+      "subject_index": 235,
+      "sub_id": 51009,
+      "file_id": "NYU_0051009",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9982622657983229
+    },
+    {
+      "subject_index": 236,
+      "sub_id": 51010,
+      "file_id": "NYU_0051010",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8884571048301909
+    },
+    {
+      "subject_index": 237,
+      "sub_id": 51011,
+      "file_id": "NYU_0051011",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.991611657125917
+    },
+    {
+      "subject_index": 238,
+      "sub_id": 51012,
+      "file_id": "NYU_0051012",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7769276839240314
+    },
+    {
+      "subject_index": 239,
+      "sub_id": 51013,
+      "file_id": "NYU_0051013",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9793444872345731
+    },
+    {
+      "subject_index": 240,
+      "sub_id": 51014,
+      "file_id": "NYU_0051014",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.44928921023455237
+    },
+    {
+      "subject_index": 241,
+      "sub_id": 51015,
+      "file_id": "NYU_0051015",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.03143540375000861
+    },
+    {
+      "subject_index": 242,
+      "sub_id": 51016,
+      "file_id": "NYU_0051016",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8173542384071524
+    },
+    {
+      "subject_index": 243,
+      "sub_id": 51017,
+      "file_id": "NYU_0051017",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9597296808567184
+    },
+    {
+      "subject_index": 244,
+      "sub_id": 51018,
+      "file_id": "NYU_0051018",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.1309257414055642
+    },
+    {
+      "subject_index": 245,
+      "sub_id": 51019,
+      "file_id": "NYU_0051019",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9060900981069201
+    },
+    {
+      "subject_index": 246,
+      "sub_id": 51020,
+      "file_id": "NYU_0051020",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7232659893110533
+    },
+    {
+      "subject_index": 247,
+      "sub_id": 51021,
+      "file_id": "NYU_0051021",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9292138326367345
+    },
+    {
+      "subject_index": 248,
+      "sub_id": 51023,
+      "file_id": "NYU_0051023",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9563373005670222
+    },
+    {
+      "subject_index": 249,
+      "sub_id": 51024,
+      "file_id": "NYU_0051024",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7991555235413917
+    },
+    {
+      "subject_index": 250,
+      "sub_id": 51025,
+      "file_id": "NYU_0051025",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.005806067409126182
+    },
+    {
+      "subject_index": 251,
+      "sub_id": 51026,
+      "file_id": "NYU_0051026",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.1583065058913715
+    },
+    {
+      "subject_index": 252,
+      "sub_id": 51027,
+      "file_id": "NYU_0051027",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.22662322054179623
+    },
+    {
+      "subject_index": 253,
+      "sub_id": 51028,
+      "file_id": "NYU_0051028",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5522318557286697
+    },
+    {
+      "subject_index": 254,
+      "sub_id": 51029,
+      "file_id": "NYU_0051029",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5665800193198548
+    },
+    {
+      "subject_index": 255,
+      "sub_id": 51030,
+      "file_id": "NYU_0051030",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7318591333582801
+    },
+    {
+      "subject_index": 256,
+      "sub_id": 51032,
+      "file_id": "NYU_0051032",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9959247515128083
+    },
+    {
+      "subject_index": 257,
+      "sub_id": 51033,
+      "file_id": "NYU_0051033",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9921596710137732
+    },
+    {
+      "subject_index": 258,
+      "sub_id": 51034,
+      "file_id": "NYU_0051034",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.0038115007517047824
+    },
+    {
+      "subject_index": 259,
+      "sub_id": 51035,
+      "file_id": "NYU_0051035",
+      "site_id": "NYU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9377656080999535
+    },
+    {
+      "subject_index": 260,
+      "sub_id": 51036,
+      "file_id": "NYU_0051036",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.7920531100693822
+    },
+    {
+      "subject_index": 261,
+      "sub_id": 51038,
+      "file_id": "NYU_0051038",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.01745083570101858
+    },
+    {
+      "subject_index": 262,
+      "sub_id": 51039,
+      "file_id": "NYU_0051039",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5849611603332012
+    },
+    {
+      "subject_index": 263,
+      "sub_id": 51040,
+      "file_id": "NYU_0051040",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0010988493957940634
+    },
+    {
+      "subject_index": 264,
+      "sub_id": 51041,
+      "file_id": "NYU_0051041",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.004997572737694201
+    },
+    {
+      "subject_index": 265,
+      "sub_id": 51042,
+      "file_id": "NYU_0051042",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4495250221973273
+    },
+    {
+      "subject_index": 266,
+      "sub_id": 51044,
+      "file_id": "NYU_0051044",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00018796227126956097
+    },
+    {
+      "subject_index": 267,
+      "sub_id": 51045,
+      "file_id": "NYU_0051045",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.008655751552087
+    },
+    {
+      "subject_index": 268,
+      "sub_id": 51046,
+      "file_id": "NYU_0051046",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.2648665683966236
+    },
+    {
+      "subject_index": 269,
+      "sub_id": 51047,
+      "file_id": "NYU_0051047",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.871356519568737
+    },
+    {
+      "subject_index": 270,
+      "sub_id": 51048,
+      "file_id": "NYU_0051048",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.3569754489702822
+    },
+    {
+      "subject_index": 271,
+      "sub_id": 51049,
+      "file_id": "NYU_0051049",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5497029665743625
+    },
+    {
+      "subject_index": 272,
+      "sub_id": 51050,
+      "file_id": "NYU_0051050",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 3.229699500465415e-05
+    },
+    {
+      "subject_index": 273,
+      "sub_id": 51051,
+      "file_id": "NYU_0051051",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0019210342141379108
+    },
+    {
+      "subject_index": 274,
+      "sub_id": 51052,
+      "file_id": "NYU_0051052",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.03507763595771562
+    },
+    {
+      "subject_index": 275,
+      "sub_id": 51053,
+      "file_id": "NYU_0051053",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8411083563204151
+    },
+    {
+      "subject_index": 276,
+      "sub_id": 51054,
+      "file_id": "NYU_0051054",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0017711115967782118
+    },
+    {
+      "subject_index": 277,
+      "sub_id": 51055,
+      "file_id": "NYU_0051055",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0003627764768989746
+    },
+    {
+      "subject_index": 278,
+      "sub_id": 51056,
+      "file_id": "NYU_0051056",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0027644086839917125
+    },
+    {
+      "subject_index": 279,
+      "sub_id": 51057,
+      "file_id": "NYU_0051057",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 2.6837780299711496e-05
+    },
+    {
+      "subject_index": 280,
+      "sub_id": 51058,
+      "file_id": "NYU_0051058",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0014233870312004894
+    },
+    {
+      "subject_index": 281,
+      "sub_id": 51059,
+      "file_id": "NYU_0051059",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.3719466015374793
+    },
+    {
+      "subject_index": 282,
+      "sub_id": 51060,
+      "file_id": "NYU_0051060",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.43094982261966147
+    },
+    {
+      "subject_index": 283,
+      "sub_id": 51061,
+      "file_id": "NYU_0051061",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.01699976479969542
+    },
+    {
+      "subject_index": 284,
+      "sub_id": 51062,
+      "file_id": "NYU_0051062",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.17601377503076043
+    },
+    {
+      "subject_index": 285,
+      "sub_id": 51063,
+      "file_id": "NYU_0051063",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0008128742816203529
+    },
+    {
+      "subject_index": 286,
+      "sub_id": 51064,
+      "file_id": "NYU_0051064",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.04119282287867079
+    },
+    {
+      "subject_index": 287,
+      "sub_id": 51065,
+      "file_id": "NYU_0051065",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.3030757877548472
+    },
+    {
+      "subject_index": 288,
+      "sub_id": 51066,
+      "file_id": "NYU_0051066",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.25420520439660504
+    },
+    {
+      "subject_index": 289,
+      "sub_id": 51067,
+      "file_id": "NYU_0051067",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0005997289403004558
+    },
+    {
+      "subject_index": 290,
+      "sub_id": 51068,
+      "file_id": "NYU_0051068",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6442120265408248
+    },
+    {
+      "subject_index": 291,
+      "sub_id": 51069,
+      "file_id": "NYU_0051069",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.03809528576809434
+    },
+    {
+      "subject_index": 292,
+      "sub_id": 51070,
+      "file_id": "NYU_0051070",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.15935683468406578
+    },
+    {
+      "subject_index": 293,
+      "sub_id": 51071,
+      "file_id": "NYU_0051071",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6768181233707958
+    },
+    {
+      "subject_index": 294,
+      "sub_id": 51072,
+      "file_id": "NYU_0051072",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.19253932494113432
+    },
+    {
+      "subject_index": 295,
+      "sub_id": 51073,
+      "file_id": "NYU_0051073",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.19829127355694437
+    },
+    {
+      "subject_index": 296,
+      "sub_id": 51074,
+      "file_id": "NYU_0051074",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.11105004859716956
+    },
+    {
+      "subject_index": 297,
+      "sub_id": 51075,
+      "file_id": "NYU_0051075",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.009782733275399476
+    },
+    {
+      "subject_index": 298,
+      "sub_id": 51076,
+      "file_id": "NYU_0051076",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.01871871100502425
+    },
+    {
+      "subject_index": 299,
+      "sub_id": 51077,
+      "file_id": "NYU_0051077",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6246272994451623
+    },
+    {
+      "subject_index": 300,
+      "sub_id": 51078,
+      "file_id": "NYU_0051078",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.003865873577810033
+    },
+    {
+      "subject_index": 301,
+      "sub_id": 51079,
+      "file_id": "NYU_0051079",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8278723370387912
+    },
+    {
+      "subject_index": 302,
+      "sub_id": 51080,
+      "file_id": "NYU_0051080",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0029186934103455167
+    },
+    {
+      "subject_index": 303,
+      "sub_id": 51081,
+      "file_id": "NYU_0051081",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0784137654350299
+    },
+    {
+      "subject_index": 304,
+      "sub_id": 51082,
+      "file_id": "NYU_0051082",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.45372152216073947
+    },
+    {
+      "subject_index": 305,
+      "sub_id": 51083,
+      "file_id": "NYU_0051083",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.7071142190623024
+    },
+    {
+      "subject_index": 306,
+      "sub_id": 51084,
+      "file_id": "NYU_0051084",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7937563028570135
+    },
+    {
+      "subject_index": 307,
+      "sub_id": 51085,
+      "file_id": "NYU_0051085",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8349165308320452
+    },
+    {
+      "subject_index": 308,
+      "sub_id": 51086,
+      "file_id": "NYU_0051086",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.6210602024541737
+    },
+    {
+      "subject_index": 309,
+      "sub_id": 51087,
+      "file_id": "NYU_0051087",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.44043375940734025
+    },
+    {
+      "subject_index": 310,
+      "sub_id": 51088,
+      "file_id": "NYU_0051088",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.1300775916886657
+    },
+    {
+      "subject_index": 311,
+      "sub_id": 51089,
+      "file_id": "NYU_0051089",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.35444709741673175
+    },
+    {
+      "subject_index": 312,
+      "sub_id": 51090,
+      "file_id": "NYU_0051090",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0032207048315669277
+    },
+    {
+      "subject_index": 313,
+      "sub_id": 51091,
+      "file_id": "NYU_0051091",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4193589501858067
+    },
+    {
+      "subject_index": 314,
+      "sub_id": 51093,
+      "file_id": "NYU_0051093",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0199189097700895
+    },
+    {
+      "subject_index": 315,
+      "sub_id": 51094,
+      "file_id": "NYU_0051094",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.12028723646257033
+    },
+    {
+      "subject_index": 316,
+      "sub_id": 51095,
+      "file_id": "NYU_0051095",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.954423582958189
+    },
+    {
+      "subject_index": 317,
+      "sub_id": 51096,
+      "file_id": "NYU_0051096",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6298316554228884
+    },
+    {
+      "subject_index": 318,
+      "sub_id": 51097,
+      "file_id": "NYU_0051097",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.08463242231132503
+    },
+    {
+      "subject_index": 319,
+      "sub_id": 51098,
+      "file_id": "NYU_0051098",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 6.601921878682833e-06
+    },
+    {
+      "subject_index": 320,
+      "sub_id": 51099,
+      "file_id": "NYU_0051099",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.006346607091745343
+    },
+    {
+      "subject_index": 321,
+      "sub_id": 51100,
+      "file_id": "NYU_0051100",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.08613363500767582
+    },
+    {
+      "subject_index": 322,
+      "sub_id": 51101,
+      "file_id": "NYU_0051101",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.16788989030342236
+    },
+    {
+      "subject_index": 323,
+      "sub_id": 51102,
+      "file_id": "NYU_0051102",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.05421067325239679
+    },
+    {
+      "subject_index": 324,
+      "sub_id": 51103,
+      "file_id": "NYU_0051103",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1400112040310523
+    },
+    {
+      "subject_index": 325,
+      "sub_id": 51104,
+      "file_id": "NYU_0051104",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.10001494457735757
+    },
+    {
+      "subject_index": 326,
+      "sub_id": 51105,
+      "file_id": "NYU_0051105",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.000246014797195693
+    },
+    {
+      "subject_index": 327,
+      "sub_id": 51106,
+      "file_id": "NYU_0051106",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.09495765346342509
+    },
+    {
+      "subject_index": 328,
+      "sub_id": 51107,
+      "file_id": "NYU_0051107",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5230552220466054
+    },
+    {
+      "subject_index": 329,
+      "sub_id": 51109,
+      "file_id": "NYU_0051109",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0008956702561467946
+    },
+    {
+      "subject_index": 330,
+      "sub_id": 51110,
+      "file_id": "NYU_0051110",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.2030103902113309
+    },
+    {
+      "subject_index": 331,
+      "sub_id": 51111,
+      "file_id": "NYU_0051111",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.051288561871781574
+    },
+    {
+      "subject_index": 332,
+      "sub_id": 51112,
+      "file_id": "NYU_0051112",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0012809053415313758
+    },
+    {
+      "subject_index": 333,
+      "sub_id": 51113,
+      "file_id": "NYU_0051113",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1459249589807116
+    },
+    {
+      "subject_index": 334,
+      "sub_id": 51114,
+      "file_id": "NYU_0051114",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.29481696349641817
+    },
+    {
+      "subject_index": 335,
+      "sub_id": 51116,
+      "file_id": "NYU_0051116",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.039367355163248303
+    },
+    {
+      "subject_index": 336,
+      "sub_id": 51117,
+      "file_id": "NYU_0051117",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.18675536574305984
+    },
+    {
+      "subject_index": 337,
+      "sub_id": 51118,
+      "file_id": "NYU_0051118",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.206882368212762
+    },
+    {
+      "subject_index": 338,
+      "sub_id": 51121,
+      "file_id": "NYU_0051121",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.386870592192594
+    },
+    {
+      "subject_index": 339,
+      "sub_id": 51122,
+      "file_id": "NYU_0051122",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.23274270385659437
+    },
+    {
+      "subject_index": 340,
+      "sub_id": 51123,
+      "file_id": "NYU_0051123",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5370653251866477
+    },
+    {
+      "subject_index": 341,
+      "sub_id": 51124,
+      "file_id": "NYU_0051124",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.03142350466613299
+    },
+    {
+      "subject_index": 342,
+      "sub_id": 51126,
+      "file_id": "NYU_0051126",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.14512214862818476
+    },
+    {
+      "subject_index": 343,
+      "sub_id": 51127,
+      "file_id": "NYU_0051127",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.8502970652191905
+    },
+    {
+      "subject_index": 344,
+      "sub_id": 51128,
+      "file_id": "NYU_0051128",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.1593111271433607
+    },
+    {
+      "subject_index": 345,
+      "sub_id": 51129,
+      "file_id": "NYU_0051129",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.23709684766163056
+    },
+    {
+      "subject_index": 346,
+      "sub_id": 51130,
+      "file_id": "NYU_0051130",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0013898632772560181
+    },
+    {
+      "subject_index": 347,
+      "sub_id": 51131,
+      "file_id": "NYU_0051131",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.017049352049089552
+    },
+    {
+      "subject_index": 348,
+      "sub_id": 51146,
+      "file_id": "NYU_0051146",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.2459924676216461
+    },
+    {
+      "subject_index": 349,
+      "sub_id": 51147,
+      "file_id": "NYU_0051147",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.486757871238407
+    },
+    {
+      "subject_index": 350,
+      "sub_id": 51148,
+      "file_id": "NYU_0051148",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.16571846176658034
+    },
+    {
+      "subject_index": 351,
+      "sub_id": 51149,
+      "file_id": "NYU_0051149",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9284120813282121
+    },
+    {
+      "subject_index": 352,
+      "sub_id": 51150,
+      "file_id": "NYU_0051150",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.021946658770773616
+    },
+    {
+      "subject_index": 353,
+      "sub_id": 51151,
+      "file_id": "NYU_0051151",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.8079455241616356
+    },
+    {
+      "subject_index": 354,
+      "sub_id": 51152,
+      "file_id": "NYU_0051152",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49484168023384206
+    },
+    {
+      "subject_index": 355,
+      "sub_id": 51153,
+      "file_id": "NYU_0051153",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9312598168595897
+    },
+    {
+      "subject_index": 356,
+      "sub_id": 51154,
+      "file_id": "NYU_0051154",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.05707487422748257
+    },
+    {
+      "subject_index": 357,
+      "sub_id": 51155,
+      "file_id": "NYU_0051155",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.2294365987080424
+    },
+    {
+      "subject_index": 358,
+      "sub_id": 51156,
+      "file_id": "NYU_0051156",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0026436809350550788
+    },
+    {
+      "subject_index": 359,
+      "sub_id": 51159,
+      "file_id": "NYU_0051159",
+      "site_id": "NYU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4584521166502417
+    },
+    {
+      "subject_index": 360,
+      "sub_id": 50106,
+      "file_id": "Olin_0050106",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9996709241562765
+    },
+    {
+      "subject_index": 361,
+      "sub_id": 50107,
+      "file_id": "Olin_0050107",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7276254566652397
+    },
+    {
+      "subject_index": 362,
+      "sub_id": 50109,
+      "file_id": "Olin_0050109",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6816624347432735
+    },
+    {
+      "subject_index": 363,
+      "sub_id": 50110,
+      "file_id": "Olin_0050110",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 2,
+      "score": 0.6409750068987577
+    },
+    {
+      "subject_index": 364,
+      "sub_id": 50111,
+      "file_id": "Olin_0050111",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 4,
+      "score": 0.8567257119021586
+    },
+    {
+      "subject_index": 365,
+      "sub_id": 50112,
+      "file_id": "Olin_0050112",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 4,
+      "score": 0.005817847721608561
+    },
+    {
+      "subject_index": 366,
+      "sub_id": 50113,
+      "file_id": "Olin_0050113",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 0,
+      "score": 0.059239374192311726
+    },
+    {
+      "subject_index": 367,
+      "sub_id": 50114,
+      "file_id": "Olin_0050114",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 4,
+      "score": 0.20130620427464713
+    },
+    {
+      "subject_index": 368,
+      "sub_id": 50115,
+      "file_id": "Olin_0050115",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 3,
+      "score": 0.12787862363319022
+    },
+    {
+      "subject_index": 369,
+      "sub_id": 50116,
+      "file_id": "Olin_0050116",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 2,
+      "score": 0.16667672124664826
+    },
+    {
+      "subject_index": 370,
+      "sub_id": 50117,
+      "file_id": "Olin_0050117",
+      "site_id": "OLIN",
+      "label": 0,
+      "fold": 4,
+      "score": 0.7575617918852654
+    },
+    {
+      "subject_index": 371,
+      "sub_id": 50118,
+      "file_id": "Olin_0050118",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6829582336246232
+    },
+    {
+      "subject_index": 372,
+      "sub_id": 50119,
+      "file_id": "Olin_0050119",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.3304240055388976
+    },
+    {
+      "subject_index": 373,
+      "sub_id": 50120,
+      "file_id": "Olin_0050120",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.44770530598061
+    },
+    {
+      "subject_index": 374,
+      "sub_id": 50121,
+      "file_id": "Olin_0050121",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9284104672678154
+    },
+    {
+      "subject_index": 375,
+      "sub_id": 50122,
+      "file_id": "Olin_0050122",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 4,
+      "score": 0.997436677810207
+    },
+    {
+      "subject_index": 376,
+      "sub_id": 50123,
+      "file_id": "Olin_0050123",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9999959919407478
+    },
+    {
+      "subject_index": 377,
+      "sub_id": 50124,
+      "file_id": "Olin_0050124",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8501417712862921
+    },
+    {
+      "subject_index": 378,
+      "sub_id": 50125,
+      "file_id": "Olin_0050125",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9300967788091491
+    },
+    {
+      "subject_index": 379,
+      "sub_id": 50126,
+      "file_id": "Olin_0050126",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9686019483449938
+    },
+    {
+      "subject_index": 380,
+      "sub_id": 50127,
+      "file_id": "Olin_0050127",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.0036138237290702212
+    },
+    {
+      "subject_index": 381,
+      "sub_id": 50128,
+      "file_id": "Olin_0050128",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7309023059669949
+    },
+    {
+      "subject_index": 382,
+      "sub_id": 50129,
+      "file_id": "Olin_0050129",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.496503215440706
+    },
+    {
+      "subject_index": 383,
+      "sub_id": 50130,
+      "file_id": "Olin_0050130",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6480038837866803
+    },
+    {
+      "subject_index": 384,
+      "sub_id": 50131,
+      "file_id": "Olin_0050131",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8873117451905101
+    },
+    {
+      "subject_index": 385,
+      "sub_id": 50132,
+      "file_id": "Olin_0050132",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 4,
+      "score": 0.6281254849140864
+    },
+    {
+      "subject_index": 386,
+      "sub_id": 50133,
+      "file_id": "Olin_0050133",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9158999220880099
+    },
+    {
+      "subject_index": 387,
+      "sub_id": 50134,
+      "file_id": "Olin_0050134",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9958351970329556
+    },
+    {
+      "subject_index": 388,
+      "sub_id": 50135,
+      "file_id": "Olin_0050135",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9988425142263091
+    },
+    {
+      "subject_index": 389,
+      "sub_id": 50136,
+      "file_id": "Olin_0050136",
+      "site_id": "OLIN",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5345929391221771
+    },
+    {
+      "subject_index": 390,
+      "sub_id": 50003,
+      "file_id": "Pitt_0050003",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9975472908217574
+    },
+    {
+      "subject_index": 391,
+      "sub_id": 50004,
+      "file_id": "Pitt_0050004",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8329893997537275
+    },
+    {
+      "subject_index": 392,
+      "sub_id": 50005,
+      "file_id": "Pitt_0050005",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.0026793395674018683
+    },
+    {
+      "subject_index": 393,
+      "sub_id": 50006,
+      "file_id": "Pitt_0050006",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9515859679537165
+    },
+    {
+      "subject_index": 394,
+      "sub_id": 50007,
+      "file_id": "Pitt_0050007",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 3,
+      "score": 0.954735836118473
+    },
+    {
+      "subject_index": 395,
+      "sub_id": 50008,
+      "file_id": "Pitt_0050008",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.05375803543378211
+    },
+    {
+      "subject_index": 396,
+      "sub_id": 50009,
+      "file_id": "Pitt_0050009",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 0,
+      "score": 0.3004795591810207
+    },
+    {
+      "subject_index": 397,
+      "sub_id": 50010,
+      "file_id": "Pitt_0050010",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 2,
+      "score": 0.2884507984279675
+    },
+    {
+      "subject_index": 398,
+      "sub_id": 50011,
+      "file_id": "Pitt_0050011",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.999559571818328
+    },
+    {
+      "subject_index": 399,
+      "sub_id": 50012,
+      "file_id": "Pitt_0050012",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.3442960542739107
+    },
+    {
+      "subject_index": 400,
+      "sub_id": 50013,
+      "file_id": "Pitt_0050013",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9913588316036286
+    },
+    {
+      "subject_index": 401,
+      "sub_id": 50014,
+      "file_id": "Pitt_0050014",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9010235039847542
+    },
+    {
+      "subject_index": 402,
+      "sub_id": 50015,
+      "file_id": "Pitt_0050015",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9686051839631761
+    },
+    {
+      "subject_index": 403,
+      "sub_id": 50016,
+      "file_id": "Pitt_0050016",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 4,
+      "score": 0.6375044575499973
+    },
+    {
+      "subject_index": 404,
+      "sub_id": 50017,
+      "file_id": "Pitt_0050017",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9819609264620263
+    },
+    {
+      "subject_index": 405,
+      "sub_id": 50019,
+      "file_id": "Pitt_0050019",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9965310081555548
+    },
+    {
+      "subject_index": 406,
+      "sub_id": 50020,
+      "file_id": "Pitt_0050020",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9968654159371689
+    },
+    {
+      "subject_index": 407,
+      "sub_id": 50022,
+      "file_id": "Pitt_0050022",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.020097762313317308
+    },
+    {
+      "subject_index": 408,
+      "sub_id": 50023,
+      "file_id": "Pitt_0050023",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6802810618393348
+    },
+    {
+      "subject_index": 409,
+      "sub_id": 50024,
+      "file_id": "Pitt_0050024",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7536340274631541
+    },
+    {
+      "subject_index": 410,
+      "sub_id": 50025,
+      "file_id": "Pitt_0050025",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8004625619307886
+    },
+    {
+      "subject_index": 411,
+      "sub_id": 50026,
+      "file_id": "Pitt_0050026",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 2,
+      "score": 0.3206761833478075
+    },
+    {
+      "subject_index": 412,
+      "sub_id": 50027,
+      "file_id": "Pitt_0050027",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 0,
+      "score": 0.03317371711373237
+    },
+    {
+      "subject_index": 413,
+      "sub_id": 50028,
+      "file_id": "Pitt_0050028",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8040666309707287
+    },
+    {
+      "subject_index": 414,
+      "sub_id": 50029,
+      "file_id": "Pitt_0050029",
+      "site_id": "PITT",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6366724508449935
+    },
+    {
+      "subject_index": 415,
+      "sub_id": 50030,
+      "file_id": "Pitt_0050030",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 0,
+      "score": 0.000137011896207627
+    },
+    {
+      "subject_index": 416,
+      "sub_id": 50031,
+      "file_id": "Pitt_0050031",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.2082013324782583
+    },
+    {
+      "subject_index": 417,
+      "sub_id": 50032,
+      "file_id": "Pitt_0050032",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0009814481923653474
+    },
+    {
+      "subject_index": 418,
+      "sub_id": 50033,
+      "file_id": "Pitt_0050033",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 2,
+      "score": 0.19587745257904599
+    },
+    {
+      "subject_index": 419,
+      "sub_id": 50034,
+      "file_id": "Pitt_0050034",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 3,
+      "score": 0.3234997375598951
+    },
+    {
+      "subject_index": 420,
+      "sub_id": 50035,
+      "file_id": "Pitt_0050035",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 4.520582062332996e-05
+    },
+    {
+      "subject_index": 421,
+      "sub_id": 50036,
+      "file_id": "Pitt_0050036",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 3,
+      "score": 0.043909643022910484
+    },
+    {
+      "subject_index": 422,
+      "sub_id": 50037,
+      "file_id": "Pitt_0050037",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 3,
+      "score": 0.03477615166756337
+    },
+    {
+      "subject_index": 423,
+      "sub_id": 50038,
+      "file_id": "Pitt_0050038",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.03781953975318727
+    },
+    {
+      "subject_index": 424,
+      "sub_id": 50039,
+      "file_id": "Pitt_0050039",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8046500399805434
+    },
+    {
+      "subject_index": 425,
+      "sub_id": 50040,
+      "file_id": "Pitt_0050040",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.00033540609456186876
+    },
+    {
+      "subject_index": 426,
+      "sub_id": 50041,
+      "file_id": "Pitt_0050041",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.003739739246133103
+    },
+    {
+      "subject_index": 427,
+      "sub_id": 50042,
+      "file_id": "Pitt_0050042",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00018608689281611492
+    },
+    {
+      "subject_index": 428,
+      "sub_id": 50043,
+      "file_id": "Pitt_0050043",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 0,
+      "score": 0.017710934959905517
+    },
+    {
+      "subject_index": 429,
+      "sub_id": 50044,
+      "file_id": "Pitt_0050044",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.32763508697323573
+    },
+    {
+      "subject_index": 430,
+      "sub_id": 50045,
+      "file_id": "Pitt_0050045",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.104691999428519
+    },
+    {
+      "subject_index": 431,
+      "sub_id": 50046,
+      "file_id": "Pitt_0050046",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 2,
+      "score": 0.13876503914285065
+    },
+    {
+      "subject_index": 432,
+      "sub_id": 50047,
+      "file_id": "Pitt_0050047",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 3,
+      "score": 0.008400081946910696
+    },
+    {
+      "subject_index": 433,
+      "sub_id": 50048,
+      "file_id": "Pitt_0050048",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.4004040114960309
+    },
+    {
+      "subject_index": 434,
+      "sub_id": 50049,
+      "file_id": "Pitt_0050049",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1289902963288006
+    },
+    {
+      "subject_index": 435,
+      "sub_id": 50050,
+      "file_id": "Pitt_0050050",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 1,
+      "score": 0.713703800747538
+    },
+    {
+      "subject_index": 436,
+      "sub_id": 50051,
+      "file_id": "Pitt_0050051",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.13915922127944017
+    },
+    {
+      "subject_index": 437,
+      "sub_id": 50052,
+      "file_id": "Pitt_0050052",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.016543128168791527
+    },
+    {
+      "subject_index": 438,
+      "sub_id": 50054,
+      "file_id": "Pitt_0050054",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9887024325039742
+    },
+    {
+      "subject_index": 439,
+      "sub_id": 50058,
+      "file_id": "Pitt_0050058",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5174227315113173
+    },
+    {
+      "subject_index": 440,
+      "sub_id": 50060,
+      "file_id": "Pitt_0050060",
+      "site_id": "PITT",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0023682252486586356
+    },
+    {
+      "subject_index": 441,
+      "sub_id": 51556,
+      "file_id": "SBL_0051556",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8915374230757841
+    },
+    {
+      "subject_index": 442,
+      "sub_id": 51557,
+      "file_id": "SBL_0051557",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 2,
+      "score": 0.0719102419992674
+    },
+    {
+      "subject_index": 443,
+      "sub_id": 51558,
+      "file_id": "SBL_0051558",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6377215720215359
+    },
+    {
+      "subject_index": 444,
+      "sub_id": 51559,
+      "file_id": "SBL_0051559",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.20377051117400538
+    },
+    {
+      "subject_index": 445,
+      "sub_id": 51560,
+      "file_id": "SBL_0051560",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 2,
+      "score": 0.08138543883106525
+    },
+    {
+      "subject_index": 446,
+      "sub_id": 51561,
+      "file_id": "SBL_0051561",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.015572660243766743
+    },
+    {
+      "subject_index": 447,
+      "sub_id": 51562,
+      "file_id": "SBL_0051562",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 3,
+      "score": 0.008478002922718256
+    },
+    {
+      "subject_index": 448,
+      "sub_id": 51563,
+      "file_id": "SBL_0051563",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 1,
+      "score": 0.19268720689528668
+    },
+    {
+      "subject_index": 449,
+      "sub_id": 51564,
+      "file_id": "SBL_0051564",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 2,
+      "score": 0.0525816655691568
+    },
+    {
+      "subject_index": 450,
+      "sub_id": 51565,
+      "file_id": "SBL_0051565",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9053575810391108
+    },
+    {
+      "subject_index": 451,
+      "sub_id": 51566,
+      "file_id": "SBL_0051566",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.13550084447260227
+    },
+    {
+      "subject_index": 452,
+      "sub_id": 51567,
+      "file_id": "SBL_0051567",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.633270054411629
+    },
+    {
+      "subject_index": 453,
+      "sub_id": 51568,
+      "file_id": "SBL_0051568",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 4,
+      "score": 0.2608548011010993
+    },
+    {
+      "subject_index": 454,
+      "sub_id": 51569,
+      "file_id": "SBL_0051569",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 2,
+      "score": 0.344133381360178
+    },
+    {
+      "subject_index": 455,
+      "sub_id": 51570,
+      "file_id": "SBL_0051570",
+      "site_id": "SBL",
+      "label": 0,
+      "fold": 1,
+      "score": 0.16639629579781035
+    },
+    {
+      "subject_index": 456,
+      "sub_id": 51571,
+      "file_id": "SBL_0051571",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9235857543147372
+    },
+    {
+      "subject_index": 457,
+      "sub_id": 51572,
+      "file_id": "SBL_0051572",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.49502803620215535
+    },
+    {
+      "subject_index": 458,
+      "sub_id": 51573,
+      "file_id": "SBL_0051573",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.27485991212246447
+    },
+    {
+      "subject_index": 459,
+      "sub_id": 51574,
+      "file_id": "SBL_0051574",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 4,
+      "score": 0.10682683965432793
+    },
+    {
+      "subject_index": 460,
+      "sub_id": 51575,
+      "file_id": "SBL_0051575",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5303463287226791
+    },
+    {
+      "subject_index": 461,
+      "sub_id": 51576,
+      "file_id": "SBL_0051576",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 1,
+      "score": 0.42078226450385187
+    },
+    {
+      "subject_index": 462,
+      "sub_id": 51577,
+      "file_id": "SBL_0051577",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5648368438082559
+    },
+    {
+      "subject_index": 463,
+      "sub_id": 51578,
+      "file_id": "SBL_0051578",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6713562952394039
+    },
+    {
+      "subject_index": 464,
+      "sub_id": 51579,
+      "file_id": "SBL_0051579",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 4,
+      "score": 0.01700263036861301
+    },
+    {
+      "subject_index": 465,
+      "sub_id": 51580,
+      "file_id": "SBL_0051580",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.19587122730147186
+    },
+    {
+      "subject_index": 466,
+      "sub_id": 51581,
+      "file_id": "SBL_0051581",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 4,
+      "score": 0.17209598277311222
+    },
+    {
+      "subject_index": 467,
+      "sub_id": 51582,
+      "file_id": "SBL_0051582",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7128847569591508
+    },
+    {
+      "subject_index": 468,
+      "sub_id": 51583,
+      "file_id": "SBL_0051583",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4612755699299175
+    },
+    {
+      "subject_index": 469,
+      "sub_id": 51584,
+      "file_id": "SBL_0051584",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 3,
+      "score": 0.36541201752247404
+    },
+    {
+      "subject_index": 470,
+      "sub_id": 51585,
+      "file_id": "SBL_0051585",
+      "site_id": "SBL",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6717637460758384
+    },
+    {
+      "subject_index": 471,
+      "sub_id": 50182,
+      "file_id": "SDSU_0050182",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.23869247814146835
+    },
+    {
+      "subject_index": 472,
+      "sub_id": 50183,
+      "file_id": "SDSU_0050183",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.07409851352840181
+    },
+    {
+      "subject_index": 473,
+      "sub_id": 50184,
+      "file_id": "SDSU_0050184",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9401535176176608
+    },
+    {
+      "subject_index": 474,
+      "sub_id": 50185,
+      "file_id": "SDSU_0050185",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9641196389339208
+    },
+    {
+      "subject_index": 475,
+      "sub_id": 50186,
+      "file_id": "SDSU_0050186",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9935845351162024
+    },
+    {
+      "subject_index": 476,
+      "sub_id": 50187,
+      "file_id": "SDSU_0050187",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.029408576966537137
+    },
+    {
+      "subject_index": 477,
+      "sub_id": 50188,
+      "file_id": "SDSU_0050188",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 0,
+      "score": 0.03961198834279987
+    },
+    {
+      "subject_index": 478,
+      "sub_id": 50189,
+      "file_id": "SDSU_0050189",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.3702453906702609
+    },
+    {
+      "subject_index": 479,
+      "sub_id": 50190,
+      "file_id": "SDSU_0050190",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.958122916119907
+    },
+    {
+      "subject_index": 480,
+      "sub_id": 50191,
+      "file_id": "SDSU_0050191",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.04809417896820759
+    },
+    {
+      "subject_index": 481,
+      "sub_id": 50192,
+      "file_id": "SDSU_0050192",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9999937186843414
+    },
+    {
+      "subject_index": 482,
+      "sub_id": 50193,
+      "file_id": "SDSU_0050193",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.1582152632824704
+    },
+    {
+      "subject_index": 483,
+      "sub_id": 50194,
+      "file_id": "SDSU_0050194",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.15515626258674395
+    },
+    {
+      "subject_index": 484,
+      "sub_id": 50195,
+      "file_id": "SDSU_0050195",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9994662257542711
+    },
+    {
+      "subject_index": 485,
+      "sub_id": 50196,
+      "file_id": "SDSU_0050196",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.007708328923521909
+    },
+    {
+      "subject_index": 486,
+      "sub_id": 50197,
+      "file_id": "SDSU_0050197",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.27322336611698417
+    },
+    {
+      "subject_index": 487,
+      "sub_id": 50198,
+      "file_id": "SDSU_0050198",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.670512103458716
+    },
+    {
+      "subject_index": 488,
+      "sub_id": 50199,
+      "file_id": "SDSU_0050199",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.002619719520979731
+    },
+    {
+      "subject_index": 489,
+      "sub_id": 50200,
+      "file_id": "SDSU_0050200",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.007052604411263598
+    },
+    {
+      "subject_index": 490,
+      "sub_id": 50201,
+      "file_id": "SDSU_0050201",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 9.267756876857558e-05
+    },
+    {
+      "subject_index": 491,
+      "sub_id": 50202,
+      "file_id": "SDSU_0050202",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.19862673305216913
+    },
+    {
+      "subject_index": 492,
+      "sub_id": 50203,
+      "file_id": "SDSU_0050203",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0006040780081099542
+    },
+    {
+      "subject_index": 493,
+      "sub_id": 50204,
+      "file_id": "SDSU_0050204",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9532456655816461
+    },
+    {
+      "subject_index": 494,
+      "sub_id": 50205,
+      "file_id": "SDSU_0050205",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00011265491373001144
+    },
+    {
+      "subject_index": 495,
+      "sub_id": 50206,
+      "file_id": "SDSU_0050206",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.970365352818193
+    },
+    {
+      "subject_index": 496,
+      "sub_id": 50207,
+      "file_id": "SDSU_0050207",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 2,
+      "score": 0.04405812642851629
+    },
+    {
+      "subject_index": 497,
+      "sub_id": 50208,
+      "file_id": "SDSU_0050208",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.02403249876348779
+    },
+    {
+      "subject_index": 498,
+      "sub_id": 50209,
+      "file_id": "SDSU_0050209",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9420573991445395
+    },
+    {
+      "subject_index": 499,
+      "sub_id": 50210,
+      "file_id": "SDSU_0050210",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 3,
+      "score": 0.04017222787323356
+    },
+    {
+      "subject_index": 500,
+      "sub_id": 50211,
+      "file_id": "SDSU_0050211",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9978366407243127
+    },
+    {
+      "subject_index": 501,
+      "sub_id": 50212,
+      "file_id": "SDSU_0050212",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9745158522166966
+    },
+    {
+      "subject_index": 502,
+      "sub_id": 50213,
+      "file_id": "SDSU_0050213",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 4,
+      "score": 0.03729582972478728
+    },
+    {
+      "subject_index": 503,
+      "sub_id": 50214,
+      "file_id": "SDSU_0050214",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.017259808613213617
+    },
+    {
+      "subject_index": 504,
+      "sub_id": 50215,
+      "file_id": "SDSU_0050215",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00013497575099269128
+    },
+    {
+      "subject_index": 505,
+      "sub_id": 50216,
+      "file_id": "SDSU_0050216",
+      "site_id": "SDSU",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9625659166456731
+    },
+    {
+      "subject_index": 506,
+      "sub_id": 50217,
+      "file_id": "SDSU_0050217",
+      "site_id": "SDSU",
+      "label": 0,
+      "fold": 0,
+      "score": 0.00924376933579304
+    },
+    {
+      "subject_index": 507,
+      "sub_id": 51160,
+      "file_id": "Stanford_0051160",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6778782120087977
+    },
+    {
+      "subject_index": 508,
+      "sub_id": 51161,
+      "file_id": "Stanford_0051161",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9883114175034388
+    },
+    {
+      "subject_index": 509,
+      "sub_id": 51162,
+      "file_id": "Stanford_0051162",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 1,
+      "score": 0.968247028557151
+    },
+    {
+      "subject_index": 510,
+      "sub_id": 51163,
+      "file_id": "Stanford_0051163",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8641573136750285
+    },
+    {
+      "subject_index": 511,
+      "sub_id": 51164,
+      "file_id": "Stanford_0051164",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6558087593745212
+    },
+    {
+      "subject_index": 512,
+      "sub_id": 51165,
+      "file_id": "Stanford_0051165",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9929896691367015
+    },
+    {
+      "subject_index": 513,
+      "sub_id": 51166,
+      "file_id": "Stanford_0051166",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5983919645916288
+    },
+    {
+      "subject_index": 514,
+      "sub_id": 51167,
+      "file_id": "Stanford_0051167",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 2,
+      "score": 0.05937061875056585
+    },
+    {
+      "subject_index": 515,
+      "sub_id": 51168,
+      "file_id": "Stanford_0051168",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 4,
+      "score": 0.6193137946860219
+    },
+    {
+      "subject_index": 516,
+      "sub_id": 51169,
+      "file_id": "Stanford_0051169",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 3,
+      "score": 0.48510454309024453
+    },
+    {
+      "subject_index": 517,
+      "sub_id": 51170,
+      "file_id": "Stanford_0051170",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9582377844735435
+    },
+    {
+      "subject_index": 518,
+      "sub_id": 51171,
+      "file_id": "Stanford_0051171",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 3,
+      "score": 0.08756559263237686
+    },
+    {
+      "subject_index": 519,
+      "sub_id": 51172,
+      "file_id": "Stanford_0051172",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 1,
+      "score": 0.007474020100847037
+    },
+    {
+      "subject_index": 520,
+      "sub_id": 51173,
+      "file_id": "Stanford_0051173",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9926517596593708
+    },
+    {
+      "subject_index": 521,
+      "sub_id": 51174,
+      "file_id": "Stanford_0051174",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7659431804120764
+    },
+    {
+      "subject_index": 522,
+      "sub_id": 51175,
+      "file_id": "Stanford_0051175",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9973403671373335
+    },
+    {
+      "subject_index": 523,
+      "sub_id": 51177,
+      "file_id": "Stanford_0051177",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 4,
+      "score": 0.752222566362863
+    },
+    {
+      "subject_index": 524,
+      "sub_id": 51178,
+      "file_id": "Stanford_0051178",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 0,
+      "score": 0.999023560536227
+    },
+    {
+      "subject_index": 525,
+      "sub_id": 51179,
+      "file_id": "Stanford_0051179",
+      "site_id": "STANFORD",
+      "label": 1,
+      "fold": 2,
+      "score": 0.976733958659401
+    },
+    {
+      "subject_index": 526,
+      "sub_id": 51180,
+      "file_id": "Stanford_0051180",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9185534741323103
+    },
+    {
+      "subject_index": 527,
+      "sub_id": 51181,
+      "file_id": "Stanford_0051181",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9715292179184251
+    },
+    {
+      "subject_index": 528,
+      "sub_id": 51182,
+      "file_id": "Stanford_0051182",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 0,
+      "score": 0.022183066424128213
+    },
+    {
+      "subject_index": 529,
+      "sub_id": 51183,
+      "file_id": "Stanford_0051183",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 0,
+      "score": 0.9325920338652006
+    },
+    {
+      "subject_index": 530,
+      "sub_id": 51184,
+      "file_id": "Stanford_0051184",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 3,
+      "score": 0.016088562595301812
+    },
+    {
+      "subject_index": 531,
+      "sub_id": 51185,
+      "file_id": "Stanford_0051185",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.020410918474986633
+    },
+    {
+      "subject_index": 532,
+      "sub_id": 51186,
+      "file_id": "Stanford_0051186",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 1,
+      "score": 0.13168459875640295
+    },
+    {
+      "subject_index": 533,
+      "sub_id": 51187,
+      "file_id": "Stanford_0051187",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 2,
+      "score": 0.08749563203474324
+    },
+    {
+      "subject_index": 534,
+      "sub_id": 51188,
+      "file_id": "Stanford_0051188",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 2,
+      "score": 0.782981799089999
+    },
+    {
+      "subject_index": 535,
+      "sub_id": 51189,
+      "file_id": "Stanford_0051189",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9458558153724878
+    },
+    {
+      "subject_index": 536,
+      "sub_id": 51190,
+      "file_id": "Stanford_0051190",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.3900271338167149
+    },
+    {
+      "subject_index": 537,
+      "sub_id": 51191,
+      "file_id": "Stanford_0051191",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 1,
+      "score": 0.008169126932959637
+    },
+    {
+      "subject_index": 538,
+      "sub_id": 51192,
+      "file_id": "Stanford_0051192",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.04002357358000599
+    },
+    {
+      "subject_index": 539,
+      "sub_id": 51193,
+      "file_id": "Stanford_0051193",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6296440228337848
+    },
+    {
+      "subject_index": 540,
+      "sub_id": 51194,
+      "file_id": "Stanford_0051194",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7565361096950332
+    },
+    {
+      "subject_index": 541,
+      "sub_id": 51195,
+      "file_id": "Stanford_0051195",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8371400806851329
+    },
+    {
+      "subject_index": 542,
+      "sub_id": 51196,
+      "file_id": "Stanford_0051196",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 2,
+      "score": 0.22680143828056662
+    },
+    {
+      "subject_index": 543,
+      "sub_id": 51197,
+      "file_id": "Stanford_0051197",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509067185269833
+    },
+    {
+      "subject_index": 544,
+      "sub_id": 51198,
+      "file_id": "Stanford_0051198",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 4,
+      "score": 0.7563728332010071
+    },
+    {
+      "subject_index": 545,
+      "sub_id": 51199,
+      "file_id": "Stanford_0051199",
+      "site_id": "STANFORD",
+      "label": 0,
+      "fold": 0,
+      "score": 0.15709522369567755
+    },
+    {
+      "subject_index": 546,
+      "sub_id": 50232,
+      "file_id": "Trinity_0050232",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9446170375538523
+    },
+    {
+      "subject_index": 547,
+      "sub_id": 50233,
+      "file_id": "Trinity_0050233",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9794768775990758
+    },
+    {
+      "subject_index": 548,
+      "sub_id": 50234,
+      "file_id": "Trinity_0050234",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.877247967562816
+    },
+    {
+      "subject_index": 549,
+      "sub_id": 50235,
+      "file_id": "Trinity_0050235",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6322941038107389
+    },
+    {
+      "subject_index": 550,
+      "sub_id": 50236,
+      "file_id": "Trinity_0050236",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 4,
+      "score": 0.11332761322206218
+    },
+    {
+      "subject_index": 551,
+      "sub_id": 50237,
+      "file_id": "Trinity_0050237",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 3,
+      "score": 0.1738849610691391
+    },
+    {
+      "subject_index": 552,
+      "sub_id": 50239,
+      "file_id": "Trinity_0050239",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.866637165211816
+    },
+    {
+      "subject_index": 553,
+      "sub_id": 50240,
+      "file_id": "Trinity_0050240",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9707281352720701
+    },
+    {
+      "subject_index": 554,
+      "sub_id": 50241,
+      "file_id": "Trinity_0050241",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9864197414040258
+    },
+    {
+      "subject_index": 555,
+      "sub_id": 50242,
+      "file_id": "Trinity_0050242",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7168949626944626
+    },
+    {
+      "subject_index": 556,
+      "sub_id": 50243,
+      "file_id": "Trinity_0050243",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.29964061977691464
+    },
+    {
+      "subject_index": 557,
+      "sub_id": 50245,
+      "file_id": "Trinity_0050245",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9927516130842543
+    },
+    {
+      "subject_index": 558,
+      "sub_id": 50246,
+      "file_id": "Trinity_0050246",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 0,
+      "score": 0.987381968348028
+    },
+    {
+      "subject_index": 559,
+      "sub_id": 50247,
+      "file_id": "Trinity_0050247",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9951498179107653
+    },
+    {
+      "subject_index": 560,
+      "sub_id": 50248,
+      "file_id": "Trinity_0050248",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 0,
+      "score": 0.876179903217093
+    },
+    {
+      "subject_index": 561,
+      "sub_id": 50249,
+      "file_id": "Trinity_0050249",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9308400472111038
+    },
+    {
+      "subject_index": 562,
+      "sub_id": 50250,
+      "file_id": "Trinity_0050250",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5953194880375061
+    },
+    {
+      "subject_index": 563,
+      "sub_id": 50251,
+      "file_id": "Trinity_0050251",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 2,
+      "score": 0.36612296849422504
+    },
+    {
+      "subject_index": 564,
+      "sub_id": 50252,
+      "file_id": "Trinity_0050252",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9554343491238035
+    },
+    {
+      "subject_index": 565,
+      "sub_id": 50253,
+      "file_id": "Trinity_0050253",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 0,
+      "score": 0.08458641457614112
+    },
+    {
+      "subject_index": 566,
+      "sub_id": 50254,
+      "file_id": "Trinity_0050254",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 0,
+      "score": 0.09082298953153492
+    },
+    {
+      "subject_index": 567,
+      "sub_id": 50255,
+      "file_id": "Trinity_0050255",
+      "site_id": "TRINITY",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9996030521245839
+    },
+    {
+      "subject_index": 568,
+      "sub_id": 50257,
+      "file_id": "Trinity_0050257",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.10205168795507737
+    },
+    {
+      "subject_index": 569,
+      "sub_id": 50259,
+      "file_id": "Trinity_0050259",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9789437023412747
+    },
+    {
+      "subject_index": 570,
+      "sub_id": 50260,
+      "file_id": "Trinity_0050260",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.1404074724459942
+    },
+    {
+      "subject_index": 571,
+      "sub_id": 50261,
+      "file_id": "Trinity_0050261",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.026340333670596374
+    },
+    {
+      "subject_index": 572,
+      "sub_id": 50262,
+      "file_id": "Trinity_0050262",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.15938268729759075
+    },
+    {
+      "subject_index": 573,
+      "sub_id": 50263,
+      "file_id": "Trinity_0050263",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.583285816415954
+    },
+    {
+      "subject_index": 574,
+      "sub_id": 50264,
+      "file_id": "Trinity_0050264",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.3806998753611225
+    },
+    {
+      "subject_index": 575,
+      "sub_id": 50265,
+      "file_id": "Trinity_0050265",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.9532059125773977
+    },
+    {
+      "subject_index": 576,
+      "sub_id": 50266,
+      "file_id": "Trinity_0050266",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.20571668774804613
+    },
+    {
+      "subject_index": 577,
+      "sub_id": 50267,
+      "file_id": "Trinity_0050267",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 2,
+      "score": 0.19489565312087875
+    },
+    {
+      "subject_index": 578,
+      "sub_id": 50268,
+      "file_id": "Trinity_0050268",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9068621548882597
+    },
+    {
+      "subject_index": 579,
+      "sub_id": 50269,
+      "file_id": "Trinity_0050269",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7847494196231458
+    },
+    {
+      "subject_index": 580,
+      "sub_id": 50270,
+      "file_id": "Trinity_0050270",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.04036769807026742
+    },
+    {
+      "subject_index": 581,
+      "sub_id": 50271,
+      "file_id": "Trinity_0050271",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 2,
+      "score": 0.029779152176517498
+    },
+    {
+      "subject_index": 582,
+      "sub_id": 51132,
+      "file_id": "Trinity_0051132",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.06929987435653638
+    },
+    {
+      "subject_index": 583,
+      "sub_id": 51133,
+      "file_id": "Trinity_0051133",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.8849166845491916
+    },
+    {
+      "subject_index": 584,
+      "sub_id": 51134,
+      "file_id": "Trinity_0051134",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0023517793743699084
+    },
+    {
+      "subject_index": 585,
+      "sub_id": 51135,
+      "file_id": "Trinity_0051135",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 2,
+      "score": 0.03482662447402679
+    },
+    {
+      "subject_index": 586,
+      "sub_id": 51136,
+      "file_id": "Trinity_0051136",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9066635010321832
+    },
+    {
+      "subject_index": 587,
+      "sub_id": 51137,
+      "file_id": "Trinity_0051137",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.5906709765782191
+    },
+    {
+      "subject_index": 588,
+      "sub_id": 51138,
+      "file_id": "Trinity_0051138",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 0,
+      "score": 0.011955840205369491
+    },
+    {
+      "subject_index": 589,
+      "sub_id": 51139,
+      "file_id": "Trinity_0051139",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.09757248589618506
+    },
+    {
+      "subject_index": 590,
+      "sub_id": 51140,
+      "file_id": "Trinity_0051140",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.8851813400227915
+    },
+    {
+      "subject_index": 591,
+      "sub_id": 51141,
+      "file_id": "Trinity_0051141",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 3,
+      "score": 0.17179247253480567
+    },
+    {
+      "subject_index": 592,
+      "sub_id": 51142,
+      "file_id": "Trinity_0051142",
+      "site_id": "TRINITY",
+      "label": 0,
+      "fold": 4,
+      "score": 0.23432545613069056
+    },
+    {
+      "subject_index": 593,
+      "sub_id": 50272,
+      "file_id": "UM_1_0050272",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5317796206007046
+    },
+    {
+      "subject_index": 594,
+      "sub_id": 50273,
+      "file_id": "UM_1_0050273",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9997350453524941
+    },
+    {
+      "subject_index": 595,
+      "sub_id": 50274,
+      "file_id": "UM_1_0050274",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4023986182605097
+    },
+    {
+      "subject_index": 596,
+      "sub_id": 50275,
+      "file_id": "UM_1_0050275",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9500904578842848
+    },
+    {
+      "subject_index": 597,
+      "sub_id": 50276,
+      "file_id": "UM_1_0050276",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8608106427158254
+    },
+    {
+      "subject_index": 598,
+      "sub_id": 50277,
+      "file_id": "UM_1_0050277",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9988546636449277
+    },
+    {
+      "subject_index": 599,
+      "sub_id": 50278,
+      "file_id": "UM_1_0050278",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.997597740989481
+    },
+    {
+      "subject_index": 600,
+      "sub_id": 50279,
+      "file_id": "UM_1_0050279",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9999681107821202
+    },
+    {
+      "subject_index": 601,
+      "sub_id": 50280,
+      "file_id": "UM_1_0050280",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9888352064596024
+    },
+    {
+      "subject_index": 602,
+      "sub_id": 50281,
+      "file_id": "UM_1_0050281",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9721246282195201
+    },
+    {
+      "subject_index": 603,
+      "sub_id": 50282,
+      "file_id": "UM_1_0050282",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.17440022544658007
+    },
+    {
+      "subject_index": 604,
+      "sub_id": 50283,
+      "file_id": "UM_1_0050283",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9937289053333227
+    },
+    {
+      "subject_index": 605,
+      "sub_id": 50284,
+      "file_id": "UM_1_0050284",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.2567704878955906
+    },
+    {
+      "subject_index": 606,
+      "sub_id": 50285,
+      "file_id": "UM_1_0050285",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.11986769674159783
+    },
+    {
+      "subject_index": 607,
+      "sub_id": 50286,
+      "file_id": "UM_1_0050286",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9999771743024799
+    },
+    {
+      "subject_index": 608,
+      "sub_id": 50287,
+      "file_id": "UM_1_0050287",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.2616802957087728
+    },
+    {
+      "subject_index": 609,
+      "sub_id": 50288,
+      "file_id": "UM_1_0050288",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8838091907996998
+    },
+    {
+      "subject_index": 610,
+      "sub_id": 50289,
+      "file_id": "UM_1_0050289",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.37844733638421885
+    },
+    {
+      "subject_index": 611,
+      "sub_id": 50290,
+      "file_id": "UM_1_0050290",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5352673170485738
+    },
+    {
+      "subject_index": 612,
+      "sub_id": 50291,
+      "file_id": "UM_1_0050291",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9312155713507594
+    },
+    {
+      "subject_index": 613,
+      "sub_id": 50292,
+      "file_id": "UM_1_0050292",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8120173598211473
+    },
+    {
+      "subject_index": 614,
+      "sub_id": 50293,
+      "file_id": "UM_1_0050293",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7357978148785087
+    },
+    {
+      "subject_index": 615,
+      "sub_id": 50294,
+      "file_id": "UM_1_0050294",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.30176675136863407
+    },
+    {
+      "subject_index": 616,
+      "sub_id": 50295,
+      "file_id": "UM_1_0050295",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.08727002580132115
+    },
+    {
+      "subject_index": 617,
+      "sub_id": 50296,
+      "file_id": "UM_1_0050296",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9978827303311102
+    },
+    {
+      "subject_index": 618,
+      "sub_id": 50297,
+      "file_id": "UM_1_0050297",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.19483623923753926
+    },
+    {
+      "subject_index": 619,
+      "sub_id": 50298,
+      "file_id": "UM_1_0050298",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.05531559372243563
+    },
+    {
+      "subject_index": 620,
+      "sub_id": 50299,
+      "file_id": "UM_1_0050299",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9993195573753909
+    },
+    {
+      "subject_index": 621,
+      "sub_id": 50300,
+      "file_id": "UM_1_0050300",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.3992577438293225
+    },
+    {
+      "subject_index": 622,
+      "sub_id": 50301,
+      "file_id": "UM_1_0050301",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9766423906731385
+    },
+    {
+      "subject_index": 623,
+      "sub_id": 50302,
+      "file_id": "UM_1_0050302",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9944070487126828
+    },
+    {
+      "subject_index": 624,
+      "sub_id": 50303,
+      "file_id": "UM_1_0050303",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9791314311957012
+    },
+    {
+      "subject_index": 625,
+      "sub_id": 50304,
+      "file_id": "UM_1_0050304",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9758303888865822
+    },
+    {
+      "subject_index": 626,
+      "sub_id": 50305,
+      "file_id": "UM_1_0050305",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9973416133083352
+    },
+    {
+      "subject_index": 627,
+      "sub_id": 50306,
+      "file_id": "UM_1_0050306",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9945978209509212
+    },
+    {
+      "subject_index": 628,
+      "sub_id": 50307,
+      "file_id": "UM_1_0050307",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.43114806185559995
+    },
+    {
+      "subject_index": 629,
+      "sub_id": 50308,
+      "file_id": "UM_1_0050308",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 2,
+      "score": 0.999985930334548
+    },
+    {
+      "subject_index": 630,
+      "sub_id": 50310,
+      "file_id": "UM_1_0050310",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7482691770572354
+    },
+    {
+      "subject_index": 631,
+      "sub_id": 50311,
+      "file_id": "UM_1_0050311",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9713362015717537
+    },
+    {
+      "subject_index": 632,
+      "sub_id": 50312,
+      "file_id": "UM_1_0050312",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9657210383487812
+    },
+    {
+      "subject_index": 633,
+      "sub_id": 50313,
+      "file_id": "UM_1_0050313",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9558924681050883
+    },
+    {
+      "subject_index": 634,
+      "sub_id": 50314,
+      "file_id": "UM_1_0050314",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.41269677700405083
+    },
+    {
+      "subject_index": 635,
+      "sub_id": 50315,
+      "file_id": "UM_1_0050315",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6183394906953847
+    },
+    {
+      "subject_index": 636,
+      "sub_id": 50316,
+      "file_id": "UM_1_0050316",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8322523293528629
+    },
+    {
+      "subject_index": 637,
+      "sub_id": 50317,
+      "file_id": "UM_1_0050317",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9941610742660169
+    },
+    {
+      "subject_index": 638,
+      "sub_id": 50318,
+      "file_id": "UM_1_0050318",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.13947095557172776
+    },
+    {
+      "subject_index": 639,
+      "sub_id": 50319,
+      "file_id": "UM_1_0050319",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8006038334199433
+    },
+    {
+      "subject_index": 640,
+      "sub_id": 50320,
+      "file_id": "UM_1_0050320",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9676046884975091
+    },
+    {
+      "subject_index": 641,
+      "sub_id": 50321,
+      "file_id": "UM_1_0050321",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9670361431774547
+    },
+    {
+      "subject_index": 642,
+      "sub_id": 50322,
+      "file_id": "UM_1_0050322",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9870442289251491
+    },
+    {
+      "subject_index": 643,
+      "sub_id": 50324,
+      "file_id": "UM_1_0050324",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9971191333684238
+    },
+    {
+      "subject_index": 644,
+      "sub_id": 50325,
+      "file_id": "UM_1_0050325",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.009245903473928448
+    },
+    {
+      "subject_index": 645,
+      "sub_id": 50326,
+      "file_id": "UM_1_0050326",
+      "site_id": "UM_1",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9989137472813364
+    },
+    {
+      "subject_index": 646,
+      "sub_id": 50327,
+      "file_id": "UM_1_0050327",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.8621978532729139
+    },
+    {
+      "subject_index": 647,
+      "sub_id": 50329,
+      "file_id": "UM_1_0050329",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.049450941220539
+    },
+    {
+      "subject_index": 648,
+      "sub_id": 50330,
+      "file_id": "UM_1_0050330",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.0005100810883266591
+    },
+    {
+      "subject_index": 649,
+      "sub_id": 50331,
+      "file_id": "UM_1_0050331",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7310730859615773
+    },
+    {
+      "subject_index": 650,
+      "sub_id": 50332,
+      "file_id": "UM_1_0050332",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9985435565757544
+    },
+    {
+      "subject_index": 651,
+      "sub_id": 50333,
+      "file_id": "UM_1_0050333",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9972880236483973
+    },
+    {
+      "subject_index": 652,
+      "sub_id": 50334,
+      "file_id": "UM_1_0050334",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.14639245754080793
+    },
+    {
+      "subject_index": 653,
+      "sub_id": 50335,
+      "file_id": "UM_1_0050335",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.17924123750267468
+    },
+    {
+      "subject_index": 654,
+      "sub_id": 50336,
+      "file_id": "UM_1_0050336",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.01228852094490913
+    },
+    {
+      "subject_index": 655,
+      "sub_id": 50337,
+      "file_id": "UM_1_0050337",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.12436669356717545
+    },
+    {
+      "subject_index": 656,
+      "sub_id": 50338,
+      "file_id": "UM_1_0050338",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.008098937564446797
+    },
+    {
+      "subject_index": 657,
+      "sub_id": 50339,
+      "file_id": "UM_1_0050339",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.30787843173229634
+    },
+    {
+      "subject_index": 658,
+      "sub_id": 50340,
+      "file_id": "UM_1_0050340",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.03976563497138849
+    },
+    {
+      "subject_index": 659,
+      "sub_id": 50341,
+      "file_id": "UM_1_0050341",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5331840999937567
+    },
+    {
+      "subject_index": 660,
+      "sub_id": 50342,
+      "file_id": "UM_1_0050342",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9886975806109921
+    },
+    {
+      "subject_index": 661,
+      "sub_id": 50343,
+      "file_id": "UM_1_0050343",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8473253952232227
+    },
+    {
+      "subject_index": 662,
+      "sub_id": 50344,
+      "file_id": "UM_1_0050344",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0024619589627957127
+    },
+    {
+      "subject_index": 663,
+      "sub_id": 50345,
+      "file_id": "UM_1_0050345",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9801086375944995
+    },
+    {
+      "subject_index": 664,
+      "sub_id": 50346,
+      "file_id": "UM_1_0050346",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.018308572036651552
+    },
+    {
+      "subject_index": 665,
+      "sub_id": 50347,
+      "file_id": "UM_1_0050347",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.2281692147546827
+    },
+    {
+      "subject_index": 666,
+      "sub_id": 50348,
+      "file_id": "UM_1_0050348",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.005817430118248652
+    },
+    {
+      "subject_index": 667,
+      "sub_id": 50349,
+      "file_id": "UM_1_0050349",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.01045750477914232
+    },
+    {
+      "subject_index": 668,
+      "sub_id": 50350,
+      "file_id": "UM_1_0050350",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.013103252087882572
+    },
+    {
+      "subject_index": 669,
+      "sub_id": 50351,
+      "file_id": "UM_1_0050351",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6808899005790798
+    },
+    {
+      "subject_index": 670,
+      "sub_id": 50352,
+      "file_id": "UM_1_0050352",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.15176655350422152
+    },
+    {
+      "subject_index": 671,
+      "sub_id": 50353,
+      "file_id": "UM_1_0050353",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.06101429126669401
+    },
+    {
+      "subject_index": 672,
+      "sub_id": 50354,
+      "file_id": "UM_1_0050354",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9754411262218411
+    },
+    {
+      "subject_index": 673,
+      "sub_id": 50355,
+      "file_id": "UM_1_0050355",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9621169846762154
+    },
+    {
+      "subject_index": 674,
+      "sub_id": 50356,
+      "file_id": "UM_1_0050356",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.001920239117628755
+    },
+    {
+      "subject_index": 675,
+      "sub_id": 50357,
+      "file_id": "UM_1_0050357",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.3380462794961779
+    },
+    {
+      "subject_index": 676,
+      "sub_id": 50358,
+      "file_id": "UM_1_0050358",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.3072140264390976
+    },
+    {
+      "subject_index": 677,
+      "sub_id": 50359,
+      "file_id": "UM_1_0050359",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.21535130118213267
+    },
+    {
+      "subject_index": 678,
+      "sub_id": 50360,
+      "file_id": "UM_1_0050360",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.3375503332615745
+    },
+    {
+      "subject_index": 679,
+      "sub_id": 50361,
+      "file_id": "UM_1_0050361",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0019870279342062225
+    },
+    {
+      "subject_index": 680,
+      "sub_id": 50362,
+      "file_id": "UM_1_0050362",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6159784905963069
+    },
+    {
+      "subject_index": 681,
+      "sub_id": 50363,
+      "file_id": "UM_1_0050363",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.11050638279796976
+    },
+    {
+      "subject_index": 682,
+      "sub_id": 50364,
+      "file_id": "UM_1_0050364",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 4,
+      "score": 0.9966847203650078
+    },
+    {
+      "subject_index": 683,
+      "sub_id": 50365,
+      "file_id": "UM_1_0050365",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.13285779100750938
+    },
+    {
+      "subject_index": 684,
+      "sub_id": 50366,
+      "file_id": "UM_1_0050366",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.010042207896700543
+    },
+    {
+      "subject_index": 685,
+      "sub_id": 50367,
+      "file_id": "UM_1_0050367",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.12476245519208407
+    },
+    {
+      "subject_index": 686,
+      "sub_id": 50368,
+      "file_id": "UM_1_0050368",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8990489589234609
+    },
+    {
+      "subject_index": 687,
+      "sub_id": 50369,
+      "file_id": "UM_1_0050369",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.002453891705851273
+    },
+    {
+      "subject_index": 688,
+      "sub_id": 50370,
+      "file_id": "UM_1_0050370",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.19346207235327328
+    },
+    {
+      "subject_index": 689,
+      "sub_id": 50371,
+      "file_id": "UM_1_0050371",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.11840786477132641
+    },
+    {
+      "subject_index": 690,
+      "sub_id": 50372,
+      "file_id": "UM_1_0050372",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.013161939531080661
+    },
+    {
+      "subject_index": 691,
+      "sub_id": 50373,
+      "file_id": "UM_1_0050373",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.006960789718663376
+    },
+    {
+      "subject_index": 692,
+      "sub_id": 50374,
+      "file_id": "UM_1_0050374",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 0,
+      "score": 0.41691115226324477
+    },
+    {
+      "subject_index": 693,
+      "sub_id": 50375,
+      "file_id": "UM_1_0050375",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.1446288705421103
+    },
+    {
+      "subject_index": 694,
+      "sub_id": 50376,
+      "file_id": "UM_1_0050376",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.9811396916829663
+    },
+    {
+      "subject_index": 695,
+      "sub_id": 50377,
+      "file_id": "UM_1_0050377",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.005534268808965522
+    },
+    {
+      "subject_index": 696,
+      "sub_id": 50379,
+      "file_id": "UM_1_0050379",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6928197117729883
+    },
+    {
+      "subject_index": 697,
+      "sub_id": 50380,
+      "file_id": "UM_1_0050380",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 1,
+      "score": 0.7447591932405844
+    },
+    {
+      "subject_index": 698,
+      "sub_id": 50381,
+      "file_id": "UM_1_0050381",
+      "site_id": "UM_1",
+      "label": 0,
+      "fold": 2,
+      "score": 0.04676278957412954
+    },
+    {
+      "subject_index": 699,
+      "sub_id": 50382,
+      "file_id": "UM_2_0050382",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.04474484282472929
+    },
+    {
+      "subject_index": 700,
+      "sub_id": 50383,
+      "file_id": "UM_2_0050383",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6996211978368648
+    },
+    {
+      "subject_index": 701,
+      "sub_id": 50385,
+      "file_id": "UM_2_0050385",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.008922231052043077
+    },
+    {
+      "subject_index": 702,
+      "sub_id": 50386,
+      "file_id": "UM_2_0050386",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.4866493885712935
+    },
+    {
+      "subject_index": 703,
+      "sub_id": 50387,
+      "file_id": "UM_2_0050387",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.0011763549311432167
+    },
+    {
+      "subject_index": 704,
+      "sub_id": 50388,
+      "file_id": "UM_2_0050388",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.00016010342697236584
+    },
+    {
+      "subject_index": 705,
+      "sub_id": 50390,
+      "file_id": "UM_2_0050390",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.022644262845860425
+    },
+    {
+      "subject_index": 706,
+      "sub_id": 50391,
+      "file_id": "UM_2_0050391",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.006987781388516501
+    },
+    {
+      "subject_index": 707,
+      "sub_id": 50397,
+      "file_id": "UM_2_0050397",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.05425201530157558
+    },
+    {
+      "subject_index": 708,
+      "sub_id": 50399,
+      "file_id": "UM_2_0050399",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.8567753122185692
+    },
+    {
+      "subject_index": 709,
+      "sub_id": 50402,
+      "file_id": "UM_2_0050402",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8386967584059781
+    },
+    {
+      "subject_index": 710,
+      "sub_id": 50403,
+      "file_id": "UM_2_0050403",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6392882135521638
+    },
+    {
+      "subject_index": 711,
+      "sub_id": 50404,
+      "file_id": "UM_2_0050404",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9874947618705747
+    },
+    {
+      "subject_index": 712,
+      "sub_id": 50405,
+      "file_id": "UM_2_0050405",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9295955105196752
+    },
+    {
+      "subject_index": 713,
+      "sub_id": 50406,
+      "file_id": "UM_2_0050406",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9309787300098568
+    },
+    {
+      "subject_index": 714,
+      "sub_id": 50407,
+      "file_id": "UM_2_0050407",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9394579140197399
+    },
+    {
+      "subject_index": 715,
+      "sub_id": 50408,
+      "file_id": "UM_2_0050408",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.07238766677042062
+    },
+    {
+      "subject_index": 716,
+      "sub_id": 50410,
+      "file_id": "UM_2_0050410",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.8248024402495511
+    },
+    {
+      "subject_index": 717,
+      "sub_id": 50411,
+      "file_id": "UM_2_0050411",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9356303165915338
+    },
+    {
+      "subject_index": 718,
+      "sub_id": 50412,
+      "file_id": "UM_2_0050412",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4888976359418802
+    },
+    {
+      "subject_index": 719,
+      "sub_id": 50413,
+      "file_id": "UM_2_0050413",
+      "site_id": "UM_2",
+      "label": 1,
+      "fold": 3,
+      "score": 0.8356377757873943
+    },
+    {
+      "subject_index": 720,
+      "sub_id": 50414,
+      "file_id": "UM_2_0050414",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 1,
+      "score": 0.18767179796935135
+    },
+    {
+      "subject_index": 721,
+      "sub_id": 50415,
+      "file_id": "UM_2_0050415",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.017136672160566722
+    },
+    {
+      "subject_index": 722,
+      "sub_id": 50416,
+      "file_id": "UM_2_0050416",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.6623107871422184
+    },
+    {
+      "subject_index": 723,
+      "sub_id": 50417,
+      "file_id": "UM_2_0050417",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.0006342058712872154
+    },
+    {
+      "subject_index": 724,
+      "sub_id": 50418,
+      "file_id": "UM_2_0050418",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.019170831720859385
+    },
+    {
+      "subject_index": 725,
+      "sub_id": 50419,
+      "file_id": "UM_2_0050419",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.06736005402097521
+    },
+    {
+      "subject_index": 726,
+      "sub_id": 50421,
+      "file_id": "UM_2_0050421",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5755309792389194
+    },
+    {
+      "subject_index": 727,
+      "sub_id": 50422,
+      "file_id": "UM_2_0050422",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.16683947024149462
+    },
+    {
+      "subject_index": 728,
+      "sub_id": 50424,
+      "file_id": "UM_2_0050424",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.9992430796841559
+    },
+    {
+      "subject_index": 729,
+      "sub_id": 50425,
+      "file_id": "UM_2_0050425",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.004114503512144123
+    },
+    {
+      "subject_index": 730,
+      "sub_id": 50426,
+      "file_id": "UM_2_0050426",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 0,
+      "score": 0.4208993487188239
+    },
+    {
+      "subject_index": 731,
+      "sub_id": 50427,
+      "file_id": "UM_2_0050427",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 4,
+      "score": 0.21518656901761973
+    },
+    {
+      "subject_index": 732,
+      "sub_id": 50428,
+      "file_id": "UM_2_0050428",
+      "site_id": "UM_2",
+      "label": 0,
+      "fold": 2,
+      "score": 0.44829358125040575
+    },
+    {
+      "subject_index": 733,
+      "sub_id": 50433,
+      "file_id": "USM_0050433",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4229355100139989
+    },
+    {
+      "subject_index": 734,
+      "sub_id": 50434,
+      "file_id": "USM_0050434",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5480293358836512
+    },
+    {
+      "subject_index": 735,
+      "sub_id": 50435,
+      "file_id": "USM_0050435",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 1,
+      "score": 0.3985345170315625
+    },
+    {
+      "subject_index": 736,
+      "sub_id": 50436,
+      "file_id": "USM_0050436",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 0,
+      "score": 0.3785834046121338
+    },
+    {
+      "subject_index": 737,
+      "sub_id": 50437,
+      "file_id": "USM_0050437",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.9716298352600305
+    },
+    {
+      "subject_index": 738,
+      "sub_id": 50438,
+      "file_id": "USM_0050438",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.3038551855049306
+    },
+    {
+      "subject_index": 739,
+      "sub_id": 50439,
+      "file_id": "USM_0050439",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.043500365022395814
+    },
+    {
+      "subject_index": 740,
+      "sub_id": 50440,
+      "file_id": "USM_0050440",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8973789087531505
+    },
+    {
+      "subject_index": 741,
+      "sub_id": 50441,
+      "file_id": "USM_0050441",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 1,
+      "score": 0.20193364463290228
+    },
+    {
+      "subject_index": 742,
+      "sub_id": 50442,
+      "file_id": "USM_0050442",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 0,
+      "score": 0.2595880493253657
+    },
+    {
+      "subject_index": 743,
+      "sub_id": 50443,
+      "file_id": "USM_0050443",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 4,
+      "score": 0.052378345829175714
+    },
+    {
+      "subject_index": 744,
+      "sub_id": 50444,
+      "file_id": "USM_0050444",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.43284271618608133
+    },
+    {
+      "subject_index": 745,
+      "sub_id": 50445,
+      "file_id": "USM_0050445",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.14793982281019646
+    },
+    {
+      "subject_index": 746,
+      "sub_id": 50446,
+      "file_id": "USM_0050446",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.24149942008020997
+    },
+    {
+      "subject_index": 747,
+      "sub_id": 50447,
+      "file_id": "USM_0050447",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7303981526794371
+    },
+    {
+      "subject_index": 748,
+      "sub_id": 50448,
+      "file_id": "USM_0050448",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9934094499661165
+    },
+    {
+      "subject_index": 749,
+      "sub_id": 50449,
+      "file_id": "USM_0050449",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0716723807803717
+    },
+    {
+      "subject_index": 750,
+      "sub_id": 50453,
+      "file_id": "USM_0050453",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 0,
+      "score": 0.9891771465558239
+    },
+    {
+      "subject_index": 751,
+      "sub_id": 50455,
+      "file_id": "USM_0050455",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.012700835341625659
+    },
+    {
+      "subject_index": 752,
+      "sub_id": 50463,
+      "file_id": "USM_0050463",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.38236290715332716
+    },
+    {
+      "subject_index": 753,
+      "sub_id": 50466,
+      "file_id": "USM_0050466",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.4586020513307957
+    },
+    {
+      "subject_index": 754,
+      "sub_id": 50467,
+      "file_id": "USM_0050467",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6053788677271885
+    },
+    {
+      "subject_index": 755,
+      "sub_id": 50468,
+      "file_id": "USM_0050468",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.900464135717622
+    },
+    {
+      "subject_index": 756,
+      "sub_id": 50469,
+      "file_id": "USM_0050469",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 2,
+      "score": 0.23549007793953006
+    },
+    {
+      "subject_index": 757,
+      "sub_id": 50470,
+      "file_id": "USM_0050470",
+      "site_id": "USM",
+      "label": 0,
+      "fold": 3,
+      "score": 0.957671544198658
+    },
+    {
+      "subject_index": 758,
+      "sub_id": 50477,
+      "file_id": "USM_0050477",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9470736546296962
+    },
+    {
+      "subject_index": 759,
+      "sub_id": 50480,
+      "file_id": "USM_0050480",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9545364980541563
+    },
+    {
+      "subject_index": 760,
+      "sub_id": 50481,
+      "file_id": "USM_0050481",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9998913600379477
+    },
+    {
+      "subject_index": 761,
+      "sub_id": 50482,
+      "file_id": "USM_0050482",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9757300794987296
+    },
+    {
+      "subject_index": 762,
+      "sub_id": 50483,
+      "file_id": "USM_0050483",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9963157392671794
+    },
+    {
+      "subject_index": 763,
+      "sub_id": 50485,
+      "file_id": "USM_0050485",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.11173981570186416
+    },
+    {
+      "subject_index": 764,
+      "sub_id": 50486,
+      "file_id": "USM_0050486",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9959105092032415
+    },
+    {
+      "subject_index": 765,
+      "sub_id": 50487,
+      "file_id": "USM_0050487",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8533775570907846
+    },
+    {
+      "subject_index": 766,
+      "sub_id": 50488,
+      "file_id": "USM_0050488",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9472557462978688
+    },
+    {
+      "subject_index": 767,
+      "sub_id": 50489,
+      "file_id": "USM_0050489",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9959719785332022
+    },
+    {
+      "subject_index": 768,
+      "sub_id": 50490,
+      "file_id": "USM_0050490",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8904411603517657
+    },
+    {
+      "subject_index": 769,
+      "sub_id": 50491,
+      "file_id": "USM_0050491",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7416119610344559
+    },
+    {
+      "subject_index": 770,
+      "sub_id": 50492,
+      "file_id": "USM_0050492",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9680470377826853
+    },
+    {
+      "subject_index": 771,
+      "sub_id": 50493,
+      "file_id": "USM_0050493",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9460153709964005
+    },
+    {
+      "subject_index": 772,
+      "sub_id": 50494,
+      "file_id": "USM_0050494",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9977569772186171
+    },
+    {
+      "subject_index": 773,
+      "sub_id": 50496,
+      "file_id": "USM_0050496",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.05405841207224723
+    },
+    {
+      "subject_index": 774,
+      "sub_id": 50497,
+      "file_id": "USM_0050497",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9969830382412597
+    },
+    {
+      "subject_index": 775,
+      "sub_id": 50498,
+      "file_id": "USM_0050498",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9993804734476213
+    },
+    {
+      "subject_index": 776,
+      "sub_id": 50499,
+      "file_id": "USM_0050499",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.7094533142273431
+    },
+    {
+      "subject_index": 777,
+      "sub_id": 50500,
+      "file_id": "USM_0050500",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6630623666386672
+    },
+    {
+      "subject_index": 778,
+      "sub_id": 50501,
+      "file_id": "USM_0050501",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9984106778239513
+    },
+    {
+      "subject_index": 779,
+      "sub_id": 50502,
+      "file_id": "USM_0050502",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9387611719646637
+    },
+    {
+      "subject_index": 780,
+      "sub_id": 50503,
+      "file_id": "USM_0050503",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9556903713685344
+    },
+    {
+      "subject_index": 781,
+      "sub_id": 50504,
+      "file_id": "USM_0050504",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9994584539657699
+    },
+    {
+      "subject_index": 782,
+      "sub_id": 50505,
+      "file_id": "USM_0050505",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9717787584459107
+    },
+    {
+      "subject_index": 783,
+      "sub_id": 50507,
+      "file_id": "USM_0050507",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9878148162009274
+    },
+    {
+      "subject_index": 784,
+      "sub_id": 50509,
+      "file_id": "USM_0050509",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9942551192192507
+    },
+    {
+      "subject_index": 785,
+      "sub_id": 50510,
+      "file_id": "USM_0050510",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9944210378392789
+    },
+    {
+      "subject_index": 786,
+      "sub_id": 50511,
+      "file_id": "USM_0050511",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 1,
+      "score": 0.999686057283656
+    },
+    {
+      "subject_index": 787,
+      "sub_id": 50514,
+      "file_id": "USM_0050514",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.41861891934979595
+    },
+    {
+      "subject_index": 788,
+      "sub_id": 50515,
+      "file_id": "USM_0050515",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9990225270899433
+    },
+    {
+      "subject_index": 789,
+      "sub_id": 50516,
+      "file_id": "USM_0050516",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.8593330742712754
+    },
+    {
+      "subject_index": 790,
+      "sub_id": 50518,
+      "file_id": "USM_0050518",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7386168371606047
+    },
+    {
+      "subject_index": 791,
+      "sub_id": 50519,
+      "file_id": "USM_0050519",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9955274074735753
+    },
+    {
+      "subject_index": 792,
+      "sub_id": 50520,
+      "file_id": "USM_0050520",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.2549531758428509
+    },
+    {
+      "subject_index": 793,
+      "sub_id": 50521,
+      "file_id": "USM_0050521",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.5316336237810951
+    },
+    {
+      "subject_index": 794,
+      "sub_id": 50523,
+      "file_id": "USM_0050523",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9911643008130825
+    },
+    {
+      "subject_index": 795,
+      "sub_id": 50524,
+      "file_id": "USM_0050524",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9923327071464286
+    },
+    {
+      "subject_index": 796,
+      "sub_id": 50525,
+      "file_id": "USM_0050525",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.7716043254014298
+    },
+    {
+      "subject_index": 797,
+      "sub_id": 50526,
+      "file_id": "USM_0050526",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4737149668887523
+    },
+    {
+      "subject_index": 798,
+      "sub_id": 50527,
+      "file_id": "USM_0050527",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6944128870252146
+    },
+    {
+      "subject_index": 799,
+      "sub_id": 50528,
+      "file_id": "USM_0050528",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8884890018290722
+    },
+    {
+      "subject_index": 800,
+      "sub_id": 50529,
+      "file_id": "USM_0050529",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7443349213679854
+    },
+    {
+      "subject_index": 801,
+      "sub_id": 50530,
+      "file_id": "USM_0050530",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9948958049981798
+    },
+    {
+      "subject_index": 802,
+      "sub_id": 50531,
+      "file_id": "USM_0050531",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9990400848118095
+    },
+    {
+      "subject_index": 803,
+      "sub_id": 50532,
+      "file_id": "USM_0050532",
+      "site_id": "USM",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9977847436506985
+    },
+    {
+      "subject_index": 804,
+      "sub_id": 50551,
+      "file_id": "Yale_0050551",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 4,
+      "score": 0.17431861812352478
+    },
+    {
+      "subject_index": 805,
+      "sub_id": 50552,
+      "file_id": "Yale_0050552",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 4,
+      "score": 0.34212622002350623
+    },
+    {
+      "subject_index": 806,
+      "sub_id": 50553,
+      "file_id": "Yale_0050553",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 2,
+      "score": 0.1524397037385286
+    },
+    {
+      "subject_index": 807,
+      "sub_id": 50554,
+      "file_id": "Yale_0050554",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.010038570801996804
+    },
+    {
+      "subject_index": 808,
+      "sub_id": 50555,
+      "file_id": "Yale_0050555",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 0,
+      "score": 0.004699448215317205
+    },
+    {
+      "subject_index": 809,
+      "sub_id": 50556,
+      "file_id": "Yale_0050556",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.0061708258174607315
+    },
+    {
+      "subject_index": 810,
+      "sub_id": 50557,
+      "file_id": "Yale_0050557",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.004779586262522746
+    },
+    {
+      "subject_index": 811,
+      "sub_id": 50558,
+      "file_id": "Yale_0050558",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.06261521746930772
+    },
+    {
+      "subject_index": 812,
+      "sub_id": 50559,
+      "file_id": "Yale_0050559",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6989052957322426
+    },
+    {
+      "subject_index": 813,
+      "sub_id": 50560,
+      "file_id": "Yale_0050560",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 2,
+      "score": 0.08378499494616189
+    },
+    {
+      "subject_index": 814,
+      "sub_id": 50561,
+      "file_id": "Yale_0050561",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 0,
+      "score": 0.2760158324755007
+    },
+    {
+      "subject_index": 815,
+      "sub_id": 50562,
+      "file_id": "Yale_0050562",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8954908278209212
+    },
+    {
+      "subject_index": 816,
+      "sub_id": 50563,
+      "file_id": "Yale_0050563",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 4,
+      "score": 0.00042412014361470547
+    },
+    {
+      "subject_index": 817,
+      "sub_id": 50564,
+      "file_id": "Yale_0050564",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5923705661921648
+    },
+    {
+      "subject_index": 818,
+      "sub_id": 50565,
+      "file_id": "Yale_0050565",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 4,
+      "score": 0.872815489046814
+    },
+    {
+      "subject_index": 819,
+      "sub_id": 50566,
+      "file_id": "Yale_0050566",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 4,
+      "score": 0.005888892923252639
+    },
+    {
+      "subject_index": 820,
+      "sub_id": 50567,
+      "file_id": "Yale_0050567",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9329833810956373
+    },
+    {
+      "subject_index": 821,
+      "sub_id": 50568,
+      "file_id": "Yale_0050568",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.09971305621831446
+    },
+    {
+      "subject_index": 822,
+      "sub_id": 50569,
+      "file_id": "Yale_0050569",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.01051481413479308
+    },
+    {
+      "subject_index": 823,
+      "sub_id": 50570,
+      "file_id": "Yale_0050570",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.010916424421714895
+    },
+    {
+      "subject_index": 824,
+      "sub_id": 50571,
+      "file_id": "Yale_0050571",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5819992676428662
+    },
+    {
+      "subject_index": 825,
+      "sub_id": 50572,
+      "file_id": "Yale_0050572",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.009967348267528374
+    },
+    {
+      "subject_index": 826,
+      "sub_id": 50573,
+      "file_id": "Yale_0050573",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 0,
+      "score": 0.032569253461776006
+    },
+    {
+      "subject_index": 827,
+      "sub_id": 50574,
+      "file_id": "Yale_0050574",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8349714805373731
+    },
+    {
+      "subject_index": 828,
+      "sub_id": 50575,
+      "file_id": "Yale_0050575",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.06279060749873411
+    },
+    {
+      "subject_index": 829,
+      "sub_id": 50576,
+      "file_id": "Yale_0050576",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 3,
+      "score": 0.019472004293008494
+    },
+    {
+      "subject_index": 830,
+      "sub_id": 50577,
+      "file_id": "Yale_0050577",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.00032574752734759656
+    },
+    {
+      "subject_index": 831,
+      "sub_id": 50578,
+      "file_id": "Yale_0050578",
+      "site_id": "YALE",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9986867042297389
+    },
+    {
+      "subject_index": 832,
+      "sub_id": 50601,
+      "file_id": "Yale_0050601",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 0,
+      "score": 0.1574438039560944
+    },
+    {
+      "subject_index": 833,
+      "sub_id": 50602,
+      "file_id": "Yale_0050602",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.0032215404756200847
+    },
+    {
+      "subject_index": 834,
+      "sub_id": 50603,
+      "file_id": "Yale_0050603",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9658038055207756
+    },
+    {
+      "subject_index": 835,
+      "sub_id": 50604,
+      "file_id": "Yale_0050604",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7465546340760755
+    },
+    {
+      "subject_index": 836,
+      "sub_id": 50605,
+      "file_id": "Yale_0050605",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 2,
+      "score": 0.9603115481599269
+    },
+    {
+      "subject_index": 837,
+      "sub_id": 50606,
+      "file_id": "Yale_0050606",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9992784071282498
+    },
+    {
+      "subject_index": 838,
+      "sub_id": 50607,
+      "file_id": "Yale_0050607",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.41979752819506067
+    },
+    {
+      "subject_index": 839,
+      "sub_id": 50608,
+      "file_id": "Yale_0050608",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9895779379274203
+    },
+    {
+      "subject_index": 840,
+      "sub_id": 50609,
+      "file_id": "Yale_0050609",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9234153448079142
+    },
+    {
+      "subject_index": 841,
+      "sub_id": 50610,
+      "file_id": "Yale_0050610",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.058860468388964776
+    },
+    {
+      "subject_index": 842,
+      "sub_id": 50611,
+      "file_id": "Yale_0050611",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9895579132444486
+    },
+    {
+      "subject_index": 843,
+      "sub_id": 50612,
+      "file_id": "Yale_0050612",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.059023085101587575
+    },
+    {
+      "subject_index": 844,
+      "sub_id": 50613,
+      "file_id": "Yale_0050613",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9914621179904878
+    },
+    {
+      "subject_index": 845,
+      "sub_id": 50614,
+      "file_id": "Yale_0050614",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.971301781128685
+    },
+    {
+      "subject_index": 846,
+      "sub_id": 50615,
+      "file_id": "Yale_0050615",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9997217879213883
+    },
+    {
+      "subject_index": 847,
+      "sub_id": 50616,
+      "file_id": "Yale_0050616",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.6737239080609284
+    },
+    {
+      "subject_index": 848,
+      "sub_id": 50617,
+      "file_id": "Yale_0050617",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6280503942267455
+    },
+    {
+      "subject_index": 849,
+      "sub_id": 50618,
+      "file_id": "Yale_0050618",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9822253582208058
+    },
+    {
+      "subject_index": 850,
+      "sub_id": 50619,
+      "file_id": "Yale_0050619",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7985749424757006
+    },
+    {
+      "subject_index": 851,
+      "sub_id": 50620,
+      "file_id": "Yale_0050620",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9924073003917325
+    },
+    {
+      "subject_index": 852,
+      "sub_id": 50621,
+      "file_id": "Yale_0050621",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9214833563310167
+    },
+    {
+      "subject_index": 853,
+      "sub_id": 50622,
+      "file_id": "Yale_0050622",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6635207789343766
+    },
+    {
+      "subject_index": 854,
+      "sub_id": 50623,
+      "file_id": "Yale_0050623",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 2,
+      "score": 0.023365205548377493
+    },
+    {
+      "subject_index": 855,
+      "sub_id": 50624,
+      "file_id": "Yale_0050624",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 0,
+      "score": 0.974117166784392
+    },
+    {
+      "subject_index": 856,
+      "sub_id": 50625,
+      "file_id": "Yale_0050625",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.13233785308195264
+    },
+    {
+      "subject_index": 857,
+      "sub_id": 50626,
+      "file_id": "Yale_0050626",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 3,
+      "score": 0.9148606492345861
+    },
+    {
+      "subject_index": 858,
+      "sub_id": 50627,
+      "file_id": "Yale_0050627",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 4,
+      "score": 0.9549547610109642
+    },
+    {
+      "subject_index": 859,
+      "sub_id": 50628,
+      "file_id": "Yale_0050628",
+      "site_id": "YALE",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9977885415017238
+    }
+  ],
+  "validation_auc": {
+    "mean": 0.7956709956709956,
+    "sample_sd": 0.04542651423864035,
+    "fold_values": [
+      0.7694805194805194,
+      0.7548701298701298,
+      0.8668831168831169,
+      0.8138528138528138,
+      0.7732683982683982
+    ]
+  }
+}

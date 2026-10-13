@@ -1,0 +1,332 @@
+{
+  "analysis": "gamma upper-bound audit on locked standard five-fold validation sets",
+  "seed": 42,
+  "original_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "audited_extension": [
+    0.95
+  ],
+  "folds_with_changed_selection": 1,
+  "folds_selecting_new_upper_boundary_095": 1,
+  "test_evaluated": false,
+  "interpretation_guardrail": "结果只用于判断候选网格边界和验证选择稳定性；不得据此读取或重算测试指标。",
+  "folds": [
+    {
+      "fold": 0,
+      "original_selected_gamma": 0.9,
+      "expanded_selected_gamma": 0.9,
+      "selection_changed_after_adding_095": false,
+      "expanded_peak_at_upper_boundary": false,
+      "top_minus_second_validation_auc": 0.007575757575757569,
+      "gammas_within_0_005_of_best": [
+        0.9
+      ],
+      "validation_curve": [
+        {
+          "gamma": 0.05,
+          "validation_auc": 0.6791125541125541
+        },
+        {
+          "gamma": 0.1,
+          "validation_auc": 0.6904761904761905
+        },
+        {
+          "gamma": 0.2,
+          "validation_auc": 0.7045454545454546
+        },
+        {
+          "gamma": 0.3,
+          "validation_auc": 0.7153679653679654
+        },
+        {
+          "gamma": 0.5,
+          "validation_auc": 0.7467532467532468
+        },
+        {
+          "gamma": 0.7,
+          "validation_auc": 0.7651515151515151
+        },
+        {
+          "gamma": 0.8,
+          "validation_auc": 0.7705627705627706
+        },
+        {
+          "gamma": 0.9,
+          "validation_auc": 0.7781385281385281
+        },
+        {
+          "gamma": 0.95,
+          "validation_auc": 0.7667748917748918
+        }
+      ],
+      "paired_validation_bootstrap_095_minus_090": {
+        "estimate": -0.011363636363636354,
+        "ci95_percentile": [
+          -0.052489177489177585,
+          0.02976190476190455
+        ],
+        "probability_difference_gt_zero": 0.2905,
+        "repetitions": 20000,
+        "seed": 20260824,
+        "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+      }
+    },
+    {
+      "fold": 1,
+      "original_selected_gamma": 0.9,
+      "expanded_selected_gamma": 0.95,
+      "selection_changed_after_adding_095": true,
+      "expanded_peak_at_upper_boundary": true,
+      "top_minus_second_validation_auc": 0.005411255411255311,
+      "gammas_within_0_005_of_best": [
+        0.95
+      ],
+      "validation_curve": [
+        {
+          "gamma": 0.05,
+          "validation_auc": 0.6915584415584416
+        },
+        {
+          "gamma": 0.1,
+          "validation_auc": 0.6964285714285714
+        },
+        {
+          "gamma": 0.2,
+          "validation_auc": 0.7121212121212122
+        },
+        {
+          "gamma": 0.3,
+          "validation_auc": 0.7180735930735931
+        },
+        {
+          "gamma": 0.5,
+          "validation_auc": 0.7472943722943723
+        },
+        {
+          "gamma": 0.7,
+          "validation_auc": 0.7602813852813852
+        },
+        {
+          "gamma": 0.8,
+          "validation_auc": 0.7646103896103896
+        },
+        {
+          "gamma": 0.9,
+          "validation_auc": 0.7803030303030304
+        },
+        {
+          "gamma": 0.95,
+          "validation_auc": 0.7857142857142857
+        }
+      ],
+      "paired_validation_bootstrap_095_minus_090": {
+        "estimate": 0.005411255411255311,
+        "ci95_percentile": [
+          -0.015692640692640647,
+          0.02705627705627711
+        ],
+        "probability_difference_gt_zero": 0.685,
+        "repetitions": 20000,
+        "seed": 20260825,
+        "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+      }
+    },
+    {
+      "fold": 2,
+      "original_selected_gamma": 0.7,
+      "expanded_selected_gamma": 0.7,
+      "selection_changed_after_adding_095": false,
+      "expanded_peak_at_upper_boundary": false,
+      "top_minus_second_validation_auc": 0.0032467532467532756,
+      "gammas_within_0_005_of_best": [
+        0.7,
+        0.9
+      ],
+      "validation_curve": [
+        {
+          "gamma": 0.05,
+          "validation_auc": 0.8344155844155844
+        },
+        {
+          "gamma": 0.1,
+          "validation_auc": 0.8382034632034632
+        },
+        {
+          "gamma": 0.2,
+          "validation_auc": 0.8463203463203464
+        },
+        {
+          "gamma": 0.3,
+          "validation_auc": 0.8544372294372294
+        },
+        {
+          "gamma": 0.5,
+          "validation_auc": 0.8598484848484849
+        },
+        {
+          "gamma": 0.7,
+          "validation_auc": 0.8658008658008658
+        },
+        {
+          "gamma": 0.8,
+          "validation_auc": 0.8544372294372294
+        },
+        {
+          "gamma": 0.9,
+          "validation_auc": 0.8625541125541125
+        },
+        {
+          "gamma": 0.95,
+          "validation_auc": 0.8382034632034632
+        }
+      ],
+      "paired_validation_bootstrap_095_minus_090": {
+        "estimate": -0.024350649350649345,
+        "ci95_percentile": [
+          -0.07413419913419905,
+          0.02435064935064946
+        ],
+        "probability_difference_gt_zero": 0.15885,
+        "repetitions": 20000,
+        "seed": 20260826,
+        "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+      }
+    },
+    {
+      "fold": 3,
+      "original_selected_gamma": 0.5,
+      "expanded_selected_gamma": 0.5,
+      "selection_changed_after_adding_095": false,
+      "expanded_peak_at_upper_boundary": false,
+      "top_minus_second_validation_auc": 0.0010822510822510178,
+      "gammas_within_0_005_of_best": [
+        0.3,
+        0.5,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "validation_curve": [
+        {
+          "gamma": 0.05,
+          "validation_auc": 0.7889610389610389
+        },
+        {
+          "gamma": 0.1,
+          "validation_auc": 0.7927489177489178
+        },
+        {
+          "gamma": 0.2,
+          "validation_auc": 0.7992424242424243
+        },
+        {
+          "gamma": 0.3,
+          "validation_auc": 0.8057359307359307
+        },
+        {
+          "gamma": 0.5,
+          "validation_auc": 0.8084415584415584
+        },
+        {
+          "gamma": 0.7,
+          "validation_auc": 0.8073593073593074
+        },
+        {
+          "gamma": 0.8,
+          "validation_auc": 0.8057359307359307
+        },
+        {
+          "gamma": 0.9,
+          "validation_auc": 0.804112554112554
+        },
+        {
+          "gamma": 0.95,
+          "validation_auc": 0.7878787878787878
+        }
+      ],
+      "paired_validation_bootstrap_095_minus_090": {
+        "estimate": -0.016233766233766156,
+        "ci95_percentile": [
+          -0.04329004329004327,
+          0.010281385281385225
+        ],
+        "probability_difference_gt_zero": 0.1099,
+        "repetitions": 20000,
+        "seed": 20260827,
+        "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+      }
+    },
+    {
+      "fold": 4,
+      "original_selected_gamma": 0.9,
+      "expanded_selected_gamma": 0.9,
+      "selection_changed_after_adding_095": false,
+      "expanded_peak_at_upper_boundary": false,
+      "top_minus_second_validation_auc": 0.0016233766233765268,
+      "gammas_within_0_005_of_best": [
+        0.8,
+        0.9,
+        0.95
+      ],
+      "validation_curve": [
+        {
+          "gamma": 0.05,
+          "validation_auc": 0.7018398268398268
+        },
+        {
+          "gamma": 0.1,
+          "validation_auc": 0.7126623376623377
+        },
+        {
+          "gamma": 0.2,
+          "validation_auc": 0.7207792207792209
+        },
+        {
+          "gamma": 0.3,
+          "validation_auc": 0.7251082251082251
+        },
+        {
+          "gamma": 0.5,
+          "validation_auc": 0.7424242424242424
+        },
+        {
+          "gamma": 0.7,
+          "validation_auc": 0.7564935064935066
+        },
+        {
+          "gamma": 0.8,
+          "validation_auc": 0.7602813852813853
+        },
+        {
+          "gamma": 0.9,
+          "validation_auc": 0.764069264069264
+        },
+        {
+          "gamma": 0.95,
+          "validation_auc": 0.7624458874458875
+        }
+      ],
+      "paired_validation_bootstrap_095_minus_090": {
+        "estimate": -0.0016233766233765268,
+        "ci95_percentile": [
+          -0.02867965367965364,
+          0.023268398268398327
+        ],
+        "probability_difference_gt_zero": 0.44865,
+        "repetitions": 20000,
+        "seed": 20260828,
+        "estimand": "fixed-model validation AUC difference; no retraining uncertainty"
+      }
+    }
+  ],
+  "runtime_seconds": 406.5370545387268,
+  "all_gamma_090_reproduced_exactly": true
+}

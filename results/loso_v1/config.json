@@ -1,0 +1,37 @@
+{
+  "design": "leave-one-site-out; inner validation = stratified (site, label) random split of remaining sites",
+  "val_frac": 0.125,
+  "split_seed": 42,
+  "gammas": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "eigclip_floor": 1e-06,
+  "schemes": [
+    "raw_fc",
+    "eigclip",
+    "ledoit_wolf",
+    "linear_shrinkage"
+  ],
+  "readout": "StandardScaler + LR(l2, C=1, liblinear, dual=True), threshold by val acc",
+  "primary_endpoint": "pooled LOSO AUC, linear_shrinkage - eigclip, paired bootstrap 95% CI",
+  "secondary": [
+    "linear_shrinkage - raw_fc",
+    "linear_shrinkage - ledoit_wolf",
+    "mean per-site AUC difference"
+  ],
+  "bootstrap": {
+    "n": 20000,
+    "seed": 20260824,
+    "scheme": "within-site, within-class paired resampling"
+  },
+  "smoke": false,
+  "n_roi": 392,
+  "t_use": 146
+}
